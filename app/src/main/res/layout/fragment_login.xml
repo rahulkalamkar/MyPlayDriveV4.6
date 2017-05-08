@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/transparent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/sub_title_text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" android:visibility="invisible"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/login_content_side_margin"
+            android:layout_marginRight="@dimen/login_content_side_margin"
+            android:layout_marginTop="15dp" >
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/medium_text_size" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/login_button_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_facebook_height"
+            android:layout_marginLeft="@dimen/login_content_side_margin"
+            android:layout_marginRight="@dimen/login_content_side_margin"
+            android:layout_marginTop="@dimen/login_content_top_margin"
+            android:background="@drawable/background_login_button_facebook" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_facebook_height"
+                android:background="?attr/selectableItemBackground">
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="@dimen/save_offline_setting_10dp"
+                android:id="@+id/login_button_facebook_icon"
+                android:layout_width="@dimen/login_facebook_logo_width"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_login_facebook" />
+
+            <View
+                android:id="@+id/login_button_facebook_divider"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@drawable/divider_login_button"
+                android:layout_toRightOf="@+id/login_button_facebook_icon" />
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:id="@+id/login_button_facebook_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@+id/login_button_facebook_divider"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/save_offline_setting_10dp"
+                android:text="@string/login_btn_connect_with_facebook"
+                android:textColor="@color/white"
+                android:textSize="@dimen/xlarge_text_size" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!--<LinearLayout
+            android:id="@+id/social_network_buttons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_content_side_margin"
+            android:layout_marginRight="@dimen/login_content_side_margin"
+            android:layout_marginTop="@dimen/login_content_top_margin" >-->
+
+
+        <RelativeLayout
+            android:id="@+id/login_button_google"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_facebook_height"
+            android:layout_marginLeft="@dimen/login_content_side_margin"
+            android:layout_marginRight="@dimen/login_content_side_margin"
+            android:layout_marginTop="@dimen/login_content_top_margin"
+            android:background="@drawable/background_login_google_icon_new" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_facebook_height"
+                android:background="?attr/selectableItemBackground">
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="@dimen/save_offline_setting_10dp"
+                android:id="@+id/login_button_google_icon"
+                android:layout_width="@dimen/login_other_social_network_button_height"
+                android:layout_height="@dimen/login_other_social_network_button_height"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_login_google_icon" />
+
+            <View
+                android:id="@+id/login_button_google_divider"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@drawable/divider_login_button"
+                android:layout_toRightOf="@+id/login_button_google_icon" />
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:id="@+id/login_button_google_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@+id/login_button_google_divider"
+                android:layout_marginLeft="@dimen/save_offline_setting_10dp"
+                android:gravity="center_vertical"
+                android:text="@string/login_google_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/xlarge_text_size" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+                android:id="@+id/login_button_twitter"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_facebook_height"
+                android:layout_marginLeft="@dimen/login_content_side_margin"
+                android:layout_marginRight="@dimen/login_content_side_margin"
+                android:layout_marginTop="@dimen/login_content_top_margin"
+
+            android:background="@drawable/background_login_twitter_icon" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_facebook_height"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="@dimen/save_offline_setting_10dp"
+                    android:id="@+id/login_button_twitter_icon"
+                    android:layout_width="@dimen/login_other_social_network_button_height"
+                    android:layout_height="@dimen/login_other_social_network_button_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_login_twitter_icon" />
+
+                <View
+                    android:id="@+id/login_button_twitter_divider"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/divider_login_button"
+                    android:layout_toRightOf="@+id/login_button_twitter_icon" />
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                    android:id="@+id/login_button_twitter_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignLeft="@+id/login_button_twitter_divider"
+                    android:layout_marginLeft="@dimen/save_offline_setting_10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/login_twitter_title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/xlarge_text_size" />
+            </LinearLayout>
+            </RelativeLayout>
+        <!--</LinearLayout>-->
+
+            <RelativeLayout
+                android:id="@+id/divider_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/login_line_separator" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="@dimen/login_other_social_network_button_height"
+                    android:layout_height="@dimen/login_other_social_network_button_height"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_login_or" />
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_login_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/login_content_side_margin"
+            android:layout_marginRight="@dimen/login_content_side_margin"
+            android:layout_marginTop="5dp" >
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:id="@+id/title_text_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_sign_in_hungama"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/medium_text_size" />
+
+            <ImageView
+                android:id="@+id/iv_login_button_expand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/icon_login_arrow" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_login_fields"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/login_content_side_margin"
+            android:layout_marginRight="@dimen/login_content_side_margin"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/login_hungama_login_fields_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageButton
+                android:id="@+id/login_hungama_login_button_login"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/save_offline_setting_10dp"
+                android:layout_marginBottom="@dimen/save_offline_setting_10dp"
+                style="@style/dialog_blue_btn_style"
+
+                android:text="@string/login_hungama_login_login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/medium_text_size" />
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:id="@+id/login_hungama_login_button_forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:text="@string/login_hungama_login_forgot_your_password"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/save_offline_setting_5dp"
+                android:textSize="@dimen/medium_text_size" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/divider_layout_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@color/login_line_separator" />
+
+            <ImageView
+                android:layout_width="@dimen/login_other_social_network_button_height"
+                android:layout_height="@dimen/login_other_social_network_button_height"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_login_or" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_signup_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/login_content_side_margin"
+            android:layout_marginRight="@dimen/login_content_side_margin"
+            android:layout_marginTop="5dp" >
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:id="@+id/title_text_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_sign_up_hungama"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/medium_text_size" />
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:id="@+id/title_text_not_a_member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/title_text_signup"
+                android:text="@string/title_not_a_member_hungama"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/login_text_color"
+                android:textSize="@dimen/medium_text_size" />
+
+            <ImageView
+                android:id="@+id/iv_signup_button_expand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/icon_login_arrow" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_signup_fields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_content_side_margin"
+            android:layout_marginRight="@dimen/login_content_side_margin"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/login_hungama_signup_fields_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageButton
+                android:id="@+id/login_hungama_signup_button_login"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/save_offline_setting_10dp"
+                android:layout_marginBottom="@dimen/save_offline_setting_10dp"
+                style="@style/dialog_blue_btn_style"
+
+                android:text="@string/login_sign_up"
+                android:textColor="@color/white"
+                android:textSize="@dimen/medium_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

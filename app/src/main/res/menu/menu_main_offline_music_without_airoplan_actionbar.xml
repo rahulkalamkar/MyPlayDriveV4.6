@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/menu_item_main_actionbar_go_offline_play_all"
+        android:icon="@drawable/icon_circle_play_blue_outline"
+        android:title="@string/main_actionbar_go_offline_play_all"
+        app:showAsAction="ifRoom"/>
+    <!--
+         <item
+        android:id="@+id/menu_item_main_actionbar_go_offline"
+        android:enabled="true"
+        android:icon="@drawable/background_actionbar_plane_blue"
+        android:title="@string/main_actionbar_go_offline"
+        app:showAsAction="ifRoom"/>
+    -->
+
+
+    <!--
+         <item android:id="@+id/menu_item_main_actionbar_navigation"
+          android:icon="@drawable/background_actionbar_plus"
+          android:title="@string/main_actionbar_navigation"
+          android:checkable="true"
+          android:checked="false"
+          android:showAsAction="never"/>
+    -->
+
+
+    <!-- <item -->
+    <!-- android:id="@+id/menu_item_main_actionbar_search" -->
+    <!-- android:icon="@drawable/background_action_bar_search" -->
+    <!-- android:title="@string/main_actionbar_search" -->
+    <!-- app:showAsAction="ifRoom"/> -->
+
+    <item
+        android:id="@+id/menu_item_main_actionbar_go_offline_more_option"
+        android:icon="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha"
+        android:title="@string/more_title"
+        app:showAsAction="ifRoom"/>
+    <!--
+         <item
+        android:id="@+id/menu_item_main_actionbar_settings"
+        android:actionViewClass="com.manuelpeinado.refreshactionitem.RefreshActionItem"
+        android:checkable="true"
+        android:checked="false"
+        android:icon="@drawable/background_actionbar_settings"
+        android:showAsAction="always"
+        android:title="@string/main_actionbar_settings"/>
+    -->
+    <!--
+    <item
+        android:id="@+id/menu_item_main_actionbar_settings_menu"
+        android:icon="@drawable/icon_main_player_settings_grey"
+        android:title="@string/main_actionbar_settings_menu_item_settings_and_accounts"/>
+    <item
+        android:id="@+id/menu_item_main_actionbar_my_profile"
+        android:icon="@drawable/icon_main_settings_my_profile"
+        android:showAsAction="ifRoom"
+        android:title="@string/main_actionbar_settings_menu_item_my_profile"/>
+    <item
+        android:id="@+id/menu_item_main_actionbar_preferences"
+        android:icon="@drawable/icon_main_settings_my_preferences"
+        android:title="@string/main_actionbar_settings_menu_item_my_preferences"/>
+    <item
+        android:id="@+id/menu_item_main_actionbar_help_faq"
+        android:icon="@drawable/icon_main_settings_help_faq"
+        android:title="@string/main_actionbar_settings_menu_item_help_faq"/>
+    <item
+        android:id="@+id/menu_item_main_actionbar_rate_app"
+        android:icon="@drawable/icon_main_settings_rate_this_app"
+        android:title="@string/main_actionbar_settings_menu_item_rate_this_app"/>
+    <item
+        android:id="@+id/menu_item_main_actionbar_invite_friends"
+        android:icon="@drawable/icon_main_settings_invite_friends"
+        android:title="@string/main_actionbar_settings_menu_item_invite_friends"/>
+    -->
+
+</menu>

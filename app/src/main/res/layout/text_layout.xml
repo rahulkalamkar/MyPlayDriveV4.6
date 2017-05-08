@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hungama.myplay.activity.ui.widgets.LanguageTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/txt_heading"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:text=""
+    android:textColor="@color/black"
+    android:textSize="@dimen/medium_text_size"
+    android:textStyle="bold" />

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/myPrimaryColor</item>
+        <item name="colorPrimaryDark">@color/myPrimaryDarkColor</item>
+        <!-- <item name="colorAccent">@color/myAccentColor</item> -->
+        <item name="android:textColorPrimary">@color/myTextPrimaryColor</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:windowBackground">@color/myWindowBackground</item>
+    </style>
+
+    <style name="AppTheme_setting" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/myPrimaryColor</item>
+        <item name="colorPrimaryDark">@color/myPrimaryDarkColor</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/myPrimaryColor</item>
+        <item name="colorPrimaryDark">@color/myPrimaryDarkColor</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <!-- SearchView attributes -->
+
+    </style>
+
+    <style name="AppTheme_gray" parent="Theme.AppCompat.NoActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/myPrimaryColor</item>
+        <item name="colorPrimaryDark">@color/myPrimaryDarkColor</item>
+        <!-- <item name="colorAccent">@color/myAccentColor</item> -->
+        <item name="android:textColorPrimary">@color/myTextPrimaryColor</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:windowBackground">@color/application_background_grey</item>
+        <item name="android:listSelector">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="AppThemeLight" parent="Theme.AppCompat.NoActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/myPrimaryColor</item>
+        <item name="colorPrimaryDark">@color/myPrimaryDarkColor</item>
+        <!-- <item name="colorAccent">@color/myAccentColor</item> -->
+        <item name="android:textColorPrimary">@drawable/default_text_color</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:editTextColor">@drawable/default_text_color</item>
+        <item name="android:textColorSecondary">@drawable/default_text_color</item>
+        <item name="android:textColorTertiary">@drawable/default_text_color</item>
+        <item name="android:textColorPrimaryInverse">@drawable/default_text_color</item>
+        <item name="android:textColorSecondaryInverse">@drawable/default_text_color</item>
+        <item name="android:textColorTertiaryInverse">@drawable/default_text_color</item>
+        <item name="android:textColor">@drawable/default_text_color</item>
+        <item name="android:listViewStyle">@style/Widget.ListView</item>
+        <!--
+        <item name="android:divider">@android:color/darker_gray</item>
+	    <item name="android:dividerHeight">1dp</item>
+        -->
+        <item name="android:windowBackground">@color/myWindowBackgroundLight</item>
+    </style>
+
+    <style name="Widget" parent="android:Widget"></style>
+
+    <style name="Widget.ListView">
+        <item name="android:background">@color/white</item>
+        <item name="android:divider">@android:color/darker_gray</item>
+        <item name="android:dividerHeight">1dip</item>
+    </style>
+
+    <style name="AppThemeHome" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/myPrimaryColor</item>
+        <item name="colorPrimaryDark">@color/myPrimaryDarkColor</item>
+        <!-- <item name="colorAccent">@color/myAccentColor</item> -->
+        <item name="android:textColorPrimary">@color/myTextPrimaryColor</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:windowBackground">@drawable/splash_bg_new</item>
+        <!--
+        <item name="android:indeterminateTint">@color/grey_400</item>
+	    <item name="android:indeterminateTintMode">src_in</item>
+        -->
+        <!-- <item name="colorWidget">@color/myAccentColor</item> -->
+        <!--
+        <item name="colorControlActivated">@color/myPrimaryDarkColor</item>
+        <item name="colorControlHighlight">@color/myPrimaryColor</item>
+        <item name="colorSwitchThumbNormal">@color/myPrimaryColor</item>
+        -->
+    </style>
+
+    <style name="AppTheme.NoActionBar.FullScreen" parent="AppTheme.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+    </style>
+
+    <style name="AppThemeSplash" parent="Theme.AppCompat">
+        <!--<item name="android:windowNoTitle">true</item>-->
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/myPrimaryColor</item>
+        <item name="colorPrimaryDark">@color/myPrimaryDarkColor</item>
+        <!-- <item name="colorAccent">@color/myAccentColor</item> -->
+        <item name="android:textColorPrimary">@color/myTextPrimaryColor</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:windowBackground">@drawable/splash_bg_new</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--
+        <item name="android:indeterminateTint">@color/grey_400</item>
+	    <item name="android:indeterminateTintMode">src_in</item>
+        -->
+        <!-- <item name="colorWidget">@color/myAccentColor</item> -->
+        <!--
+        <item name="colorControlActivated">@color/myPrimaryDarkColor</item>
+        <item name="colorControlHighlight">@color/myPrimaryColor</item>
+        <item name="colorSwitchThumbNormal">@color/myPrimaryColor</item>
+        -->
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="@style/Theme.AppCompat.NoActionBar" />
+
+    <style name="AppTheme.Translucent" parent="@android:style/Theme.Translucent.NoTitleBar" >
+        <item name="colorPrimary">@color/myPrimaryColor</item>
+        <item name="colorPrimaryDark">@color/myPrimaryDarkColor</item>
+    </style>
+
+    <style name="AppThemelogin" parent="Theme.AppCompat.Light.NoActionBar" >
+
+    </style>
+
+    <style name="AppTheme.Field" parent="@style/Theme.AppCompat">
+        <item name="android:dropDownListViewStyle">@style/App.Style.Field.Spinner</item>
+    </style>
+
+    <style name="AppTheme.Field.NoActionBar" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:dropDownListViewStyle">@style/App.Style.Field.Spinner</item>
+        <item name="windowActionBar">false</item>
+        <item name="title">true</item>
+    </style>
+
+    <!--
+    <style name=”NotificationsTheme” parent=””>
+        <item name=”android:windowTitleSize”>45dip</item>
+        <item name=”android:windowTitleBackgroundStyle”>@style/NotificationWindowTitleBackground</item>
+    </style>
+    -->
+    <!--<style name="NotificationsTitleTheme" parent="android:Theme">
+        <item name="android:windowTitleSize">45dp</item>
+        <item name="android:windowTitleBackgroundStyle">@style/NotificationWindowTitleBackground</item>
+    </style>-->
+
+    <style name="Theme.UserDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@drawable/transparent_background</item>
+        <item name="android:windowBackground">@drawable/transparent_background</item>
+    </style>
+
+</resources>

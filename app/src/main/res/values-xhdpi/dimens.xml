@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- song catcher -->
+    <dimen name="search_songcatcher_result_line_image_size">65dp</dimen>
+    <dimen name="songcatcher_listening_layout_padding">10dp</dimen>
+    <dimen name="marginleft_tv_catcher_title_upper">20dp</dimen>
+    <dimen name="marginright_iv_mick">20dp</dimen>
+    <dimen name="padding_leftright_error_layout">10dp</dimen>
+    <dimen name="margin_left_error_history_image">10dp</dimen>
+    <dimen name="humming_result_image_width_height">200dp</dimen>
+    <dimen name="margin_left_humming_result_favorite_btn">15dp</dimen>
+    <dimen name="margin_top_holocircular_progressbar">23dp</dimen>
+    <dimen name="home_music_tile_overlay_height">55dp</dimen>
+    <dimen name="home_video_tile_overlay_height">45dp</dimen>
+
+    <!-- Trivia Custom Dialog -->
+    <dimen name="trivia_custom_dialog_min_width">350dp</dimen>
+
+    <!-- discovery new -->
+    <dimen name="circle_height">300dp</dimen>
+    <dimen name="circle_margin">40dp</dimen>
+    <dimen name="circle_margin_left">40dp</dimen>
+    <dimen name="middle_circle_margin_left">0dp</dimen>
+    <dimen name="circle_margin_top">18dp</dimen>
+    <dimen name="needle_width">70dp</dimen>
+    <dimen name="discover_btn_margin_top">-50dp</dimen>
+    <dimen name="discover_selected_mood_widht">110dp</dimen>
+    <dimen name="discover_predefine_padding">10dp</dimen>
+    <dimen name="discover_margin_top_play">15dp</dimen>
+
+    <!--on screen boards -->
+    <dimen name="dialog_margin_top_bottom">15dp</dimen>
+    <dimen name="dialog_margin_left_right">0dp</dimen>
+    <dimen name="dialog_margin_top">45dp</dimen>
+</resources>

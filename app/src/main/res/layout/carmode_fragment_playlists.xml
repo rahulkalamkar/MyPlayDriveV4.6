@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/carmode_main_bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5.04">
+
+        <ImageButton
+            android:id="@+id/btn_back_main_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@drawable/carmode_button_states"
+            android:onClick="vHandleClicks"
+            android:src="@drawable/carmode_btn_back" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/carmode_divider_color" />
+
+        <TextView
+            style="@style/CarModeHeaderTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="@string/title_playlists" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/btn_universal_player"
+            android:background="@color/carmode_divider_color" />
+
+        <ImageButton
+            android:id="@+id/btn_universal_player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@drawable/carmode_button_states"
+            android:onClick="vHandleClicks"
+            android:src="@drawable/carmode_btn_music_player" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/carmode_divider_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_music"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_list_musics"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1">
+
+                <FrameLayout
+                    android:id="@+id/fl_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/ll_listview_progress_control">
+
+                    <ListView
+                        android:id="@android:id/list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@null"
+                        android:dividerHeight="10dp"
+                        android:focusable="false"
+                        android:scrollbars="none" />
+
+                    <TextView
+                        android:id="@android:id/empty"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/msg_not_found"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/carmode_main_text_color" />
+                </FrameLayout>
+            </RelativeLayout>
+
+            <include layout="@layout/carmode_layout_scroller" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_music_options"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:background="@color/carmode_sub_bg_color"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btn_view_detail"
+                style="@style/CarModeMusicOptionTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/carmode_btn_view_detail"
+                android:text="@string/btn_view_detail" />
+
+            <RelativeLayout
+                android:id="@+id/rl_play_now"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ProgressBar
+                    android:id="@+id/pb_load_media"
+                    style="?android:attr/android:progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/btn_play_now"
+                    style="@style/CarModeMusicOptionTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/pb_load_media"
+                    android:drawableLeft="@drawable/carmode_btn_play"
+                    android:text="@string/media_details_custom_dialog_long_click_play_now" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:layout_weight="1">
+
+                <ProgressBar
+                    android:id="@+id/pb_download_queued"
+                    style="?android:attr/android:progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_download"
+                    style="@style/CarModeMusicOptionTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/pb_download_queued"
+                    android:drawableLeft="@drawable/carmode_btn_downloaded"
+                    android:text="@string/btn_download" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_add_to_queue"
+                style="@style/CarModeMusicOptionTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/carmode_btn_add_queue"
+                android:text="@string/btn_add_queue" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

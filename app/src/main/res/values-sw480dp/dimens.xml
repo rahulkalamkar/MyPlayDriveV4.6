@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Discovery -->
+
+    <dimen name="discovery_mood_selected_item">200dp</dimen>
+    <dimen name="discovery_mood_selected_item_margin_top">32dp</dimen>
+    <dimen name="discovery_mood_item_size">50dp</dimen>
+    <dimen name="discovery_mood_selected_item_size">85dp</dimen>
+    <dimen name="discovery_mood_selected_item_text_size">15dp</dimen>
+    <dimen name="discovery_mood_selected_item_text_width">80dp</dimen>
+    <dimen name="discovery_mood_first_raw_item_margin_top">25dp</dimen>
+    <dimen name="discovery_mood_first_raw_item_margin_side">45dp</dimen>
+    <dimen name="discovery_mood_second_raw_item_margin_top">35dp</dimen>
+    <dimen name="discovery_mood_second_raw_item_margin_side">20dp</dimen>
+    <dimen name="discovery_mood_third_raw_item_margin_top">30dp</dimen>
+    <dimen name="discovery_mood_third_raw_item_margin">30dp</dimen>
+    <dimen name="discovery_mood_forth_raw_item_margin_top">100dp</dimen>
+    <dimen name="discovery_mood_button_next_skip_height">35dp</dimen>
+    <dimen name="discovery_mood_button_next_skip_width">60dp</dimen>
+
+
+    <!-- songcatcher -->
+    <dimen name="songcatcher_listening_layout_padding">10dp</dimen>
+    <dimen name="marginleft_tv_catcher_title_upper">25dp</dimen>
+    <dimen name="marginright_iv_mick">10dp</dimen>
+    <dimen name="padding_leftright_error_layout">10dp</dimen>
+    <dimen name="margin_left_error_history_image">5dp</dimen>
+    <dimen name="humming_result_image_width_height">200dp</dimen>
+    <dimen name="margin_left_humming_result_favorite_btn">15dp</dimen>
+    <dimen name="margin_top_holocircular_progressbar">25dp</dimen>
+    <dimen name="radio_list_item_height">73dp</dimen>
+
+
+    <!-- Album arts -->
+    <dimen name="album_arts_ad_Height">120dp</dimen>
+
+    <!-- Song details -->
+    <dimen name="song_details_layout_height">520dp</dimen>
+
+    <!-- General -->
+    <dimen name="screen_height">640dp</dimen>
+    <dimen name="upgrade_subscription_popup_close_button_margin">-20dp</dimen>
+    <dimen name="upgrade_subscription_popup_benefits_height">250dp</dimen>
+    <dimen name="upgrade_subscription_item_height">75dp</dimen>
+    <dimen name="home_music_playlist_height">160dp</dimen>
+    <dimen name="home_music_playlist_img_widht">195dp</dimen>
+    <dimen name="profile_section_height">100dp</dimen>
+
+    <!-- discovery new -->
+    <dimen name="circle_height">350dp</dimen>
+    <dimen name="circle_margin">65dp</dimen>
+    <dimen name="circle_margin_left">65dp</dimen>
+    <dimen name="middle_circle_margin_left">0dp</dimen>
+    <dimen name="circle_margin_top">25dp</dimen>
+    <dimen name="needle_width">90dp</dimen>
+    <dimen name="discover_btn_margin_top">-30dp</dimen>
+    <dimen name="discover_selected_mood_widht">110dp</dimen>
+    <dimen name="discover_predefine_padding">10dp</dimen>
+    <dimen name="discover_margin_top_play">15dp</dimen>
+    <dimen name="playlist_height">300dp</dimen>
+
+</resources>

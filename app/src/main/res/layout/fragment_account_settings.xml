@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/main_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_title_bar_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background_home_tabwidget_tab_unselected"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+            android:id="@+id/main_title_bar_text"
+            style="@style/TextMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/acccount_details_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_title_bar"
+        android:layout_marginLeft="@dimen/save_offline_setting_10dp"
+        android:layout_marginRight="@dimen/save_offline_setting_10dp"
+        android:layout_marginTop="@dimen/save_offline_setting_10dp"
+        android:background="@drawable/background_text_field" >
+
+        <ImageView
+            android:id="@+id/thumbnail_imageview"
+            android:layout_width="@dimen/search_result_line_image_size"
+            android:layout_height="@dimen/search_result_line_image_size"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/save_offline_setting_15dp"
+            android:layout_marginLeft="@dimen/save_offline_setting_15dp"
+            android:layout_marginTop="@dimen/save_offline_setting_15dp" />
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+            android:id="@+id/name_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/save_offline_setting_10dp"
+            android:layout_marginTop="@dimen/save_offline_setting_15dp"
+            android:layout_toRightOf="@id/thumbnail_imageview"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text_size"
+            android:textStyle="bold" />
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+            android:id="@+id/email_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/name_textview"
+            android:layout_alignRight="@id/name_textview"
+            android:layout_below="@id/name_textview"
+            android:layout_marginBottom="@dimen/save_offline_setting_15dp"
+            android:layout_marginTop="@dimen/save_offline_setting_5dp"
+            android:textSize="@dimen/medium_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/secondary_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/acccount_details_layout"
+        android:layout_marginLeft="@dimen/save_offline_setting_10dp"
+        android:layout_marginRight="@dimen/save_offline_setting_10dp"
+        android:layout_marginTop="@dimen/save_offline_setting_15dp"
+        android:background="@drawable/background_text_field"
+        android:visibility="gone" >
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+            android:id="@+id/logout_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/save_offline_setting_10dp"
+            android:layout_marginRight="@dimen/save_offline_setting_10dp"
+            android:text="@string/account_setting_log_out"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sharing_settings_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/acccount_details_layout"
+        android:layout_marginLeft="@dimen/save_offline_setting_10dp"
+        android:layout_marginRight="@dimen/save_offline_setting_10dp"
+        android:layout_marginTop="@dimen/save_offline_setting_15dp"
+        android:background="@drawable/background_text_field"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/settings_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/save_offline_setting_5dp"
+            android:layout_marginLeft="@dimen/save_offline_setting_20dp"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/divider_listview_color"
+            android:dividerHeight="@dimen/save_offline_setting_1dp" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

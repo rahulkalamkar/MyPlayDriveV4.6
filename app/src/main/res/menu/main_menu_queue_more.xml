@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/queue_delete"
+        android:icon="@drawable/icon_queue_delete_new"
+        android:title="@string/delete_title"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/queue_more"
+        android:icon="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha"
+        android:title="@string/more_title"
+        app:showAsAction="ifRoom"/>
+
+</menu>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ToolBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    android:minHeight="@dimen/abc_action_bar_default_height_material" >
+
+    <com.hungama.myplay.activity.ui.widgets.LanguageButtonLollipop
+        android:id="@+id/btn_preferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/abs__spinner_ab_disabled_holo_dark"
+        android:text="Editors Picks"
+        android:textColor="@color/white"
+        android:textSize="@dimen/xlarge_text_size"
+        android:visibility="gone" />
+
+</android.support.v7.widget.Toolbar>

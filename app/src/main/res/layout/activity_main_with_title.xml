@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!--
+         <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    -->
+
+   <!-- <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        app:dragView="@+id/dragView"
+        app:panelHeight="@dimen/main_player_bar_height"
+        app:paralaxOffset="@dimen/player_paralaxOffset"
+        app:shadowHeight="@dimen/player_shadowHeight" >-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/application_background_grey" >
+
+            <RelativeLayout
+                android:id="@+id/main_title_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/main_title_bar_height"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="?android:attr/actionBarSize"
+                android:background="@drawable/background_home_tabwidget_tab_unselected" >
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                    android:id="@+id/main_title_bar_text"
+                    style="@style/TextMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="marquee"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true" />
+
+                <ImageButton
+                    android:id="@+id/main_title_bar_button_options"
+                    android:layout_width="@dimen/main_title_bar_options_button_width"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:onClick="onOptionsClicked"
+                    android:src="@drawable/background_main_title_bar_button_options_selector"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/main_fragmant_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="?android:attr/actionBarSize"
+                android:background="@null" />
+
+            <LinearLayout
+                android:id="@+id/favorite_list_options"
+                android:layout_width="@dimen/main_title_bar_options_panel_width"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/main_title_bar"
+                android:layout_marginTop="?android:attr/actionBarSize"
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageButton
+                    android:id="@+id/favorite_list_options_save_all_offline"
+                    style="@style/TitleBarOptionsItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/main_title_bar_options_panel_item_height"
+                    android:onClick="onOptionsItemSaveAllOfflineClicked"
+                    android:text="@string/player_queue_options_save_all_offline" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/main_navigation_fragmant_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="?android:attr/actionBarSize"
+                android:background="@null" />
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/home_menu_margin_bottom"
+                android:background="@drawable/home_context_menu"
+                android:visibility="gone" />
+
+            <!-- <FrameLayout -->
+            <!-- android:id="@+id/main_fragmant_player_bar" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:layout_alignParentBottom="true" -->
+            <!-- android:background="@null" /> -->
+        </RelativeLayout>
+
+       <!-- <include layout="@layout/player_drag_view" />
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>-->
+
+    <!--
+    <FrameLayout
+            android:id="@+id/left_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_marginTop="?android:attr/actionBarSize"
+            android:background="@null" />
+    </android.support.v4.widget.DrawerLayout>
+    -->
+
+    <!--<include
+        android:id="@+id/toolbar_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar_default" />-->
+
+</RelativeLayout>

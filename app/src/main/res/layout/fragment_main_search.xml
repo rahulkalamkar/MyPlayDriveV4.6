@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearlayout_search_popular_searches"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_bg_songcatcher"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        app:dragView="@+id/dragView"
+        app:panelHeight="@dimen/main_player_bar_height"
+        app:paralaxOffset="@dimen/player_paralaxOffset"
+        app:shadowHeight="@dimen/player_shadowHeight" >
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_searchbar_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical" >
+
+            <!-- ########### END LEFT BUTTON IMAGES #################### -->
+
+            <TextView
+                android:id="@+id/search_popular_searches_category"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/search_searchbar_container_height"
+                android:layout_toRightOf="@+id/left_spacing_view"
+                android:background="@drawable/background_searchbox_bg"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/search_searchbar_label_category_text_padding_bottom"
+                android:paddingLeft="@dimen/search_searchbar_label_category_text_padding_left"
+                android:paddingTop="@dimen/search_searchbar_label_category_text_padding_top"
+                android:text="@string/search_popular_searches_search_category_all_config"
+                android:textColor="@color/black"
+                android:textSize="@dimen/large_text_size"
+                android:visibility="gone" />
+
+            <!-- ########### END HINTS #################### -->
+
+            <View
+                android:id="@+id/left_spacing_view"
+                android:layout_width="@dimen/search_content_margin"
+                android:layout_height="@dimen/search_searchbar_container_height"
+                android:background="@color/transparent" />
+
+            <RelativeLayout
+                android:id="@+id/llKeywordsScrollHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="?android:attr/actionBarSize"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/listview_search_keywords"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_above="@+id/llSearchAdHolder"
+                    android:layout_weight="1"
+                    android:cacheColorHint="#0000" >
+                </ListView>
+
+                <!-- </LinearLayout> -->
+
+                <LinearLayout
+                    android:id="@+id/llSearchAdHolder"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/ivAdMainSearch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@color/application_background_grey" />
+
+                    <ImageView
+                        android:id="@+id/ivHungamaPopularSearch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_actionbar_logo" />
+
+                    <ProgressBar
+                        android:id="@+id/pbHungamaPopularSearch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_toRightOf="@+id/ivHungamaSplash" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/search_auto_suggest_keywords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/media_details_listview_seperator_color"
+                android:dividerHeight="0.5dp"
+                android:headerDividersEnabled="true"
+                android:visibility="gone" >
+            </ListView>
+
+            <!-- Container for results. -->
+
+
+            <!-- Container for results. -->
+
+            <FrameLayout
+                android:id="@+id/main_search_results_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="?android:attr/actionBarSize" >
+            </FrameLayout>
+
+            <!-- ############# END CATEGORIES ################## -->
+
+        </RelativeLayout>
+
+        <include layout="@layout/player_drag_view" />
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+    <!--
+    <FrameLayout
+            android:id="@+id/left_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_marginTop="?android:attr/actionBarSize"
+            android:background="@null" />
+    </android.support.v4.widget.DrawerLayout>
+
+
+
+
+
+
+    -->
+
+    <include
+        android:id="@+id/toolbar_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar_default" />
+
+</RelativeLayout>

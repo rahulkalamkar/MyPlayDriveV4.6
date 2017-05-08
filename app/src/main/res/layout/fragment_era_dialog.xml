@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/trivia_bubble_padding_left_right"
+    android:paddingRight="@dimen/trivia_bubble_padding_left_right" >
+
+    <RelativeLayout
+        android:id="@+id/discovery_era_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_rounded_corner_white"
+        android:paddingBottom="@dimen/trivia_bubble_content_padding"
+        android:paddingLeft="@dimen/trivia_bubble_content_padding"
+        android:paddingRight="@dimen/trivia_bubble_content_padding"
+        android:paddingTop="0dp" >
+
+        <!-- android:background="@drawable/background_discovery_era" -->
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+            android:id="@+id/discovery_era_title"
+            android:layout_width="@dimen/media_details_long_click_custom_dialog_text_view_row_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/dlg_margin_top"
+            android:text="@string/sleep_mode_dialog_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xlarge_text_size" />
+
+        <LinearLayout
+            android:id="@+id/discovery_era_container_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/discovery_era_title"
+            android:layout_below="@+id/discovery_era_title"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_round_rectangle_black" >
+
+            <TextView
+                android:id="@+id/discovery_era_time_from"
+                style="@style/TextSmallMediumMinus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/discovery_era_text_padding"
+                android:text="70s"
+                android:textColor="@color/azure"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/discovery_era_time_separator"
+                style="@style/TextSmallMediumMinus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/application_fold_sign"
+                android:textColor="@color/azure"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/discovery_era_time_to"
+                style="@style/TextSmallMediumMinus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/discovery_era_text_padding"
+                android:text="2012"
+                android:textColor="@color/azure"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <com.edmodo.rangebar.RangeBar
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/rangebar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/discovery_era_container_time"
+            android:layout_marginTop="30dp"
+            custom:tickCount="7" />
+
+        <LinearLayout
+            android:id="@+id/ll_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rangebar1"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <TextView
+                android:id="@+id/discovery_era_slider_ruler_text_time_minumum_year"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/discovery_era_slider_ruler"
+                android:layout_marginLeft="@dimen/discovery_era_slider_ruler_side"
+                android:layout_weight="1"
+                android:text="@string/discovery_era_slider_ruler_text_time_minumum_year"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_text_size" />
+
+            <TextView
+                android:id="@+id/discovery_era_slider_ruler_text_time_middle_year"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/discovery_era_slider_ruler_text_time_minumum_year"
+                android:layout_alignBottom="@+id/discovery_era_slider_ruler_text_time_minumum_year"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/discovery_era_slider_ruler_text_time_middle_year"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_text_size"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/discovery_era_slider_ruler_text_time_current_year"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/discovery_era_slider_ruler_text_time_minumum_year"
+                android:layout_alignBottom="@+id/discovery_era_slider_ruler_text_time_minumum_year"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/discovery_era_slider_ruler_side"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/discovery_era_slider_ruler_text_time_current_year"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_button"
+            android:layout_width="130dp"
+            android:layout_height="@dimen/dlg_common_height"
+            android:layout_below="@+id/ll_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/trivia_bubble_content_padding"
+            android:layout_marginTop="@dimen/trivia_bubble_content_padding" >
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageButton
+                android:id="@+id/start_timer_button"
+                style="@style/dialog_blue_btn_style"
+                android:layout_gravity="center"
+                android:text="@string/redeem_dialog_apply_button"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

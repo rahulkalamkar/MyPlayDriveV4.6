@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_appirater_main"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/radio_dialog_padding_top_bottom"
+    android:background="@drawable/background_rounded_corner_white"
+    android:minWidth="@dimen/redeem_dialog_min_width"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/trivia_bubble_padding_left_right"
+    android:paddingLeft="@dimen/trivia_bubble_padding_left_right"
+    android:paddingRight="@dimen/trivia_bubble_padding_left_right" >
+
+    <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+        android:id="@+id/appirater_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="@dimen/dlg_margin_top"
+        android:text="Info"
+        android:textColor="@color/black"
+        android:textSize="@dimen/xlarge_text_size" />
+
+    <!--
+         <View
+        android:id="@+id/viewDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/appirater_title"
+        android:layout_marginTop="5dp"
+        android:background="@color/native_dialog_divider_color" />
+    -->
+
+    <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+        android:id="@+id/appirater_message_area"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="@dimen/dlg_padding_around"
+        android:text="@string/APPIRATER_MESSAGE"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/medium_text_size" />
+
+    <com.hungama.myplay.activity.ui.widgets.LanguageButton
+        android:id="@+id/appirater_rate_button"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dlg_appirater_height"
+        android:layout_marginTop="@dimen/dlg_padding_around"
+        android:background="@drawable/background_blue_dialog_btn"
+        android:text="@string/APPIRATER_RATE_BUTTON_NEW"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/medium_text_size" />
+
+    <com.hungama.myplay.activity.ui.widgets.LanguageButton
+        android:id="@+id/appirater_rate_later_button"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dlg_appirater_height"
+        android:layout_marginTop="@dimen/dlg_padding_around"
+        android:background="@drawable/background_blue_dialog_btn"
+        android:text="@string/APPIRATER_RATE_LATER"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/medium_text_size" />
+
+    <com.hungama.myplay.activity.ui.widgets.LanguageButton
+        android:id="@+id/appirater_cancel_button"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dlg_appirater_height"
+        android:layout_marginTop="@dimen/dlg_padding_around"
+        android:background="@drawable/background_blue_dialog_btn"
+        android:text="@string/APPIRATER_CANCEL_BUTTON"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/medium_text_size" />
+
+</LinearLayout>

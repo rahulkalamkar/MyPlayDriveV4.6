@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rowBackground"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/carmode_music_item_height"
+    android:background="@color/carmode_music_item_color" >
+
+    <ImageView
+        android:id="@+id/album_thumb"
+        android:layout_width="@dimen/carmode_music_item_thumb_width"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_home_tile_album_default" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/btn_play"
+        android:layout_toRightOf="@id/album_thumb"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="@string/application_name"
+        android:textColor="@color/carmode_main_text_color"
+        android:textSize="@dimen/carmode_text_small_size" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/btn_play"
+        android:background="@color/carmode_divider_color" />
+
+    <ImageButton
+        android:id="@+id/btn_play"
+        android:layout_width="@dimen/carmode_music_item_menu_btn_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_weight="4"
+        android:background="@drawable/carmode_button_states"
+        android:src="@drawable/carmode_btn_play" />
+
+</RelativeLayout>

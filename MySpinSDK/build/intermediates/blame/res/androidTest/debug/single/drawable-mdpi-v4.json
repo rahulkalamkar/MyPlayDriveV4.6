@@ -1,0 +1,290 @@
+[
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_right_inactive.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_right_inactive.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_left_inactive.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_left_inactive.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_keyboard_flyin.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_keyboard_flyin.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_right.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_right.png"
+    },
+    {
+        "merged": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_flyin_pushed_top.png",
+        "source": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_flyin_pushed_top.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_flyin_top.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_flyin_top.png"
+    },
+    {
+        "merged": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_ok_pushed.png",
+        "source": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_ok_pushed.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_maps_pin.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_maps_pin.png"
+    },
+    {
+        "merged": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_left_inactive.png",
+        "source": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_left_inactive.png"
+    },
+    {
+        "merged": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_pushed.png",
+        "source": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_pushed.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_currentlocation_circle.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_currentlocation_circle.png"
+    },
+    {
+        "merged": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_icon_connected.png",
+        "source": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_icon_connected.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_pushed.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_pushed.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_flyin.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_flyin.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_pushed2.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_pushed2.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_left_inactive.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_left_inactive.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_ok_pushed_top.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_ok_pushed_top.png"
+    },
+    {
+        "merged": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_flyin_pushed.png",
+        "source": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_flyin_pushed.png"
+    },
+    {
+        "merged": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_maps_pin.png",
+        "source": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_maps_pin.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_keyboard_back.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_keyboard_back.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_flyin_pushed.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_flyin_pushed.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_flyin_pushed_top.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_flyin_pushed_top.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_pushed2_top.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_pushed2_top.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_right.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_right.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_ok_pushed.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_ok_pushed.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_right_inactive.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_right_inactive.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_icon_connected.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_icon_connected.png"
+    },
+    {
+        "merged": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_currentlocation_circle.png",
+        "source": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_currentlocation_circle.png"
+    },
+    {
+        "merged": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_currentlocation.png",
+        "source": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_currentlocation.png"
+    },
+    {
+        "merged": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_ok_top.png",
+        "source": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_ok_top.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_pushed.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_pushed.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_ok_top.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_ok_top.png"
+    },
+    {
+        "merged": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_keyboard_flyin.png",
+        "source": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_keyboard_flyin.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_ok_pushed_top.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_ok_pushed_top.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_ok.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_ok.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_keyboard_back.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_keyboard_back.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_pushed2.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_pushed2.png"
+    },
+    {
+        "merged": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_flyin.png",
+        "source": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_flyin.png"
+    },
+    {
+        "merged": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_keyboard_back.png",
+        "source": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_keyboard_back.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_ok_top.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_ok_top.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_currentlocation_circle.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_currentlocation_circle.png"
+    },
+    {
+        "merged": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_pushed2_top.png",
+        "source": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_pushed2_top.png"
+    },
+    {
+        "merged": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_right_inactive.png",
+        "source": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_right_inactive.png"
+    },
+    {
+        "merged": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_ok_pushed_top.png",
+        "source": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_ok_pushed_top.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_maps_pin.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_maps_pin.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_ok.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_ok.png"
+    },
+    {
+        "merged": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_top.png",
+        "source": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_top.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_pushed2_top.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_pushed2_top.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_pushed_top.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_pushed_top.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_flyin_pushed_top.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_flyin_pushed_top.png"
+    },
+    {
+        "merged": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_flyin_top.png",
+        "source": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_flyin_top.png"
+    },
+    {
+        "merged": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_right.png",
+        "source": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_right.png"
+    },
+    {
+        "merged": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_pushed_top.png",
+        "source": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_pushed_top.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_ok_pushed.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_ok_pushed.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_top.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_top.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_flyin_top.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_flyin_top.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_pushed_top.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_pushed_top.png"
+    },
+    {
+        "merged": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_pushed2.png",
+        "source": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_pushed2.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_flyin.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_flyin.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_keyboard_flyin.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_keyboard_flyin.png"
+    },
+    {
+        "merged": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_ok.png",
+        "source": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_ok.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_currentlocation.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_currentlocation.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_left.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_left.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_top.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_top.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_left.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_left.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_icon_connected.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_icon_connected.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_flyin_pushed.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_flyin_pushed.png"
+    },
+    {
+        "merged": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_left.png",
+        "source": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard_left.png"
+    },
+    {
+        "merged": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_button_keyboard.png",
+        "source": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_button_keyboard.png"
+    },
+    {
+        "merged": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\myspin_sdk_currentlocation.png",
+        "source": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\myspin_sdk_currentlocation.png"
+    }
+]

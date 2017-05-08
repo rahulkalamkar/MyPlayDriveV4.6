@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CastCompanionLibrary-android-master/CastCompanionLibrary-android-master.iml" filepath="$PROJECT_DIR$/CastCompanionLibrary-android-master/CastCompanionLibrary-android-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyPlayDriveV4.6.iml" filepath="$PROJECT_DIR$/MyPlayDriveV4.6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MySpinSDK/MySpinSDK.iml" filepath="$PROJECT_DIR$/MySpinSDK/MySpinSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customseekbarlibrary/customseekbarlibrary.iml" filepath="$PROJECT_DIR$/customseekbarlibrary/customseekbarlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dragdrop-lib/dragdrop-lib.iml" filepath="$PROJECT_DIR$/dragdrop-lib/dragdrop-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exoplayer_library/exoplayer_library.iml" filepath="$PROJECT_DIR$/exoplayer_library/exoplayer_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gigyalibrary/gigyalibrary.iml" filepath="$PROJECT_DIR$/gigyalibrary/gigyalibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/showcaseview-lib/showcaseview-lib.iml" filepath="$PROJECT_DIR$/showcaseview-lib/showcaseview-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/slideuppanellib/slideuppanellib.iml" filepath="$PROJECT_DIR$/slideuppanellib/slideuppanellib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wheellib/wheellib.iml" filepath="$PROJECT_DIR$/wheellib/wheellib.iml" />
+    </modules>
+  </component>
+</project>

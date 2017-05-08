@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlAudioQualityMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:paddingLeft="@dimen/trivia_bubble_padding_left_right"
+    android:paddingRight="@dimen/trivia_bubble_padding_left_right" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_rounded_corner_white"
+        android:paddingBottom="@dimen/trivia_bubble_content_padding"
+        android:paddingLeft="@dimen/trivia_bubble_content_padding"
+        android:paddingRight="@dimen/trivia_bubble_content_padding"
+        android:paddingTop="0dp" >
+
+        <LinearLayout
+            android:id="@+id/audio_view_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/media_details_long_click_custom_dialog_row_height"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal" >
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageButton
+                android:id="@+id/audio_quality_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:gravity="left|center_vertical"
+                android:text="@string/settings_audio_quality_title_english"
+                android:textColor="@color/black"
+                android:textSize="@dimen/xlarge_text_size" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/audio_view_dialog"
+            android:background="#B2B2B2" />
+
+        <RelativeLayout
+            android:id="@+id/audio_quality_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view2"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/trivia_bubble_content_padding" >
+
+            <RadioGroup
+                android:id="@+id/bitrateRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_button_auto"
+                        style="@style/revRadioButtonStyle" />
+
+                    <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                        android:id="@+id/radio_txt_auto"
+                        style="@style/revRadioButtonTxtStyle"
+                        android:text="@string/settings_audio_quality_auto" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_radio_item"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_button_low"
+                        style="@style/revRadioButtonStyle" />
+
+                    <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                        android:id="@+id/radio_txt_low"
+                        style="@style/revRadioButtonTxtStyle"
+                        android:text="@string/settings_audio_quality_low" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_radio_item"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_button_medium"
+                        style="@style/revRadioButtonStyle" />
+
+                    <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                        android:id="@+id/radio_txt_medium"
+                        style="@style/revRadioButtonTxtStyle"
+                        android:text="@string/settings_audio_quality_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_radio_item"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_button_high"
+                        style="@style/revRadioButtonStyle" />
+
+                    <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                        android:id="@+id/radio_txt_high"
+                        style="@style/revRadioButtonTxtStyle"
+                        android:text="@string/settings_audio_quality_high" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_radio_item"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_button_hd"
+                        style="@style/revRadioButtonStyle" />
+
+                    <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                        android:id="@+id/radio_txt_hd"
+                        style="@style/revRadioButtonTxtStyle"
+                        android:text="@string/settings_audio_quality_hd" />
+                </LinearLayout>
+            </RadioGroup>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

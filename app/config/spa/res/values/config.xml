@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- For s-pa live -->
+    <string name="hungama_server_url">http://api.hungama.com/myplay2/v2/</string>
+    <string name="hungama_server_url_new">http://api.hungama.com/webservice/hungama/</string>
+    <string name="hungama_social_server_url">http://api.hungama.com/myplaysocial/</string>
+    <string name="hungama_social_server_url_new">http://api.hungama.com/webservice/hungama/</string>
+    <string name="gigya_api_key">2_aBV-CQ78LUtBJbUFqsbX40Hni6xfNuASSCrue4Pa2z8lYFXy7zOziRMT_ibqxv10</string>
+    <string name="gigya_facebook_application_id">103931556876</string>
+    <string name="web_service_url">s-pa.catchmedia.com</string>
+	<string name="hungama_pay_url">https://pay.hungama.com</string>
+    <string name="version">2</string>
+
+    <string name="apsalar_api_key">Hungama_dev</string>
+    <string name="apsalar_secret">D6bWtl9B</string>
+    <string
+        name="apsalar_attribution_api">http://ad.apsalar.com/api/v1/ad?re=0&amp;a=Hungama_dev&amp;i=com.hungama.myplay.activity&amp;ca=OEM&amp;an=Micromax&amp;p=Android&amp;pl=Preloads&amp;h=248ed06c071b241c822e993ffe456561455e3a21&amp;redirect=false&amp;andi=</string>
+    <string name="flurry_app_key">VKFVHCZ8GK4JZYFK3NNR</string> <!-- SPA APP -->
+
+    <string name="hungama_server_url_device_offer_dev">http://202.87.41.147/hungamacgbilling/v2/offer/device_offer.php?imei=</string>
+</resources>

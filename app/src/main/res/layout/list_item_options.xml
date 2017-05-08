@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/media_details_long_click_custom_dialog_row_height"
+    android:background="@drawable/background_media_details_long_press_menu_item_selector"
+    android:paddingBottom="@dimen/quick_action_margin_top_bottom"
+    android:paddingLeft="@dimen/quick_action_margin_left"
+    android:paddingTop="@dimen/quick_action_margin_top_bottom" >
+
+    <ImageView
+        android:id="@+id/img_option_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/quick_action_margin_left"
+        android:layout_toRightOf="@+id/img_option_item"
+        android:gravity="left|center_vertical" >
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+            android:id="@+id/tv_option_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/medium_text_size" />
+    </LinearLayout>
+
+</RelativeLayout>

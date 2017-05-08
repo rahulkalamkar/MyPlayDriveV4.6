@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/application_background_grey"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:id="@+id/tl_new"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/home_music_tile_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:clickable="true"
+            android:focusable="true" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_selector"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bg_song"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/home_tiles_bottom_size"
+        android:layout_below="@id/tl_new"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp">
+
+        <LinearLayout
+            android:id="@+id/ll_buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <!-- android:background="@drawable/background_home_tile_button_remove" -->
+
+
+            <ImageView
+                android:id="@+id/iv_home_tile_options"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:background="?android:attr/selectableItemBackground"
+                android:paddingLeft="0dp"
+
+                android:src="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha_gray"
+                android:visibility="visible" />
+        </LinearLayout>
+        <!-- </LinearLayout> -->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/save_offline_setting_5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/ll_buttons">
+
+          <!--  <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:id="@+id/home_music_tile_title_song_or_playlist"
+                style="@style/HomeMediaTileTextSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:visibility="gone" />-->
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:id="@+id/home_music_tile_title"
+                style="@style/HomeMediaTileTextMedium_new"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="dfd "
+                android:textColor="#828282"
+                android:textSize="@dimen/medium_text_size" />
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:id="@+id/home_music_tile_description"
+                style="@style/HomeMediaTileTextSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_music_tile_title"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="fdsa"
+                android:textColor="#b8b8b8"
+                android:textSize="@dimen/normal_text_size"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+   
+
+    <ProgressBar
+        android:id="@+id/pbMain"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/home_music_tile_image_cache_state"
+        android:layout_width="@dimen/home_tiles_button_play_size"
+        android:layout_height="@dimen/home_tiles_button_play_size"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/home_tiles_button_play_margin_right"
+        android:layout_marginTop="@dimen/home_tiles_button_play_margin_bottom"
+        android:background="@drawable/icon_media_details_saving"
+        android:src="@null"
+        android:visibility="gone" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/home_tiles_bottom_size">
+
+        <ImageButton
+            android:id="@+id/home_music_tile_button_play"
+            android:layout_width="@dimen/home_tiles_button_play_size"
+            android:layout_height="@dimen/home_tiles_button_play_size"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+
+            android:layout_marginRight="5dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_play_small" />
+        <com.hungama.myplay.activity.ui.widgets.CustomCacheStateProgressBar
+            android:id="@+id/home_music_tile_progress_cache_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_marginRight="@dimen/home_tiles_button_offline_state_side_margin"
+            android:layout_marginBottom="@dimen/home_tiles_button_offline_state_side_margin" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

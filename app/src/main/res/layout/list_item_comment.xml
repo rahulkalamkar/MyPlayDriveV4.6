@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout_search_result_line"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/comment_user_image"
+        android:layout_width="@dimen/comment_result_line_image_size"
+        android:layout_height="@dimen/comment_result_line_image_size"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/comment_result_line_paddin_top_bottom"
+        android:layout_marginLeft="@dimen/comment_result_line_paddin_left_right"
+        android:layout_marginRight="@dimen/comment_result_line_paddin_left_right"
+        android:layout_marginTop="@dimen/comment_result_line_paddin_top_bottom" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:orientation="vertical"
+        android:paddingRight="3dp" >
+
+        <LinearLayout
+            android:id="@+id/media_details_mid_right_internal_mid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/comment_user_name"
+                style="@style/TextSmallMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:singleLine="true"
+                android:textColor="@color/search_fragment_result_list_item_title_text_color" />
+
+            <TextView
+                android:id="@+id/comment_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:textColor="@color/search_fragment_result_list_item_bottom_text_color"
+                android:textSize="@dimen/medium_text_size" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/comment_text"
+            style="@style/TextSmallMediumMinusPlus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|center_vertical"
+            android:paddingBottom="5dp"
+            android:textColor="@color/search_fragment_result_list_item_bottom_text_color" />
+    </LinearLayout>
+
+</LinearLayout>

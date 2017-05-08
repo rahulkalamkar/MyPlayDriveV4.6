@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- CM Servers -->
+    <string name="web_service_url_version">v46</string>
+    <string name="lc_id">en-us</string>
+    <string name="partner_id">3041</string>
+    <string name="ws_ver">4.6</string>
+    <string name="api">0.46</string>
+    <string name="app_code">MYPLAY-ANDROID</string> <!-- MYPLAY-ANDROID-FIRSTOUCH -->
+    <string name="format">3.1</string>
+    <string name="referal_id">1</string> <!-- 1 is playstore , 966 for Gujarati -->
+    <bool name="isTablet">false</bool>
+    <!-- Hungama Servers -->
+
+
+    <!-- For h-fe devlopment -->
+
+    <!--<string name="hungama_server_url">http://apistaging.hungama.com/myplay2/v2/</string>
+    <string name="hungama_server_url_new">http://apistaging.hungama.com/webservice/hungama/</string>
+    <string name="hungama_social_server_url">http://apistaging.hungama.com/myplaysocial/</string>
+    <string name="hungama_social_server_url_new">http://apistaging.hungama.com/webservice/hungama/</string>
+    <string name="gigya_api_key">2_40t_esg1DScX0shHKgLPcolT2LMy4DHVoKxpis9yYhYDQvagpfsj2-gy4sk0IRKg</string>
+    <string name="gigya_facebook_application_id">10153105691476877</string>
+    <string name="web_service_url">pa-sqa.catchmedia.com</string>
+	<string name="hungama_pay_url">https://paystag.hungama.com</string>
+    <string name="version">2</string>-->
+    <!--<string name="apsalar_api_key">Hungama_dev</string>
+    <string name="apsalar_secret">D6bWtl9B</string>
+    <string
+        name="apsalar_attribution_api">http://ad.apsalar.com/api/v1/ad?re=0&amp;a=Hungama_dev&amp;i=com.hungama.myplay.activity&amp;ca=OEM&amp;an=Micromax&amp;p=Android&amp;pl=Preloads&amp;h=248ed06c071b241c822e993ffe456561455e3a21&amp;redirect=false&amp;andi=</string>-->
+    <!-- <string name="hungama_server_url_new">http://54.243.231.83/webservice/hungama/</string> -->
+    <!-- <string name="web_service_url">h-fe.catchmedia.com</string> -->
+    <!--<string name="gigya_facebook_application_id">469850926362469</string>-->
+    <!-- END h-fe -->
+
+    <!-- For s-pa live -->
+    <!--<string name="hungama_server_url">http://api.hungama.com/myplay2/v2/</string>
+    <string name="hungama_server_url_new">http://api.hungama.com/webservice/hungama/</string>
+    <string name="hungama_social_server_url">http://api.hungama.com/myplaysocial/</string>
+    <string name="hungama_social_server_url_new">http://api.hungama.com/webservice/hungama/</string>
+    <string name="gigya_api_key">2_aBV-CQ78LUtBJbUFqsbX40Hni6xfNuASSCrue4Pa2z8lYFXy7zOziRMT_ibqxv10</string>
+    <string name="gigya_facebook_application_id">103931556876</string>
+    <string name="web_service_url">s-pa.catchmedia.com</string>
+	<string name="hungama_pay_url">https://pay.hungama.com</string>
+    <string name="version">2</string>-->
+    <!--<string name="apsalar_api_key">Hungama</string>
+    <string name="apsalar_secret">0Ry1peZE</string>
+    <string
+        name="apsalar_attribution_api">http://ad.apsalar.com/api/v1/ad?re=0&amp;a=Hungama&amp;i=com.hungama.myplay.activity&amp;ca=OEM&amp;an=Micromax&amp;p=Android&amp;pl=Preloads&amp;h=d0f2c5d228afb064b4264d260c14e1822e3d1c89&amp;redirect=false&amp;andi=</string>
+    --><!-- END s-pa -->
+
+
+    <!-- AdX Changes -->
+    <!-- MOBANGO -->
+    <!--<string name="adx_other_store_name">SELFHOST</string>
+    <string name="adx_other_store_app_id">1791451</string>-->
+    <!-- MOBOGENIE -->
+    <!--
+    <string name="adx_other_store_name">SELFHOST</string>
+    <string name="adx_other_store_app_id">com.hungama.myplay.activity</string>
+    -->
+    <!-- UC BROWSER -->
+    <!--
+    <string name="adx_other_store_name">SELFHOST</string>
+    <string name="adx_other_store_app_id">com.hungama.myplay.activity</string>
+    -->
+
+    <!--<string name="gcm_defaultSenderId">556683560964</string>-->
+
+    <!-- <string name="hungama_version_check_server_url">http://ws-stag.hungama.com/applications/update</string> -->
+    <string name="hungama_version_check_server_url">http://ws.hungama.com/applications/update</string>
+
+    <!-- <string name="hungama_subscription_server_url">http://202.87.41.147/hungamacgbilling/v1/upgrade/</string> -->
+    <string name="hungama_subscription_server_url">http://202.87.41.147/hungamacgbilling/v2/upgrade/</string>
+    <!-- <string name="hungama_subscription_server_url">https://secure.hungama.com/hungamasignup/myplayupgrade/v3/</string> -->
+    <!-- <string name="hungama_mobile_verification_server_url">https://secure.hungama.com/hungamasignup/mobileverify/</string> -->
+    <!-- <string name="hungama_download_server_url">https://secure.hungama.com/hungamasignup/myplaydownload/</string> -->
+    <!-- <string name="hungama_download_server_url_v2">http://202.87.41.147/hungamacgbilling/v1/download/</string> -->
+    <string name="hungama_download_server_url_v2">http://202.87.41.147/hungamacgbilling/v2/download/</string>
+    <!-- <string name="hungama_download_server_url_v2">https://secure.hungama.com/hungamasignup/myplaydownload/v3/</string> -->
+    <string name="hungama_server_url_term_of_use">http://202.87.41.147/hungamaone/terms_of_use/t01</string>
+    <string name="hungama_server_url_faq">http://202.87.41.147/hungamaone/faq/</string>
+    <!-- <string name="hungama_server_url_privacy_policy">http://www.hungama.com/more/privacypolicy</string> -->
+    <string name="hungama_server_url_follow_facebook">https://www.facebook.com/Hungamacom?ref=ts</string>
+    <string name="hungama_server_url_follow_twitter">https://twitter.com/Hungama_com</string>
+    <string name="hungama_server_url_follow_google">https://plus.google.com/108320407093218123566/posts</string>
+    <!-- <string name="hungama_server_url_live_radio">http://123.176.41.20/hungama/nowplaying/nowPlayingJSONM2.php?site_url=</string> -->
+    <string name="hungama_server_url_live_radio">http://123.176.41.20/hungama/nowplaying/nowPlayingDuration.php?site_url=</string>
+    <!-- <string name="hungama_server_url_new_goodies">http://digital.hungamatech.com/hnewgoodies/index.html</string> -->
+    <string name="hungama_server_url_new_goodies">http://api.hungama.com/myplay2/v2/html/whatsnew/index.html</string>
+    <string name="hungama_server_url_rewards">http://api.hungama.com/myplay2/v2/html/rewards/index.html</string>
+    <!-- <string name="hungama_server_url_save_offline_learn_more">http://digital.hungamatech.com/hnewgoodies/learn-more.html</string> -->
+    <string name="hungama_server_url_save_offline_learn_more">http://api.hungama.com/webservice/hungama/html/learnmore/index.html</string>
+
+    <!-- Moved to config/BuildType/res/values/config.xml-->
+     <!--<string name="hungama_server_url_device_offer_dev">http://202.87.41.147/hungamacgbilling/v2/offer/device_offer_dev.php?imei=</string>-->
+    <string name="hungama_server_url_coupon_redeem">http://202.87.41.147/hungamacgbilling/coupons/</string>
+    <string name="hungama_server_url_user_profile">http://202.87.41.147/hungamacm_signup/spa/user_profile.php?</string>
+    <string name="hungama_pay_url_telco_api">http://202.87.41.147/payhungama/telco.php</string>
+
+    <!-- key for all the requests api. -->
+    <string name="hungama_auth_key">HUN$12MP#0712</string>
+
+    <!-- key that is used onlyn for the forgot password request. -->
+    <!-- <string name="hungama_forgot_password_server_url">https://secure.hungama.com/hungama/index.php/user/forgot</string> -->
+    <string name="hungama_forgot_password_server_url">http://202.87.41.147/hungamacgbilling/v2/user/forgot_password.php</string>
+    <string name="hungama_forgot_password_key">c04ffdae250d1751c2d36a83ede0f120</string>
+
+    <!-- Appirater on/off -->
+    <string name="rate_app_on_off">true</string>
+
+    <!-- AdX properties -->
+    <!--<string name="adx_app_name">com.hungama.myplay.activity</string>
+    <string name="adx_client_id">Hungind45789jo</string>
+    <string name="adx_app_secret_key">961f342f-f9f2-42c3-b559-b086c2b10dac</string>-->
+
+    <!-- In App Billing -->
+    <string name="base_64_key">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApfPPciZRDbMMQs4I3HUflV+ntCBrvlKKrrbXkzH4G5m+lRugOPO/S38ABaLsKrDdosKrlL+/TFpNOXsWdgPzarQX84p58jXod48I0iSJtjHH+gTgvUnM5lBiZJrdzfwc+xCDMNVe1YIqSfTQ1SXgDcLdd1tNNGpRN7tLP5RFiwFrpfDevT29NNArH+vtXkC4cNcttSx7DwVfIdE0fSmZN1CtH+T2MKVTRzZgty3ZecGBoaUzbJejCPWwFUrOZCvo5FmL4gxYxjgrs4jhZ2wyn2cJLE2YImfMNrrnKSP6RMZQwyWnsOZd1hvEOgIQP9YXdHVGYxDQpSbbxTBpROM61QIDAQAB</string>
+    <string name="hungama_valuepack">hungama_valuepack</string>
+    <string name="hungama_alacarte">hungama_alacarte</string>
+    <!--<string name="hungama_premium_subscription">hungama_premium_subscription</string>-->
+    <string name="key_billing">$HUNGAMA APP BILLING</string>
+
+    <!-- do not include in conversion -->
+
+    <string name="search_popular_searches_search_category_all_line_config">All</string>
+    <string name="search_popular_searches_search_category_artists_line_config">Artists</string>
+    <string name="search_popular_searches_search_category_songs_line_config">Songs</string>
+    <string name="search_popular_searches_search_category_album_line_config">Albums</string>
+    <string name="search_popular_searches_search_category_playlist_line_config">Playlists</string>
+    <string name="search_popular_searches_search_category_video_line_config">Videos</string>
+    <string name="search_popular_searches_search_category_all_config">All: </string>
+    <string name="search_popular_searches_search_category_artists_config">Artists: </string>
+    <string name="search_popular_searches_search_category_songs_config">Songs: </string>
+    <string name="search_popular_searches_search_category_album_config">Albums: </string>
+    <string name="search_popular_searches_search_category_playlist_config">Playlists: </string>
+    <string name="search_popular_searches_search_category_video_config">Videos: </string>
+    <!-- <string name="gcm_project_id">632603807834</string> -->
+    <!-- <string name="flurry_app_key">RZ5Q7M5NQMF34WBPW2T3</string> -->
+    <!-- PROD APP -->
+    <string name="flurry_app_key">VKFVHCZ8GK4JZYFK3NNR</string> <!-- SPA APP -->
+    <!-- Test_App_For_Ad_Impressions 10-08-2015 -->
+    <!--<string name="flurry_app_key">C67PK2X2TDDFGH5BP9NH</string>-->
+
+
+    <!-- xtpl -->
+    <!-- Affiliate Id inserted By Hungama -->
+    <string name="affiliate_id">891</string>
+    <string name="oem_package_name">com.hungama.myplay.activity</string>
+    <!-- xtpl -->
+
+    <string name="inapp_prompt_action_saveofflinehelpdialog">com.hungama.myplay.activity.ui.inappprompts.SaveOfflineHelpDialog</string>
+    <string name="inapp_prompt_action_apppromptofflinecaching3rdsong">com.hungama.myplay.activity.ui.inappprompts.AppPromptOfflineCaching3rdSong</string>
+
+    <!-- Apsalar -->
+    <!--<string name="apsalar_api_key">trushalpatel</string>
+    <string name="apsalar_secret">ALyPC2TC</string>-->
+</resources>

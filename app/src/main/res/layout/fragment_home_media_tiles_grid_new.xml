@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <GridView
+            android:id="@+id/media_tile_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:background="@null" android:listSelector="#23fdfa" android:drawSelectorOnTop="true"
+            android:fastScrollEnabled="true"
+            android:scrollingCache="true"
+            android:smoothScrollbar="true"
+            android:visibility="gone" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    -->
+
+    <GridView
+        android:id="@+id/media_tile_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:drawSelectorOnTop="true"
+        android:listSelector="#23fdfa"
+        android:scrollingCache="true"
+        android:smoothScrollbar="true"
+        android:visibility="gone" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:cacheColorHint="@color/transparent"
+            android:drawSelectorOnTop="false"
+            android:listSelector="@color/transparent"
+            android:scrollbars="vertical"
+            android:scrollingCache="true"
+            android:smoothScrollbar="true"
+            android:visibility="visible" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/progressBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/swipeRefreshLayout_listView"
+        android:background="@color/background_progress_bar"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp" />
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/search_results_loading_indicator_loading_more"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_connection_error_empty_view" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_init"
+        style="@style/CustomProgressDialogStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</RelativeLayout>

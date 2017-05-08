@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fcf="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlCoverItemInner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/item_player_content_media_art"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_item_player_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/bg_full_player_shadow"
+            android:padding="@dimen/main_player_bar_button_padding"
+            android:scaleType="fitEnd"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/main_player_bar_button_padding"
+            android:src="@drawable/ic_play"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/item_player_content_media_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="@dimen/main_player_bar_button_padding"
+            android:src="@drawable/ic_play"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/item_player_content_add"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/main_player_bar_button_padding"
+            android:src="@drawable/icon_add_top_audio"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rlItemInfoCover_English"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/item_content_info_bar_text_title_english"
+                style="@style/TextMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/item_content_info_bar_text_additional_english"
+                style="@style/TextSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_content_info_bar_text_title_english"
+                android:layout_marginTop="@dimen/main_player_bar_text_container_internal_margin"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlItemInfoCover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:visibility="gone" >
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:id="@+id/item_content_info_bar_text_title"
+                style="@style/TextMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:id="@+id/item_content_info_bar_text_additional"
+                style="@style/TextSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_content_info_bar_text_title"
+                android:layout_marginTop="@dimen/main_player_bar_text_container_internal_margin"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bCloseAd"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/main_player_ad_close_size"
+            android:layout_height="@dimen/main_player_ad_close_size"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/ad_close_button"
+            android:text="X"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_text_size"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

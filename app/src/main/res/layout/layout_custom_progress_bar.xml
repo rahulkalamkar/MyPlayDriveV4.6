@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/home_media_cache_state_button_width"
+    android:layout_height="@dimen/home_media_cache_state_button_height" >
+
+    <ImageButton
+        android:id="@+id/button_cache_state"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/cache_state_not_cached"
+        android:clickable="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_text_size"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progress_cache_state"
+        style="@style/Widget.ProgressBar.Vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:progress="00"
+        android:visibility="gone" />
+
+    <!--
+         <ProgressBar
+        android:id="@+id/progress_cache_state_circular"
+        android:layout_width="@dimen/home_media_cache_state_progress_size"
+        android:layout_height="@dimen/home_media_cache_state_progress_size"
+        android:layout_marginLeft="@dimen/home_media_cache_state_progress_margin_left"
+        android:layout_marginTop="@dimen/home_media_cache_state_progress_margin_top"
+        android:indeterminateDrawable="@drawable/cache_progress_indeterminate"
+        android:visibility="invisible" />
+    -->
+
+    <ProgressBar
+        android:id="@+id/progress_cache_state_circular"
+        android:layout_width="@dimen/home_media_cache_state_progress_size"
+        android:layout_height="@dimen/home_media_cache_state_progress_size"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/cache_progress_indeterminate"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_cache_state_circular_progress"
+        android:layout_width="@dimen/home_media_cache_state_progress_size"
+        android:layout_height="@dimen/home_media_cache_state_progress_size"
+        android:layout_centerInParent="true"
+        android:src="@drawable/cache_progress_indeterminate"
+        android:visibility="invisible" />
+
+</RelativeLayout>

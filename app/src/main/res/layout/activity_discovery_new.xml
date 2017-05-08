@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/discover_bg" >
+
+    <RelativeLayout
+        android:id="@+id/main_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_title_bar_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background_home_tabwidget_tab_unselected"
+        android:visibility="gone" >
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+            android:id="@+id/main_title_bar_text"
+            style="@style/TextMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/main_title_bar_options_button_width"
+            android:layout_toLeftOf="@+id/main_title_bar_button_options"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="5dp"
+            android:singleLine="true" />
+
+        <ImageButton
+            android:id="@+id/main_title_bar_button_options"
+            android:layout_width="@dimen/main_title_bar_options_button_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:onClick="onOptionsClicked"
+            android:src="@drawable/background_main_title_bar_button_options_selector" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/svScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="30dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/img_disk"
+                    android:layout_width="@dimen/circle_height"
+                    android:layout_height="@dimen/circle_height"
+                    android:layout_marginLeft="@dimen/circle_margin"
+                    android:layout_marginRight="@dimen/circle_margin"
+                    android:layout_marginTop="@dimen/circle_margin_top"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/disk" />
+
+                <ImageView
+                    android:id="@+id/rotate_iv"
+                    android:layout_width="@dimen/circle_height"
+                    android:layout_height="@dimen/circle_height"
+                    android:layout_marginLeft="@dimen/circle_margin"
+                    android:layout_marginRight="@dimen/circle_margin"
+                    android:layout_marginTop="@dimen/circle_margin_top"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/disk_light" />
+
+                <com.lukedeighton.wheelview.WheelView
+                    android:id="@+id/wheelview"
+                    android:layout_width="@dimen/circle_height"
+                    android:layout_height="@dimen/circle_height"
+                    android:layout_marginLeft="@dimen/circle_margin"
+                    android:layout_marginRight="@dimen/circle_margin"
+                    android:layout_marginTop="@dimen/circle_margin_top"
+                    app:emptyItemColor="@color/green_900"
+                    app:repeatItems="true"
+                    app:rotatableWheelDrawable="false"
+                    app:selectionAngle="90.0"
+                    app:selectionColor="@color/teal_900"
+                    app:selectionPadding="4dp"
+                    app:wheelColor="@color/grey_400" />
+
+                <ImageView
+                    android:id="@+id/needle_iv"
+                    android:layout_width="@dimen/needle_width"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/disk_player_needle" />
+
+                <LinearLayout
+                    android:id="@+id/ll_middle_disk"
+                    android:layout_width="@dimen/circle_height"
+                    android:layout_height="@dimen/circle_height"
+                    android:layout_marginLeft="@dimen/circle_margin"
+                    android:layout_marginRight="@dimen/circle_margin"
+                    android:layout_marginTop="@dimen/circle_margin_top"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/selection_iv"
+                        android:layout_marginRight="@dimen/middle_circle_margin_left"
+                        android:layout_width="@dimen/discover_selected_mood_widht"
+                        android:layout_height="@dimen/discover_selected_mood_widht"
+                        android:adjustViewBounds="true" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/discover_btn_margin_top"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_era_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp" >
+
+                    <ImageView
+                        android:id="@+id/iv_era"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/era_non_active" />
+
+                    <ImageView
+                        android:id="@+id/iv_tempo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/tempo_non_active" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_discovery_detail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_era_btn"
+                    android:layout_marginTop="@dimen/discover_margin_top_discovery_Desc"
+                    android:orientation="vertical"
+                    android:paddingBottom="30dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:visibility="invisible" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@null"
+                        android:gravity="center_horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/ll_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/discovery_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Happy"
+                                android:textColor="#0693e2"
+                                android:textSize="@dimen/medium_text_size" />
+
+                            <TextView
+                                android:id="@+id/discovery_discription"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/main_title_bar"
+                                android:layout_marginTop="5dp"
+                                android:background="@null"
+                                android:text="Era 2010-2015 Tempo High"
+                                android:textColor="#9f9f9f"
+                                android:textSize="@dimen/medium_text_size" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/img_close"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:padding="@dimen/discover_img_close_padding"
+                            android:src="@drawable/close_icon" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@+id/img_close"
+                        android:layout_marginTop="5dp"
+                        android:background="#3e3e3e" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_button"
+                        android:layout_width="@dimen/discover_play_btn_widht"
+                        android:layout_height="@dimen/discover_play_btn_height"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/trivia_bubble_content_padding"
+                        android:layout_marginTop="@dimen/discover_margin_top_play"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <com.hungama.myplay.activity.ui.widgets.LanguageButton
+                            android:id="@+id/start_timer_button"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/background_blue_dialog_btn"
+                            android:text="@string/media_details_play"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/medium_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_discovery_predefine"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_era_btn"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                        android:id="@+id/discovery_title_hashtag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/discovery_of_the_day"
+                        android:textColor="#0693e2"
+                        android:textSize="@dimen/medium_text_size" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_discovery_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/background_round_rectangle_gray"
+                        android:gravity="center" >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:padding="@dimen/discover_predefine_padding" >
+
+                            <LinearLayout
+                                android:id="@+id/ll_text_hashtag"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:id="@+id/discovery_subtitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/main_title_bar"
+                                    android:layout_gravity="center_vertical"
+                                    android:background="@null"
+                                    android:text="#"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/large_text_size" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/img_play"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:src="@drawable/icon_play_new" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar_init"
+        style="@style/CustomProgressDialogStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</RelativeLayout>

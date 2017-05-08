@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Discovery -->
+
+    <dimen name="discovery_categories_selected_item_width">140dp</dimen>
+
+    <!-- Album arts -->
+    <dimen name="album_arts_ad_Height">100dp</dimen>
+
+    <!-- Song details -->
+    <dimen name="song_details_layout_height">460dp</dimen>
+
+    <!-- General -->
+    <dimen name="screen_height">395dp</dimen>
+    <dimen name="main_actionbar_settings">200dp</dimen>
+    <dimen name="upgrade_subscription_popup_close_button_margin">-20dp</dimen>
+
+</resources>

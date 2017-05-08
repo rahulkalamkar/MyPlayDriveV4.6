@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageButton
+            android:id="@+id/button_go_pro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/background_upgrade_go_pro"
+            android:paddingTop="0dp"
+            android:text="@string/button_text_go_pro_now" />
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageButton
+            android:id="@+id/button_get_started"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/background_upgrade_get_started"
+            android:paddingTop="0dp"
+            android:text="@string/button_text_get_started" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/web_information"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_bottom_buttons" />
+
+</RelativeLayout>

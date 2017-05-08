@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_player_queue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/application_background_grey" >
+
+    <!-- <android.support.v4.widget.DrawerLayout -->
+    <!-- android:id="@+id/drawer_layout" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" > -->
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        app:dragView="@+id/dragView"
+        app:panelHeight="@dimen/main_player_bar_height"
+        app:paralaxOffset="@dimen/player_paralaxOffset"
+        app:shadowHeight="@dimen/player_shadowHeight" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/application_background_grey" >
+
+            <RelativeLayout
+                android:id="@+id/player_queue_title_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/main_title_bar_height"
+                android:layout_alignParentTop="true"
+                android:background="@color/myPrimaryColor" >
+
+                <Button
+                    android:id="@+id/player_queue_title_bar_button_done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/bg_button_done"
+                    android:padding="0dp"
+                    android:text="@string/btn_done"
+                    android:textColor="@color/hungama_text_grey"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ivBackArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha" />
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                    android:id="@+id/player_queue_title_bar_text"
+                    style="@style/TextMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ivBackArrow"
+                    android:ellipsize="end"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:text="@string/player_queue_title_1" />
+
+                <ImageView
+                    android:id="@+id/player_queue_title_bar_button_clear"
+                    android:layout_width="@dimen/main_title_bar_options_button_width"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/player_queue_title_bar_button_more"
+                    android:padding="12dp"
+                    android:src="@drawable/icon_queue_delete_new"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/player_queue_title_bar_button_more"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/music_dots_f"
+                    android:visibility="visible" />
+
+                <ImageButton
+                    android:id="@+id/player_queue_title_bar_button_options"
+                    android:layout_width="@dimen/main_title_bar_options_button_width"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:src="@drawable/background_main_title_bar_button_options_selector"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/player_queue_remove_option_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/player_queue_title_bar"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/background_fragment_search_results_top"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/player_queue_options_save_all_offline"
+                    android:layout_width="@dimen/queue_screen_menu"
+                    android:layout_height="@dimen/queue_screen_menu"
+                    android:src="@drawable/ic_download_catcher"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/player_queue_options_save_as_playlist"
+                    android:layout_width="@dimen/queue_screen_menu"
+                    android:layout_height="@dimen/queue_screen_menu"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/player_queue_options_save_all_offline"
+                    android:src="@drawable/ic_download_catcher"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/player_queue_options_clear_queue"
+                    android:layout_width="@dimen/queue_screen_menu"
+                    android:layout_height="@dimen/queue_screen_menu"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/player_queue_options_save_as_playlist"
+                    android:src="@drawable/ic_download_catcher"
+                    android:visibility="gone" />
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                    android:id="@+id/player_queue_textview_remove_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="To remove songs tap on artwork"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:id="@+id/player_queue_iv_select_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/icon_tick_mark_white"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/player_queue_chkbox_select_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone" />
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                    android:id="@+id/player_queue_textview_cancel_selection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/player_queue_chkbox_select_all"
+                    android:text="Cancel"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                    android:id="@+id/player_queue_textview_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Edit"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                    android:id="@+id/player_queue_textview_delete_selected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/icon_delete_red"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:text="Delete"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <com.mobeta.android.dslv.DragSortListView
+                android:id="@+id/player_queue_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/player_queue_remove_option_bar"
+                android:layout_marginTop="@dimen/player_quer_list_margin_top"
+                android:background="@null"
+                android:cacheColorHint="#0000"
+                android:divider="@color/player_queue_listview_seperator_color"
+                android:dividerHeight="@dimen/media_details_seperetor_height"
+                android:gravity="center_horizontal"
+                android:horizontalSpacing="@dimen/home_tiles_spacing_horizontal"
+                android:overScrollMode="never"
+                app:collapsed_height="1px"
+                app:drag_enabled="true"
+                app:drag_handle_id="@+id/player_queue_media_drag_handle"
+                app:drag_scroll_start="0.33"
+                app:drag_start_mode="onDown"
+                app:float_alpha="1"
+                app:float_background_color="#fff"
+                app:remove_enabled="true"
+                app:remove_mode="flingRemove"
+                app:slide_shuffle_speed="0.3" />
+            <!-- app:float_background_color="#999" -->
+
+
+            <!-- <com.dnd.nhaarman.listviewanimations.itemmanipulation.DynamicListView -->
+            <!-- android:id="@+id/player_queue_listview" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:layout_below="@+id/player_queue_remove_option_bar" -->
+            <!-- android:background="@null" -->
+            <!-- android:cacheColorHint="#0000" -->
+            <!-- android:clipToPadding="false" -->
+            <!-- android:divider="@color/player_queue_listview_seperator_color" -->
+            <!-- android:dividerHeight="@dimen/media_details_seperetor_height" -->
+            <!-- android:gravity="center_horizontal" -->
+            <!-- android:horizontalSpacing="@dimen/home_tiles_spacing_horizontal" -->
+            <!-- android:overScrollMode="never" /> -->
+
+            <FrameLayout
+                android:id="@+id/player_queue_content_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/player_queue_title_bar" />
+        </RelativeLayout>
+
+        <!-- <FrameLayout -->
+        <!-- android:id="@+id/left_drawer" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:layout_gravity="start" -->
+        <!-- android:layout_marginTop="?android:attr/actionBarSize" -->
+        <!-- android:background="@null" /> -->
+        <!-- </android.support.v4.widget.DrawerLayout> -->
+
+        <include
+            layout="@layout/player_drag_view"
+            android:visibility="gone" />
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <include
+        android:id="@+id/toolbar_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar_default" />
+
+</RelativeLayout>

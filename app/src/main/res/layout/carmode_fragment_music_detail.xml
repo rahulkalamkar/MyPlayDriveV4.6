@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/carmode_main_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5.04">
+
+        <ImageButton
+            android:id="@+id/btn_back_main_menu"
+            android:layout_width="@dimen/carmode_header_button_width"
+            android:layout_height="match_parent"
+            android:background="@drawable/carmode_button_states"
+            android:onClick="vHandleClicks"
+            android:src="@drawable/carmode_btn_back" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/btn_back_main_menu"
+            android:background="@color/carmode_divider_color" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/CarModeHeaderTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/btn_universal_player"
+            android:layout_toRightOf="@id/btn_back_main_menu" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/btn_universal_player"
+            android:background="@color/carmode_divider_color" />
+
+        <ImageButton
+            android:id="@+id/btn_universal_player"
+            android:layout_width="@dimen/carmode_header_button_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/carmode_button_states"
+            android:onClick="vHandleClicks"
+            android:src="@drawable/carmode_btn_music_player" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/carmode_divider_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/rl_detail_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ll_player"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <LinearLayout
+                        android:id="@+id/ll_playlist_avatar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/iv_track_avatar_one"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:src="@drawable/background_home_tile_album_default" />
+
+                            <ImageView
+                                android:id="@+id/iv_track_avatar_two"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:src="@drawable/background_home_tile_album_default" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/iv_track_avatar_three"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:src="@drawable/background_home_tile_album_default" />
+
+                            <ImageView
+                                android:id="@+id/iv_track_avatar_four"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:src="@drawable/background_home_tile_album_default" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_single_avatar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/background_home_tile_album_default"
+                        android:visibility="gone" />
+
+
+                    <ImageButton
+                        android:id="@+id/btn_player_start_pause"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="#DD787878"
+                        android:onClick="vHandleClicks"
+                        android:src="@drawable/carmode_btn_play_large" />
+
+                    <ProgressBar
+                        android:id="@+id/pb_player"
+                        style="@style/CustomProgressDialogStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5">
+
+                    <ImageButton
+                        android:id="@+id/btn_download"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/carmode_button_states"
+                        android:onClick="vHandleClicks"
+                        android:src="@drawable/carmode_btn_download" />
+
+                    <ImageButton
+                        android:id="@+id/btn_add_to_queue"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/carmode_button_states"
+                        android:onClick="vHandleClicks"
+                        android:src="@drawable/carmode_btn_add_queue_big" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_favorite"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageButton
+                            android:id="@+id/btn_favorite"
+                            android:layout_width="@dimen/carmode_header_button_width"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/carmode_button_states"
+                            android:onClick="vHandleClicks"
+                            android:src="@drawable/carmode_btn_favorites"
+                            android:visibility="invisible" />
+
+                        <ProgressBar
+                            android:id="@+id/pb_favorite"
+                            style="?android:attr/android:progressBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/ll_player"
+                android:background="@color/carmode_divider_color" />
+
+            <ListView
+                android:id="@+id/lv_musics"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/ll_listview_progress_control"
+                android:layout_toRightOf="@id/ll_player"
+                android:divider="@null"
+                android:dividerHeight="10dp"
+                android:padding="10dp"
+                android:scrollbars="none" />
+
+            <include layout="@layout/carmode_layout_scroller" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

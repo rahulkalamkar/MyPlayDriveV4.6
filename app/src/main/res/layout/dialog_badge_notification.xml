@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout_search_result_line"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/overlay"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp" >
+
+    <ImageView
+        android:id="@+id/badge_dialog_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent" />
+
+    <RelativeLayout
+        android:id="@+id/badge_bottom_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent" >
+
+        <RelativeLayout
+            android:id="@+id/badge_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/background_badge_notification"
+            android:paddingBottom="5dp" >
+
+            <LinearLayout
+                android:id="@+id/badge_bottom_inner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/background_badges_coins_middle"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                    android:id="@+id/badge_bottom_inner_text_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="@string/badges_dialog_notification_text_congratulations"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                    android:id="@+id/badge_bottom_inner_text_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="@string/badges_dialog_notification_text_you_have_just"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+.
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                    android:id="@+id/badge_bottom_inner_text_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="Congratulations"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medium_text_size" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/badges_info_dialog_title_close_button"
+            android:layout_width="@dimen/badges_custom_dialog_close_button_size"
+            android:layout_height="@dimen/badges_custom_dialog_close_button_size"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/icon_close_button" />
+    </RelativeLayout>
+
+</LinearLayout>

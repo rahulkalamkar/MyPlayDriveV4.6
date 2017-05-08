@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/carmode_sub_bg_color" android:state_pressed="true"/>
+    <item android:drawable="@color/carmode_btn_press_state_color"/>
+
+</selector>

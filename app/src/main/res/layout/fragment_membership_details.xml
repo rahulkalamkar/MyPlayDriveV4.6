@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_subscription_old"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+        android:visibility="visible">
+    <LinearLayout
+        android:id="@+id/main_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_title_bar_height"
+        android:background="@drawable/background_home_tabwidget_tab_unselected"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+            android:id="@+id/main_title_bar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prenium_membership_fragment_title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/memberhip_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/save_offline_setting_10dp"
+        android:layout_marginRight="@dimen/save_offline_setting_10dp"
+        android:layout_marginTop="@dimen/save_offline_setting_10dp"
+        android:background="@drawable/background_text_field"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/save_offline_setting_10dp"
+            android:layout_marginTop="@dimen/save_offline_setting_10dp"
+            android:orientation="vertical" >
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/save_offline_setting_10dp"
+                android:background="@color/transparent"
+                android:text="@string/premium_membership"
+                android:textColor="@color/black"
+                android:textSize="@dimen/large_text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/save_offline_setting_1dp"
+            android:layout_marginLeft="@dimen/save_offline_setting_2dp"
+            android:layout_marginRight="@dimen/save_offline_setting_2dp"
+            android:background="#E1E1E1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/save_offline_setting_5dp"
+            android:orientation="vertical" >
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/save_offline_setting_10dp"
+                android:layout_marginLeft="@dimen/save_offline_setting_10dp"
+                android:text="@string/membership_detailed_text_new"
+                android:textColor="@color/membership_detail_text_color"
+                android:textSize="@dimen/medium_text_size" />
+
+            <TextView
+                android:id="@+id/membership_plan_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/save_offline_setting_10dp"
+                android:layout_marginLeft="@dimen/save_offline_setting_10dp"
+                android:textColor="@color/membership_detail_text_color"
+                android:textSize="@dimen/medium_text_size" />
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/save_offline_setting_10dp"
+                android:background="@color/transparent"
+                android:text="@string/membership_benefit_title"
+                android:textColor="@color/membership_detail_text_color"
+                android:textSize="@dimen/large_text_size" />
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:id="@+id/text_benifits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/save_offline_setting_10dp"
+                android:text="@string/membership_benefit_1"
+                android:textColor="@color/membership_detail_text_color"
+                android:textSize="@dimen/medium_text_size" />
+
+            <!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/membership_benefit_2"
+                android:textSize="14dp" 
+                android:textColor="@color/membership_detail_text_color"/>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/membership_benefit_3"
+                android:textSize="14dp" 
+                android:textColor="@color/membership_detail_text_color"/>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/membership_benefit_4"
+                android:textSize="14dp" 
+                android:textColor="@color/membership_detail_text_color"/>
+            -->
+
+
+            <!--
+                 <com.hungama.myplay.activity.ui.widgets.LanguageButton
+		        android:id="@+id/upgrade_button_unsubscribe"
+		        android:layout_width="@dimen/upgrade_plans_unsubscribe_button_width"
+		        android:layout_height="@dimen/login_button_height"
+		        android:layout_marginLeft="@dimen/upgrade_mobile_required_margin_sides"
+		        android:layout_marginTop="12dp"
+		        android:layout_marginBottom="12dp"
+		        android:layout_marginRight="20dp"
+		        android:background="@drawable/background_button_blue"
+		        android:text="@string/membership_unsubscribe_button"
+		        android:textColor="@color/white"
+		        android:layout_gravity="left|center_vertical"
+		        android:layout_alignParentRight="true"/>
+            -->
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageButton
+                android:id="@+id/upgrade_button_unsubscribe"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_40"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginBottom="@dimen/save_offline_setting_12dp"
+                android:layout_marginLeft="@dimen/upgrade_mobile_required_margin_sides"
+                android:layout_marginRight="@dimen/save_offline_setting_20dp"
+                android:layout_marginTop="@dimen/save_offline_setting_12dp"
+                android:background="@drawable/background_button_blue"
+                android:paddingLeft="@dimen/save_offline_setting_10dp"
+                android:paddingRight="@dimen/save_offline_setting_10dp"
+                android:text="@string/membership_unsubscribe_button"
+                android:textColor="@color/white"
+                android:textSize="@dimen/medium_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.hungama.myplay.activity.ui.widgets.LanguageButton
+        android:id="@+id/unsubscribe_button"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_40"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/save_offline_setting_20dp"
+        android:background="@drawable/background_button_grey"
+        android:onClick="unsubscribe"
+        android:paddingLeft="@dimen/save_offline_setting_20dp"
+        android:paddingRight="@dimen/save_offline_setting_20dp"
+        android:text="@string/membership_unsubscribe_button"
+        android:textColor="@color/upgrade_verification_resend_button_text_color"
+        android:textSize="@dimen/normal_text_size"
+        android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_hungama_pay_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_profile_pic"
+            android:layout_width="@dimen/upgrade_benefit_user_pic_size"
+            android:layout_height="@dimen/upgrade_benefit_user_pic_size"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/user_icon"
+            android:layout_marginTop="@dimen/save_offline_setting_10dp"
+            android:clickable="false"
+            android:cropToPadding="false"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/txt_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/save_offline_setting_5dp"
+            android:textSize="@dimen/xxlarge_text_size"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/upgrade_benefit_new_text_color"
+            android:text="@string/upgrade_benefit_default_user_name"/>
+
+        <TextView
+            android:id="@+id/txt_user_plan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/large_text_size"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/upgrade_benefit_new_text_color"
+            android:text=""/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <io.techery.progresshint.addition.widget.SeekBar
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:id="@+id/main_membership_progress_bar_seek_bar_handle"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_centerVertical="true"
+            android:indeterminateOnly="false"
+            android:maxHeight="75dp"
+            android:padding="0dp"
+            android:progress="50"
+            android:progressDrawable="@drawable/background_membership_progress_bar"
+            android:secondaryProgress="0"
+            android:thumb="@null"
+            android:thumbOffset="0dip"
+            app:popupStyle="follow"
+            app:popupAlwaysShown="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_centerVertical="true">
+            <TextView
+                android:id="@+id/lbl_start_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/save_offline_setting_12dp"
+                android:text="START DATE"/>
+            <TextView
+                android:id="@+id/lbl_end_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/save_offline_setting_12dp"
+                android:textColor="@android:color/white"
+                android:text="END DATE"/>
+            <TextView
+                android:id="@+id/txt_start_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lbl_start_date"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/save_offline_setting_15dp"
+                android:text=""/>
+            <TextView
+                android:id="@+id/txt_end_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_below="@id/lbl_end_date"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/save_offline_setting_15dp"
+                android:text=""/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+            android:layout_marginLeft="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/membership_benefit_title"
+            android:textColor="@color/upgrade_benefit_new_text_color"
+            android:textSize="@dimen/large_text_size"/>
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+            android:id="@+id/text_benifits_new"
+            android:layout_marginLeft="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/upgrade_benefit_new_text_color"
+            android:textSize="@dimen/medium_text_size" />
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageButton
+            android:id="@+id/btn_unsubscribe"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_40"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/save_offline_setting_20dp"
+            android:background="@drawable/background_button_grey"
+            android:onClick="unsubscribe"
+            android:paddingLeft="@dimen/save_offline_setting_20dp"
+            android:paddingRight="@dimen/save_offline_setting_20dp"
+            android:text="@string/membership_unsubscribe_button"
+            android:textColor="@color/upgrade_verification_resend_button_text_color"
+            android:textSize="@dimen/normal_text_size"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

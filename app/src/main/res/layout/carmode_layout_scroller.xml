@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_listview_progress_control"
+    android:layout_width="@dimen/carmode_header_button_width"
+    android:layout_height="match_parent"
+    android:layout_alignParentRight="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/btn_scroll_up"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@android:color/transparent"
+        android:onClick="vHandleClicks"
+        android:src="@drawable/carmode_btn_scroll_up" />
+
+    <com.hungama.hungamamusic.lite.carmode.view.VerticalSeekBar
+        android:id="@+id/sb_listview_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:maxHeight="2dp"
+        android:progressDrawable="@drawable/carmode_scroller_bar"
+        android:thumb="@drawable/carmode_thumb" />
+
+    <ImageButton
+        android:id="@+id/btn_scroll_down"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@android:color/transparent"
+        android:onClick="vHandleClicks"
+        android:src="@drawable/carmode_btn_scroll_down" />
+
+</LinearLayout>

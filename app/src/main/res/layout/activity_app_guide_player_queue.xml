@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_overlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/overlay" >
+
+    <LinearLayout
+        android:id="@+id/ll_hint_clear_queue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:visibility="invisible" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/help_player_queue_clear" />
+
+        <View
+            android:id="@+id/line_hint_clear_queue"
+            android:layout_width="50dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@color/white" />
+
+        <ImageView
+            android:id="@+id/hint_clear_queue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_hint_player_queue_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/hint_player_queue_options"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher" />
+
+            <View
+                android:id="@+id/line_player_queue_options"
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/help_player_queue_options" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_hint_player_queue_drag_handle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/hint_player_queue_drag_handle"
+                android:layout_width="@dimen/player_queue_drag_handle_image_width"
+                android:layout_height="@dimen/player_queue_drag_handle_image_height"
+                android:scaleType="center"
+                android:src="@drawable/icon_general_swipe_grey"
+                android:visibility="visible" />
+
+            <View
+                android:id="@+id/line_player_queue_drag_handle"
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/help_player_queue_drag_handle" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_hint_player_queue_list_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/hint_player_queue_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/application_background_grey"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/icon_swipe_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="45dp"
+            android:src="@drawable/hint_icon_swipe_right" />
+
+        <TextView
+            android:id="@+id/txt_hint_player_queue_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/icon_swipe_right"
+            android:layout_below="@id/icon_swipe_right"
+            android:text="@string/help_player_queue_list_item" />
+    </RelativeLayout>
+
+</RelativeLayout>

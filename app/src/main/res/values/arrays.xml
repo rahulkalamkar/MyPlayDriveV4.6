@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="facebook_sharing_properties">
+        <item>@string/songs_i_listen_to</item>
+        <item>@string/my_favorite</item>
+        <item>@string/songs_i_downloaded</item>
+        <item>@string/my_comments</item>
+        <item>@string/my_badges</item>
+        <item>@string/videos_watched</item>
+        <item>@string/videos_downloaded</item>
+    </string-array>
+    <string-array name="my_stream_settings_properties">
+        <item>@string/mystream_settings_music_listened_to</item>
+        <item>@string/mystream_settings_likes</item>
+        <item>@string/mystream_settings_downlods</item>
+        <item>@string/mystream_settings_comments</item>
+        <item>@string/mystream_settings_videos_watched</item>
+        <item>@string/mystream_settings_shares</item>
+        <item>@string/mystream_settings_badges_earned</item>
+        <!--
+        <item>@string/mystream_settings_show_trivia</item>
+        <item>@string/mystream_settings_show_lyrics</item>
+        -->
+    </string-array>
+
+    <!-- Used in Spinner/spinner_2.java -->
+    <string-array name="operators">
+        <item>Select Mobile Operator</item>
+        <item>BSNL Validity</item>
+        <item>BSNL Value</item>
+        <item>Aircel</item>
+        <item>Idea</item>
+        <item>MTNL Mumbai</item>
+        <item>MTNL Delhi</item>
+        <item>MTS</item>
+        <item>Reliance</item>
+        <item>Tata Docomo</item>
+        <item>Tata Docomo Special</item>
+        <item>Tata Indicom</item>
+        <item>Uninor</item>
+        <item>Uninor Special</item>
+        <item>Videocon Mobile</item>
+        <item>Videocon Mobile - Special</item>
+        <item>Vodafone</item>
+    </string-array>
+    <string-array name="operatorsProductID">
+        <item>-1</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+    </string-array>
+
+</resources>

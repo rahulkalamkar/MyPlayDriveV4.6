@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="keyboard_de">
+        <item>q w eéèêë r t z uüúùû iìíîï oöóòôõøœ p</item>
+        <item>aäáàâåâãåæ sßšş d f g h j k l</item>
+        <item>*shift yÿ x cç v b nñ m *del</item>
+        <item>*123 *lang - *space .:;,?! *enter</item>
+    </string-array>
+    <string-array name="keyboard_de_digits">
+        <item>1 2 3 4 5 6 7 8 9 0</item>
+        <item>_ * / + = ( ) € &amp; @</item>
+        <item>*123alt : ; , ? ! \' \" *del</item>
+        <item>*abc *lang - *space . *enter</item>
+    </string-array>
+    <string-array name="keyboard_de_digits_alt">
+        <item>~ #  \\ | ^ [ ] { } %</item>
+        <item>_ * / + =  &lt; > $ £ ¥</item>
+        <item>*123alt : ; , ? ! \' \" *del</item>
+        <item>*abc *lang - *space . *enter</item>
+    </string-array>
+    <string-array name="keyboard_de_shift">
+        <item>Q W EÉÈÊË R T Z UÜÚÙÛ IÌÍÎÏ OÖÓÒÔÕØŒ P</item>
+        <item>AÄÁÀÂÅÂÃÅÆ SŠŞ D F G H J K L</item>
+        <item>*shift YŸ X CÇ V B NÑ M *del</item>
+        <item>*123 *lang - *space .:;,?! *enter</item>
+    </string-array>
+    <string-array name="keyboard_en">
+        <item>q w eéèêë r t yÿ uüúùû iìíîï oöóòôõøœ p</item>
+        <item>aäáàâåâãåæ sßšş d f g h j k l</item>
+        <item>*shift z x cç v b nñ m *del</item>
+        <item>*123 *lang - *space .:;,?! *enter</item>
+    </string-array>
+    <string-array name="keyboard_en_digits">
+        <item>1 2 3 4 5 6 7 8 9 0</item>
+        <item>_ * / + = ( ) € &amp; @</item>
+        <item>*123alt : ; , ? ! \' \" *del</item>
+        <item>*abc *lang - *space . *enter</item>
+    </string-array>
+    <string-array name="keyboard_en_digits_alt">
+        <item>~ #  \\ | ^ [ ] { } %</item>
+        <item>_ * / + =  &lt; > $ £ ¥</item>
+        <item>*123alt : ; , ? ! \' \" *del</item>
+        <item>*abc *lang - *space . *enter</item>
+    </string-array>
+    <string-array name="keyboard_en_shift">
+        <item>Q W EÉÈÊË R T YŸ UÜÚÙÛ IÌÍÎÏ OÖÓÒÔÕØŒ P</item>
+        <item>AÄÁÀÂÅÂÃÅÆ SŠŞ D F G H J K L</item>
+        <item>*shift Z X CÇ V B NÑ M *del</item>
+        <item>*123 *lang - *space .:;,?! *enter</item>
+    </string-array>
+    <string-array name="keyboard_ru">
+        <item>й ц у к её н г ш щ з х</item>
+        <item>ф ы в а п р о л д ж э</item>
+        <item>*shift я ч с м и т ьъ б ю *del</item>
+        <item>*123 *lang - *space .:;,?! *enter</item>
+    </string-array>
+    <string-array name="keyboard_ru_digits">
+        <item>1 2 3 4 5 6 7 8 9 0</item>
+        <item>_ * / + = ( ) € &amp; @</item>
+        <item>*123alt : ; , ? ! \' \" *del</item>
+        <item>*abc *lang - *space . *enter</item>
+    </string-array>
+    <string-array name="keyboard_ru_digits_alt">
+        <item>~ # \\ | ^ [ ] { } %</item>
+        <item>_ * / + =  &lt; > $ £ ¥</item>
+        <item>*123alt : ; , ? ! \' \" *del</item>
+        <item>*abc *lang - *space . *enter</item>
+    </string-array>
+    <string-array name="keyboard_ru_shift">
+        <item>Й Ц У К ЕЁ Н Г Ш Щ З Х</item>
+        <item>Ф Ы В А П Р О Л Д Ж Э</item>
+        <item>*shift Я Ч С М И Т ЬЪ Б Ю *del</item>
+        <item>*123 *lang - *space .:;,?! *enter</item>
+    </string-array>
+    <string name="keyboard_abc" translatable="false">ABC</string>
+    <string name="keyboard_abc_ru" translatable="false">АБВ</string>
+    <string name="keyboard_done">done</string>
+    <string name="keyboard_go">go</string>
+    <string name="keyboard_next">next</string>
+    <string name="keyboard_ok">OK</string>
+    <string name="keyboard_prev">prev</string>
+    <string name="keyboard_search">search</string>
+    <string name="keyboard_space">space</string>
+</resources>

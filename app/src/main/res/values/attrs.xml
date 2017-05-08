@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RightIconOptionsItem">
+        <attr name="itemIcon" format="reference" />
+        <attr name="itemIconSize" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="ActiveButton">
+
+        <!-- Sets a drawable when the button is active. -->
+        <attr name="activeSrc" format="reference" />
+        <!-- Sets a drawable when the button is inactive. -->
+        <attr name="inactiveSrc" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="TwoStatesButton">
+        <attr name="selectedBackground" format="reference" />
+        <attr name="unselectedBackground" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="TwoStatesActiveButton">
+        <attr name="activeStateSource" format="reference" />
+        <attr name="inactiveStateSource" format="reference" />
+        <attr name="secondStateSource" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="ThreeStatesActiveButton">
+        <attr name="activeStateSrc" format="reference" />
+        <attr name="inactiveStateSrc" format="reference" />
+        <attr name="secondStateSrc" format="reference" />
+        <attr name="ThirdStateSrc" format="reference" />
+    </declare-styleable>
+
+    <!--
+         SlidingDrawer specific attributes. These attributes are used to configure
+         a SlidingDrawer from XML.
+    -->
+    <declare-styleable name="SlidingDrawer">
+
+        <!-- Identifier for the child that represents the drawer's handle. -->
+        <attr name="handle" format="reference" />
+        <!-- Identifier for the child that represents the drawer's content. -->
+        <attr name="content" format="reference" />
+        <!-- Orientation of the SlidingDrawer. -->
+
+
+        <!-- Extra offset for the handle at the bottom of the SlidingDrawer. -->
+        <attr name="bottomOffset" format="dimension" />
+        <!-- Extra offset for the handle at the top of the SlidingDrawer. -->
+        <attr name="topOffset" format="dimension" />
+        <!--
+             Indicates whether the drawer can be opened/closed by a single tap
+             on the handle.  (If false, the user must drag or fling, or click
+             using the trackball, to open/close the drawer.)  Default is true.
+        -->
+        <attr name="allowSingleTap" format="boolean" />
+        <!--
+             Indicates whether the drawer should be opened/closed with an animation
+             when the user clicks the handle. Default is true.
+        -->
+        <attr name="animateOnClick" format="boolean" />
+    </declare-styleable>
+
+    <!-- home view pager -->
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="pstsTabSwitch" format="boolean" />
+        <attr name="pstsActivateTextColor" format="color" />
+        <attr name="pstsDeactivateTextColor" format="color" />
+    </declare-styleable>
+
+    <!-- Circular Imageview -->
+    <!-- <declare-styleable name="CircularImageView"> -->
+    <!-- <attr name="border" format="boolean"></attr> -->
+    <!-- <attr name="border_width" format="dimension"></attr> -->
+    <!-- <attr name="border_color" format="color"></attr> -->
+    <!-- <attr name="shadow" format="boolean"></attr> -->
+    <!-- </declare-styleable> -->
+    <!-- <declare-styleable name="Theme"> -->
+    <!-- <attr name="circularImageViewStyle" format="reference"></attr> -->
+    <!-- </declare-styleable> -->
+    <!-- CircularImageView for custom shape -->
+
+    <declare-styleable name="RoundedImageView">
+        <attr name="riv_corner_radius" format="dimension" />
+        <attr name="riv_border_width" format="dimension" />
+        <attr name="riv_border_color" format="color" />
+        <attr name="riv_mutate_background" format="boolean" />
+        <attr name="riv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+        <attr name="riv_tile_mode">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="riv_tile_mode_x">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="riv_tile_mode_y">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+    </declare-styleable>
+
+</resources>

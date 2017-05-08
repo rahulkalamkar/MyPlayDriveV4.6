@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/trivia_bubble_padding_left_right"
+    android:paddingRight="@dimen/trivia_bubble_padding_left_right" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_rounded_corner_white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/trivia_bubble_content_padding"
+        android:paddingRight="@dimen/trivia_bubble_content_padding"
+        android:paddingTop="0dp" >
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+            android:id="@+id/download_custom_dialog_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/sleep_mode_dialog_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xlarge_text_size"
+            android:visibility="gone" />
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+            android:id="@+id/text_custom_alert_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Dialog Message"
+            android:textColor="@color/black"
+            android:textSize="@dimen/medium_text_size" />
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageCheckBox
+            android:id="@+id/check_box_remember"
+            style="@style/CheckBoxAppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/trivia_bubble_padding"
+            android:layout_marginLeft="@dimen/trivia_bubble_content_padding_checkbox"
+            android:text="@string/custom_dialog_remember_text"
+            android:textColor="@color/custom_dialog_do_not_show_again"
+            android:textSize="@dimen/normal_text_size"
+            android:visibility="gone" />
+
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dlg_common_height"
+            android:layout_marginBottom="@dimen/trivia_bubble_content_padding"
+            android:layout_marginTop="@dimen/trivia_bubble_content_padding"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:id="@+id/button_custom_alert_positive"
+                style="@style/dialog_blue_btn_style"
+                android:text="Ok" />
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:id="@+id/button_custom_alert_negative" android:visibility="gone"
+                style="@style/dialog_blue_btn_style"
+                android:layout_marginLeft="@dimen/nativeDialogButtonMargin"
+                android:text="Cancel" />
+        </LinearLayout>
+        -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/trivia_bubble_content_padding"
+            android:layout_marginTop="@dimen/trivia_bubble_content_padding"
+            android:gravity="center_horizontal"
+            android:minHeight="@dimen/dlg_common_height"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:id="@+id/button_custom_alert_positive"
+                style="@style/dialog_blue_btn_style"
+                android:text="Ok" />
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:id="@+id/button_custom_alert_negative"
+                style="@style/dialog_blue_btn_style"
+                android:layout_marginLeft="@dimen/nativeDialogButtonMargin"
+                android:text="Cancel"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+                                        android:background="@color/application_background_grey"
+    android:fitsSystemWindows="true" >
+
+    <RelativeLayout
+        android:id="@+id/homeScreenMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.sothree.slidinguppanel.SlidingUpPanelLayout
+            xmlns:sothree="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/sliding_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            sothree:dragView="@+id/dragView"
+            sothree:panelHeight="@dimen/main_player_bar_height"
+            sothree:paralaxOffset="@dimen/player_paralaxOffset"
+            sothree:shadowHeight="@dimen/player_shadowHeight" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/application_background_grey" >
+
+                <!--
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/offline_tab_message"
+                    android:layout_marginBottom="@dimen/main_player_bar_margin_from_it"
+                    android:background="@null" >
+                </android.support.v4.view.ViewPager>
+                -->
+
+                <com.hungama.myplay.activity.ui.widgets.CustomViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/offline_tab_message"
+                    android:layout_marginBottom="@dimen/main_player_bar_margin_from_it"
+                    android:background="@null" >
+                </com.hungama.myplay.activity.ui.widgets.CustomViewPager>
+
+                <com.hungama.myplay.activity.ui.PagerSlidingTabStrip
+                    android:id="@+id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/home_tabwidget_height"
+                    android:layout_marginTop="?android:attr/actionBarSize"
+                    android:background="@color/myPrimaryColor"
+                    android:textColor="@color/white"
+                    app:footerColor="@color/white"
+                    app:pstsShouldExpand="true" />
+
+                <RelativeLayout
+                    android:id="@+id/offline_tab_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tabs"
+                    android:background="#191919"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:visibility="visible" >
+
+                    <ImageButton
+                        android:id="@+id/btn_help_close"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:paddingLeft="5dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_hint_close"
+                        android:visibility="visible" />
+
+                    <!-- <com.hungama.myplay.activity.ui.widgets.LanguageTextView -->
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@id/btn_help_close"
+                        android:text="@string/offline_message_without_internet"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/medium_text_size"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <!-- <RelativeLayout -->
+                <!-- android:id="@+id/offline_tab_message" -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_below="@+id/tabs" -->
+                <!-- android:gravity="center_vertical" -->
+                <!-- android:padding="5dp" -->
+                <!-- android:visibility="visible" > -->
+
+
+                <!-- <ImageButton -->
+                <!-- android:id="@+id/btn_help_close" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_alignParentRight="true" -->
+                <!-- android:layout_centerVertical="true" -->
+                <!-- android:layout_marginRight="5dp" -->
+                <!-- android:background="#0000" -->
+                <!-- android:paddingLeft="5dp" -->
+                <!-- android:paddingRight="5dp" -->
+                <!-- android:scaleType="centerInside" -->
+                <!-- android:src="@drawable/ic_close" -->
+                <!-- android:visibility="visible" /> -->
+
+
+                <!-- <com.hungama.myplay.activity.ui.widgets.LanguageTextView -->
+                <!-- android:layout_width="fill_parent" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_centerVertical="true" -->
+                <!-- android:textSize="@dimen/medium_text_size" -->
+                <!-- android:layout_toLeftOf="@id/btn_help_close" -->
+                <!-- android:text="@string/offline_message_without_internet" -->
+                <!-- android:textColor="@color/search_fragment_result_list_item_title_text_color" -->
+                <!-- android:layout_marginLeft="10dp" -->
+                <!-- android:visibility="visible" /> -->
+                <!-- </RelativeLayout> -->
+
+                <FrameLayout
+                    android:id="@+id/main_fragmant_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/main_player_bar_margin_from_it"
+                    android:background="@null"
+                    android:visibility="gone" />
+
+                <com.hungama.myplay.activity.ui.widgets.GoOfflineTabBar
+                    android:id="@+id/offline_tab_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/home_tabwidget_height"
+                    android:layout_alignParentTop="true"
+                    android:layout_below="@+id/main_fragmant_container"
+                    android:layout_marginTop="?android:attr/actionBarSize"
+                    android:background="@drawable/background_home_tabwidget"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/offline_tab_bar_options"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/offline_tab_bar"
+                    android:background="@drawable/background_fragment_search_results_top"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:visibility="gone" >
+
+                    <!--
+                    <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                        android:id="@+id/go_offline_play_all1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/player_queue_options_button_play_all"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                    <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                        android:id="@+id/go_offline_settings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/go_offline_play_all1"
+                        android:text="@string/go_offline_option_settings"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+                    -->
+
+                    <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                        android:id="@+id/offline_textview_tab_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/playerqueue_removesong_title"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/medium_text_size"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/offline_iv_select_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_tick_mark_white"
+                        android:visibility="gone" />
+
+                    <CheckBox
+                        android:id="@+id/offline_chkbox_select_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                        android:id="@+id/offline_textview_cancel_selection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/offline_chkbox_select_all"
+                        android:text="@string/player_queue_message_confirm_clear_all_cancel"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/medium_text_size"
+                        android:visibility="gone" />
+
+                    <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                        android:id="@+id/offline_textview_delete_selected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/icon_delete_red"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/delete_notifications_button"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/medium_text_size"
+                        android:visibility="gone" />
+
+                    <!--
+                    <ImageButton
+                        android:id="@+id/offline_imagebutton_options"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="#0000"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/background_main_title_bar_button_options_selector" />
+
+                    <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                        android:id="@+id/offline_textview_sorttype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/offline_imagebutton_options"
+                        android:text="@string/go_offline_activity_latest"
+                        android:textColor="@color/white" />
+                    -->
+                </RelativeLayout>
+
+                <!--
+                <RelativeLayout
+                    android:id="@+id/offline_tab_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/offline_tab_bar_options"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:visibility="gone" >
+
+                    <ImageButton
+                        android:id="@+id/btn_help_close"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="#0000"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_close"
+                        android:visibility="visible" />
+
+                    <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/medium_text_size"
+                        android:layout_toLeftOf="@id/btn_help_close"
+                        android:text="@string/offline_message_without_internet"
+                        android:textColor="@color/search_fragment_result_list_item_title_text_color"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="visible" />
+                </RelativeLayout>
+                -->
+
+                <RelativeLayout
+                    android:id="@+id/offline_tab_bar_options1"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@+id/offline_tab_bar_options"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:visibility="gone" >
+
+                    <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                        android:id="@+id/go_offline_play_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/offline_imagebutton_options"
+                        android:drawableLeft="@drawable/icon_circle_play_blue_outline"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/player_queue_options_button_play_all"
+                        android:textColor="@color/search_fragment_result_list_item_title_text_color"
+                        android:textSize="@dimen/medium_text_size"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/offline_imagebutton_options"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="#0000"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha_gray_selector"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_free_user_offline_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/offline_tab_bar_options1"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                        android:id="@+id/text_free_user_offline_message"
+                        style="@style/TextSmallMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/message_free_user_offline"
+                        android:textColor="@color/search_fragment_result_list_item_title_text_color" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/media_details_seperetor_height"
+                        android:background="@color/player_queue_listview_seperator_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@id/layout_free_user_offline_message"
+                    android:layout_marginBottom="@dimen/main_player_bar_margin_from_it"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <View
+                        android:id="@+id/divider_top"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="@color/player_queue_listview_seperator_color" />
+
+                    <!--
+                         <ListView
+                        android:id="@+id/go_offline_listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layout_free_user_offline_message"
+                        android:background="@null"
+                        android:cacheColorHint="#0000"
+                        android:divider="@color/player_queue_listview_seperator_color"
+                        android:dividerHeight="@dimen/media_details_seperetor_height"
+                        android:gravity="center_horizontal"
+                        android:overScrollMode="never"
+                        android:visibility="visible" />
+                    -->
+
+                    <com.mobeta.android.dslv.DragSortListView
+                        android:id="@+id/go_offline_listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layout_free_user_offline_message"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        android:cacheColorHint="#0000"
+                        android:divider="@color/player_queue_listview_seperator_color"
+                        android:dividerHeight="@dimen/media_details_seperetor_height"
+                        android:gravity="center_horizontal"
+                        android:horizontalSpacing="@dimen/home_tiles_spacing_horizontal"
+                        android:listSelector="#0000"
+                        android:overScrollMode="never"
+                        app:collapsed_height="1px"
+                        app:drag_enabled="true"
+                        app:drag_handle_id="@+id/player_queue_media_drag_handle"
+                        app:drag_scroll_start="0.33"
+                        app:drag_start_mode="onDown"
+                        app:float_alpha="0.6"
+                        app:remove_enabled="true"
+                        app:remove_mode="flingRemove"
+                        app:slide_shuffle_speed="0.3" />
+
+                    <View
+                        android:id="@+id/divider_bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/media_details_seperetor_height"
+                        android:background="@color/player_queue_listview_seperator_color" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_go_pro_now"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_below="@id/go_offline_listview"
+                        android:visibility="gone" >
+
+                        <ImageView
+                            android:id="@+id/iv_go_pro_now"
+                            android:layout_width="@dimen/go_pro_now_button_width"
+                            android:layout_height="@dimen/go_pro_now_button_height"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/go_pro_now" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/go_offline_options"
+                    android:layout_width="@dimen/main_actionbar_settings"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/offline_tab_bar_options1"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <com.hungama.myplay.activity.ui.widgets.LanguageButton
+                        android:id="@+id/go_offline_sort_a_to_z"
+                        style="@style/TitleBarOptionsItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/player_queue_options_item_size"
+                        android:background="@color/black"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="@dimen/player_queue_options_item_left_padding"
+                        android:text="@string/go_offline_option_sort_a_to_z"
+                        android:textColor="@color/white" />
+
+                    <com.hungama.myplay.activity.ui.widgets.LanguageButton
+                        android:id="@+id/go_offline_sort_latest"
+                        style="@style/TitleBarOptionsItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/player_queue_options_item_size"
+                        android:background="@color/black"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="@dimen/player_queue_options_item_left_padding"
+                        android:text="@string/go_offline_option_sort_latest"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/search_fragment_categories_seperator_background" />
+
+                    <com.hungama.myplay.activity.ui.widgets.LanguageButton
+                        android:id="@+id/go_offline_settings"
+                        style="@style/TitleBarOptionsItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/player_queue_options_item_size"
+                        android:background="@color/black"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="@dimen/player_queue_options_item_left_padding"
+                        android:text="@string/go_offline_option_settings"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/main_navigation_fragmant_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/main_player_drawer_header_height"
+                    android:layout_marginTop="?android:attr/actionBarSize"
+                    android:background="@null" />
+
+                <!-- <FrameLayout -->
+                <!-- android:id="@+id/main_fragmant_player_bar" -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="match_parent" -->
+                <!-- android:layout_alignParentBottom="true" -->
+                <!-- android:background="@null" /> -->
+            </RelativeLayout>
+
+            <include layout="@layout/player_drag_view" />
+        </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+        <include
+            android:id="@+id/toolbar_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/toolbar_default" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/left_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@null" />
+
+</android.support.v4.widget.DrawerLayout>

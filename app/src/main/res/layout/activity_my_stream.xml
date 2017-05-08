@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:clickable="true"
+    android:layout_height="match_parent" >
+
+    <!--<com.sothree.slidinguppanel.SlidingUpPanelLayout
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        app:dragView="@+id/dragView"
+        app:panelHeight="@dimen/main_player_bar_height"
+        app:paralaxOffset="@dimen/player_paralaxOffset"
+        app:shadowHeight="@dimen/player_shadowHeight" >-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/application_background_grey" >
+
+            <FrameLayout
+                android:id="@+id/main_fragmant_container_new"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/main_player_bar_margin_from_it"
+
+                android:background="@null" />
+
+            <FrameLayout
+                android:id="@+id/main_navigation_fragmant_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/main_player_drawer_header_height"
+
+                android:background="@null" />
+
+            <!-- <FrameLayout -->
+            <!-- android:id="@+id/main_fragmant_player_bar" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:layout_alignParentBottom="true" -->
+            <!-- android:background="@null" /> -->
+
+        </RelativeLayout>
+
+      <!--  <include layout="@layout/player_drag_view" />
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>-->
+
+    <!--<include
+        android:id="@+id/toolbar_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar_default" />-->
+
+</RelativeLayout>

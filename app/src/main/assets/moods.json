@@ -1,0 +1,44 @@
+{
+  "last_modified": 1450334168,
+  "response": {
+    "moods": {
+      "mood": [{
+        "id": 1,
+        "name": "Heart Broken",
+        "image_big": "http:\/\/api.hungama.com\/webservice\/hungama\/appimages\/discovermoods\/smiley_big\/1-bgblack.png",
+        "image_small": "http:\/\/api.hungama.com\/webservice\/hungama\/appimages\/discovermoods\/smiley_small\/1-smblack.png"
+      }, {
+        "id": 2,
+        "name": "Sad",
+        "image_big": "http:\/\/api.hungama.com\/webservice\/hungama\/appimages\/discovermoods\/smiley_big\/2-bgblack.png",
+        "image_small": "http:\/\/api.hungama.com\/webservice\/hungama\/appimages\/discovermoods\/smiley_small\/2-smblack.png"
+      }, {
+        "id": 3,
+        "name": "Chilled Out",
+        "image_big": "http:\/\/api.hungama.com\/webservice\/hungama\/appimages\/discovermoods\/smiley_big\/3-bgblack.png",
+        "image_small": "http:\/\/api.hungama.com\/webservice\/hungama\/appimages\/discovermoods\/smiley_small\/3-smblack.png"
+      }, {
+        "id": 4,
+        "name": "Happy",
+        "image_big": "http:\/\/api.hungama.com\/webservice\/hungama\/appimages\/discovermoods\/smiley_big\/4-bgblack.png",
+        "image_small": "http:\/\/api.hungama.com\/webservice\/hungama\/appimages\/discovermoods\/smiley_small\/4-smblack.png"
+      }, {
+        "id": 5,
+        "name": "Ecstatic",
+        "image_big": "http:\/\/api.hungama.com\/webservice\/hungama\/appimages\/discovermoods\/smiley_big\/5-bgblack.png",
+        "image_small": "http:\/\/api.hungama.com\/webservice\/hungama\/appimages\/discovermoods\/smiley_small\/5-smblack.png"
+      }]
+    },
+    "tags": {
+      "tag": [{
+        "name": "Romantic",
+        "image_big": "http:\/\/api.hungama.com\/webservice\/hungama\/appimages\/discovermoods\/smiley_big\/6-bgblack.png",
+        "image_small": "http:\/\/api.hungama.com\/webservice\/hungama\/appimages\/discovermoods\/smiley_small\/6-smblack.png"
+      }, {
+        "name": "Party",
+        "image_big": "http:\/\/api.hungama.com\/webservice\/hungama\/appimages\/discovermoods\/smiley_big\/7-bgblack.png",
+        "image_small": "http:\/\/api.hungama.com\/webservice\/hungama\/appimages\/discovermoods\/smiley_small\/7-smblack.png"
+      }]
+    }
+  }
+}

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/main_player_content_info_bar_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/video_player_bar_height"
+        android:background="@color/main_player_content_buttons_background_trans"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/ivBackArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="10dp"
+            android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha" />
+
+        <RelativeLayout
+            android:id="@+id/rlExpandHandle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/main_player_content_actions_bar_button_info"
+            android:layout_toRightOf="@+id/ivBackArrow"
+            android:gravity="center_vertical"
+            android:paddingBottom="0dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="0dp" >
+
+            <RelativeLayout
+                android:id="@+id/rlExpandHandleTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical" >
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                    android:id="@+id/main_player_content_info_bar_text_title_handle"
+                    style="@style/TextMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/large_text_size" />
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                    android:id="@+id/main_player_content_info_bar_text_additional_handle"
+                    style="@style/TextSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_player_content_info_bar_text_title_handle"
+                    android:layout_marginTop="@dimen/main_player_bar_text_container_internal_margin"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/normal_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlExpandHandleFavorite"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <!-- <com.hungama.myplay.activity.ui.widgets.LanguageTextView -->
+
+                <TextView
+                    android:id="@+id/main_player_content_info_bar_text_played"
+                    style="@style/TextMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="none"
+                    android:gravity="center_vertical"
+                    android:singleLine="false"
+                    android:text="sdd"
+                    android:textSize="@dimen/large_text_size" />
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                    android:id="@+id/main_player_content_info_bar_text_played1"
+                    style="@style/TextMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="none"
+                    android:gravity="center_vertical"
+                    android:singleLine="false"
+                    android:text="@string/media_details_no_of_play"
+                    android:layout_toRightOf="@+id/main_player_content_info_bar_text_played"
+                    android:layout_marginLeft="@dimen/save_offline_setting_10dp"
+                    android:textSize="@dimen/large_text_size" />
+
+                <View
+                    android:id="@+id/verticalLine"
+                    android:layout_width="0.8dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@+id/main_player_content_info_bar_text_played1"
+                    android:background="@android:color/white" >
+                </View>
+
+                <!-- <com.hungama.myplay.activity.ui.widgets.LanguageTextView -->
+
+                <TextView
+                    android:id="@+id/main_player_content_info_bar_text_favorite"
+                    style="@style/TextSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/verticalLine"
+                    android:drawableRight="@drawable/icon_main_player_favorites_white_small"
+                    android:ellipsize="none"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:singleLine="false"
+                    android:text="12345"
+                    android:textSize="@dimen/large_text_size" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- <ImageButton -->
+        <!-- android:id="@+id/main_player_content_info_bar_button_view_queue" -->
+        <!-- android:layout_width="@dimen/main_player_content_info_bar_button_width" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:layout_alignParentRight="true" -->
+        <!-- android:layout_alignParentTop="true" -->
+        <!-- android:background="@drawable/background_main_player_content_button_selector" -->
+        <!-- android:src="@drawable/icon_main_settings_my_playlists" /> -->
+
+        <ImageView
+            android:id="@+id/main_player_content_info_bar_button_view_settings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="5dp"
+            android:src="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha_selector" />
+
+
+
+        <!--<android.support.v7.app.MediaRouteButton
+            android:id="@+id/media_route_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="4dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/main_player_content_actions_bar_button_info"
+            android:mediaRouteTypes="user"
+            android:visibility="gone" />-->
+
+
+        <ImageView
+            android:id="@+id/main_player_content_actions_bar_button_info"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/video_player_content_actions_bar_button_more_header"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:src="@drawable/icon_info_full_player"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_text_size"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/video_player_content_actions_bar_button_more_header"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/main_player_content_info_bar_button_view_settings"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:src="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_text_size" />
+        <!-- <ImageView -->
+        <!-- android:id="@+id/main_player_content_actions_bar_button_download" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:layout_marginRight="5dp" -->
+        <!-- android:layout_toLeftOf="@+id/main_player_content_info_bar_button_view_settings" -->
+        <!-- android:background="?android:attr/selectableItemBackground" -->
+        <!-- android:gravity="center_vertical" -->
+        <!-- android:onClick="startDownloadProcess" -->
+        <!-- android:paddingLeft="4dp" -->
+        <!-- android:paddingRight="4dp" -->
+        <!-- android:src="@drawable/mp4" -->
+        <!-- android:textColor="@color/white" -->
+        <!-- android:textSize="@dimen/normal_text_size" /> -->
+    </RelativeLayout>
+
+</RelativeLayout>

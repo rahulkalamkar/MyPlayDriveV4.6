@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/application_background_grey"
+    android:orientation="vertical" >
+
+    <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+        style="@style/TextSmallMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/help_faq_content_padding"
+        android:gravity="center"
+        android:padding="@dimen/help_faq_content_padding"
+        android:text="@string/help_faq_sections_title"
+        android:textColor="@color/hungama_text_blue"
+        android:textSize="@dimen/large_text_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/help_faq_section_app_crashing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/help_faq_content_padding" >
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:id="@+id/textView1"
+                style="@style/TextSmallMediumMinusPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/help_faq_section_app_crashes"
+                android:textColor="@color/hungama_text_blue"
+                android:textSize="@dimen/large_text_size" />
+
+            <ImageView
+                android:id="@+id/help_faq_section_app_crashing_button_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_circle_arrow_bottom" />
+        </RelativeLayout>
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+            android:id="@+id/help_faq_section_app_crashing_text"
+            style="@style/TextSmallMediumMinus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/help_faq_content_padding"
+            android:text="@string/help_faq_section_app_crashes_content"
+            android:textColor="@color/hungama_text_dark_grey"
+            android:textSize="@dimen/large_text_size"
+            android:visibility="gone" />
+
+        <WebView
+            android:id="@+id/help_faq_section_app_crashing_web_text"
+            style="@style/TextSmallMediumMinus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/application_background_grey"
+            android:padding="@dimen/help_faq_content_padding"
+            android:text="@string/help_faq_section_app_crashes_content"
+            android:textColor="@color/hungama_text_dark_grey"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/help_faq_container_sliding_sections"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/application_background_grey"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/field_list_line_separator"
+                android:background="@drawable/field_list_line_separator" />
+
+            <RelativeLayout
+                android:id="@+id/help_faq_section_read_faq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/help_faq_content_padding" >
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                    style="@style/TextSmallMediumMinusPlus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/help_faq_section_read_faqs"
+                    android:textColor="@color/hungama_text_blue"
+                    android:textSize="@dimen/large_text_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_circle_arrow_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/field_list_line_separator"
+                android:background="@drawable/field_list_line_separator" />
+
+            <RelativeLayout
+                android:id="@+id/help_faq_section_report_a_problem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/help_faq_content_padding" >
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                    style="@style/TextSmallMediumMinusPlus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/help_faq_section_report_problem"
+                    android:textColor="@color/hungama_text_blue"
+                    android:textSize="@dimen/large_text_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_circle_arrow_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/field_list_line_separator"
+                android:background="@drawable/field_list_line_separator" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

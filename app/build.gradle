@@ -1,0 +1,168 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'io.fabric'
+
+
+android {
+    signingConfigs {
+        Release {
+            keyAlias 'hungama'
+            keyPassword 'hungama123'
+            storeFile file('../Credentials/HungamaMyPlay')
+            storePassword 'hungama123'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+    defaultConfig {
+        applicationId "com.hungama.hungamamusic.lite"
+        minSdkVersion 15
+        targetSdkVersion 21
+//        versionCode 1
+//        versionName "1.0"
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.Release
+            debuggable false
+        }
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            debuggable true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.Dev
+        }
+        releasetest {
+            minifyEnabled false
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.Release
+            debuggable true
+        }
+    }
+    dexOptions {
+        preDexLibraries = false
+        javaMaxHeapSize "2048M"
+    }
+
+	packagingOptions {
+        exclude '.readme'
+    }
+
+    productFlavors {
+        spa {
+        }
+        hfe {
+        }
+        production {
+        }
+    }
+
+    sourceSets {
+        hfe {
+            java {
+                srcDir 'config/hfe/java/'
+            }
+            assets {
+                srcDir 'config/hfe/assets/'
+            }
+            res {
+                srcDir 'config/hfe/res/'
+            }
+        }
+        spa {
+            java {
+                srcDir 'config/spa/java/'
+            }
+            res {
+                srcDir 'config/spa/res/'
+            }
+        }
+        production {
+            java {
+                srcDir 'config/production/java/'
+            }
+            res {
+                srcDir 'config/production/res/'
+            }
+        }
+//        main.java.srcDirs += 'src/main/java/'
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'aars'
+    }
+    maven {
+        url 'https://maven.fabric.io/public'
+    }
+    maven {
+        url  "http://dl.bintray.com/urbanairship/android"
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'com.android.support:recyclerview-v7:23.0.1'
+    compile 'net.danlew:android.joda:2.8.1'
+    //    compile 'com.google.android.gms:play-services-location:7.0.0'
+    //    compile 'com.google.android.gms:play-services-gcm:6.5.87'
+    compile project(':slideuppanellib')
+    compile project(':wheellib')
+    compile project(':dragdrop-lib')
+    compile project(':exoplayer_library')
+    compile project(':MySpinSDK')
+    //    compile 'com.urbanairship:urbanairship-lib:+@aar'
+    //    compile(name: 'urbanairship-lib-5.1.0', ext: 'aar')
+    compile 'com.urbanairship.android:urbanairship-sdk:6.3.+'
+    //    compile 'com.android.support:cardview-v7:23.0.1'
+    compile 'com.github.lzyzsd:circleprogress:1.1.0'
+    compile 'com.edmodo:rangebar:1.0.0'
+    compile project(':showcaseview-lib')
+    //    compile 'com.github.amlcurran.showcaseview:library:5.0.0'
+    //    compile 'com.google.android.exoplayer:exoplayer:r1.3.3'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    //    compile 'com.google.android.gms:play-services-plus:6.5.87'
+    //    compile 'com.google.android.gms:play-services-identity:6.5.87'
+    //    compile 'com.facebook.android:facebook-android-sdk:4.1.0'
+    //    compile files('libs/RevSDK_4_Hungama_23_7_15_ob.jar')
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.2@aar') {
+        transitive = true;
+    }
+    compile('com.twitter.sdk.android:tweet-composer:0.9.0@aar') {
+        transitive = true;
+    }
+    compile project(':gigyalibrary')
+    //    compile files('libs/FlurryAnalytics-5.6.0.jar')
+    compile project(':customseekbarlibrary')
+    compile 'com.android.support:support-v4:23.0.1'
+    //    compile files('libs/apsalar.jar')
+    compile 'com.squareup.okhttp:okhttp:2.5.0'
+    //--------------Crome Cast-------
+    //    compile files('libs/android-query.0.25.10.jar')
+    //    compile project(':CastCompanionLibrary-android-master')
+    //    compile 'com.android.support:mediarouter-v7:23.0.1'
+    //    compile 'com.google.android.gms:play-services-cast:8.1.0'
+    //    compile 'com.google.android.gms:play-services:7.8.0'
+    //    compile 'com.google.android.gms:play-services-cast:7.8.+'
+    //    compile 'com.h6ah4i.android.widget.advrecyclerview:advrecyclerview:0.6.1'
+    //    compile 'com.parse.bolts:bolts-android:1.+'
+    //    compile fileTree(dir: 'libs', include: 'Parse-*.jar')
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.google.android.gms:play-services-analytics:8.1.0'
+    compile files('libs/FlurryAnalytics-5.6.0.jar')
+    compile files('libs/apsalar_v6.2.jar')
+
+    compile files('libs/SmartDeviceLinkLibrary-4.0.0-Android.jar')
+}

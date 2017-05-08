@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlRadioDetailParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_player_content_buttons_background_white_trans"
+    android:clickable="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/radio_details_layout_coming_up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp" >
+
+        <RelativeLayout
+            android:id="@+id/rlTileParent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/radio_placement_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/background_home_tile_album_default"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/ivBlackShadow"
+                android:layout_width="@dimen/discovery_player_smily_shadow_size"
+                android:layout_height="@dimen/discovery_player_smily_shadow_size"
+                android:background="@drawable/ic_album_ribbon"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/ivSmilePic"
+                android:layout_width="@dimen/discovery_player_smily_size"
+                android:layout_height="@dimen/discovery_player_smily_size"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+               
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/bCloseVideoAd"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="@dimen/main_player_ad_close_size"
+                android:layout_height="@dimen/main_player_ad_close_size"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/ad_close_button"
+                android:text="X"
+                android:textColor="@color/white"
+                android:textSize="@dimen/large_text_size"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_player_dont_want_ads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radio_details_layout_coming_up"
+        android:background="@drawable/skip_ad_background"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+            android:id="@+id/main_player_text_dont_want_ads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="@string/dont_want_ad_message_free_user"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/radio_details_layout_coming_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_player_content_buttons_background_trans"
+        android:paddingBottom="@dimen/radio_details_coming_up_content_margin"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/radio_details_coming_up_thumbnail_size"
+            android:layout_marginBottom="@dimen/radio_details_coming_up_content_margin"
+            android:layout_marginLeft="@dimen/radio_details_layout_padding"
+            android:layout_marginTop="@dimen/radio_details_coming_up_content_margin"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/radio_details_coming_up_thumbnail"
+                android:layout_width="@dimen/radio_details_coming_up_thumbnail_size"
+                android:layout_height="@dimen/radio_details_coming_up_thumbnail_size"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/radio_details_coming_up_label"
+                android:background="@drawable/background_home_tile_album_default" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/radio_details_coming_up_thumbnail"
+                android:orientation="vertical"
+                android:weightSum="1" >
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                    android:id="@+id/radio_details_coming_up_next"
+                    style="@style/TextSmallMediumMinus"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:text=" "
+                    android:textColor="@color/white" />
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                    android:id="@+id/radio_details_coming_up_song_name"
+                    style="@style/TextSmallMedium"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.4"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:text=" "
+                    android:textColor="@color/white" />
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                    android:id="@+id/radio_details_coming_up_album_name"
+                    style="@style/TextSmallMediumMinus"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:text=" "
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_discovery_play_context_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/radio_details_coming_up_label"
+        android:layout_marginBottom="@dimen/radio_details_coming_up_discovery_context_menu"
+        android:layout_marginRight="@dimen/radio_details_layout_padding"
+        android:src="@drawable/ic_discovery_context_menu"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/main_player_drawer_ad_outer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/radio_details_layout_coming_up"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/main_player_drawer_ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="@dimen/album_arts_ad_Height"
+            android:background="@color/background_material_light"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <!-- <Button -->
+            <!-- android:id="@+id/bCloseVideoAd" -->
+            <!-- style="?android:attr/buttonStyleSmall" -->
+            <!-- android:layout_width="35dp" -->
+            <!-- android:layout_height="35dp" -->
+            <!-- android:layout_alignParentRight="true" -->
+            <!-- android:layout_alignParentTop="true" -->
+            <!-- android:layout_marginRight="10dp" -->
+            <!-- android:layout_marginTop="10dp" -->
+            <!-- android:background="@color/ad_close_button" -->
+            <!-- android:text="x" -->
+            <!-- android:textColor="@color/white" -->
+            <!-- android:textSize="15dp" /> -->
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/membership_detail_text_color" />
+
+</RelativeLayout>

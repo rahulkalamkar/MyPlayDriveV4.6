@@ -1,0 +1,416 @@
+[
+    {
+        "outputFile": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-fr\\values-fr.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 44,
+                    "endOffset": 95
+                },
+                "from": {
+                    "file": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\values-fr\\values-fr.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 44,
+                        "endOffset": 95
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 100,
+                    "endColumn": 42,
+                    "endOffset": 138
+                },
+                "from": {
+                    "file": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\values-fr\\values-fr.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 100,
+                        "endColumn": 42,
+                        "endOffset": 138
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 143,
+                    "endColumn": 49,
+                    "endOffset": 188
+                },
+                "from": {
+                    "file": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\values-fr\\values-fr.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 143,
+                        "endColumn": 49,
+                        "endOffset": 188
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 193,
+                    "endColumn": 42,
+                    "endOffset": 231
+                },
+                "from": {
+                    "file": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\values-fr\\values-fr.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 193,
+                        "endColumn": 42,
+                        "endOffset": 231
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 236,
+                    "endColumn": 46,
+                    "endOffset": 278
+                },
+                "from": {
+                    "file": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\values-fr\\values-fr.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 236,
+                        "endColumn": 46,
+                        "endOffset": 278
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 283,
+                    "endColumn": 54,
+                    "endOffset": 333
+                },
+                "from": {
+                    "file": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\values-fr\\values-fr.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 283,
+                        "endColumn": 54,
+                        "endOffset": 333
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 338,
+                    "endColumn": 49,
+                    "endOffset": 383
+                },
+                "from": {
+                    "file": "D:\\Client\\Ford\\Surat Team\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\values-fr\\values-fr.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 338,
+                        "endColumn": 49,
+                        "endOffset": 383
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-fr\\values-fr.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 44,
+                    "endOffset": 95
+                },
+                "from": {
+                    "file": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\values-fr\\values-fr.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 44,
+                        "endOffset": 95
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 100,
+                    "endColumn": 42,
+                    "endOffset": 138
+                },
+                "from": {
+                    "file": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\values-fr\\values-fr.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 100,
+                        "endColumn": 42,
+                        "endOffset": 138
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 143,
+                    "endColumn": 49,
+                    "endOffset": 188
+                },
+                "from": {
+                    "file": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\values-fr\\values-fr.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 143,
+                        "endColumn": 49,
+                        "endOffset": 188
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 193,
+                    "endColumn": 42,
+                    "endOffset": 231
+                },
+                "from": {
+                    "file": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\values-fr\\values-fr.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 193,
+                        "endColumn": 42,
+                        "endOffset": 231
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 236,
+                    "endColumn": 46,
+                    "endOffset": 278
+                },
+                "from": {
+                    "file": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\values-fr\\values-fr.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 236,
+                        "endColumn": 46,
+                        "endOffset": 278
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 283,
+                    "endColumn": 54,
+                    "endOffset": 333
+                },
+                "from": {
+                    "file": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\values-fr\\values-fr.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 283,
+                        "endColumn": 54,
+                        "endOffset": 333
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 338,
+                    "endColumn": 49,
+                    "endOffset": 383
+                },
+                "from": {
+                    "file": "D:\\Client\\Ford\\Surat Team\\Me\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\values-fr\\values-fr.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 338,
+                        "endColumn": 49,
+                        "endOffset": 383
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-fr\\values-fr.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 44,
+                    "endOffset": 95
+                },
+                "from": {
+                    "file": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\values-fr\\values-fr.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 44,
+                        "endOffset": 95
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 100,
+                    "endColumn": 42,
+                    "endOffset": 138
+                },
+                "from": {
+                    "file": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\values-fr\\values-fr.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 100,
+                        "endColumn": 42,
+                        "endOffset": 138
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 143,
+                    "endColumn": 49,
+                    "endOffset": 188
+                },
+                "from": {
+                    "file": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\values-fr\\values-fr.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 143,
+                        "endColumn": 49,
+                        "endOffset": 188
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 193,
+                    "endColumn": 42,
+                    "endOffset": 231
+                },
+                "from": {
+                    "file": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\values-fr\\values-fr.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 193,
+                        "endColumn": 42,
+                        "endOffset": 231
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 236,
+                    "endColumn": 46,
+                    "endOffset": 278
+                },
+                "from": {
+                    "file": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\values-fr\\values-fr.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 236,
+                        "endColumn": 46,
+                        "endOffset": 278
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 283,
+                    "endColumn": 54,
+                    "endOffset": 333
+                },
+                "from": {
+                    "file": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\values-fr\\values-fr.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 283,
+                        "endColumn": 54,
+                        "endOffset": 333
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 338,
+                    "endColumn": 49,
+                    "endOffset": 383
+                },
+                "from": {
+                    "file": "D:\\home\\aniruddh\\Desktop\\Aniruddh Pal\\Studio Projects\\HungamaMyPlayDrive\\MyPlayDriveV4.6\\MySpinSDK\\build\\intermediates\\bundles\\debug\\res\\values-fr\\values-fr.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 338,
+                        "endColumn": 49,
+                        "endOffset": 383
+                    }
+                }
+            }
+        ]
+    }
+]

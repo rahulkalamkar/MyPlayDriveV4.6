@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/trivia_bubble_padding_left_right"
+    android:paddingRight="@dimen/trivia_bubble_padding_left_right" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/llMainLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/background_rounded_corner_white"
+            android:minWidth="@dimen/trivia_custom_dialog_min_width"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/trivia_bubble_content_padding"
+            android:paddingRight="@dimen/trivia_bubble_content_padding"
+            android:paddingTop="@dimen/trivia_bubble_content_padding" >
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/trivia_bubble_padding"
+                android:paddingLeft="@dimen/trivia_bubble_content_padding"
+                android:text="@string/txt_trivia_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/xlarge_text_size" />
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:id="@+id/tvSongName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/trivia_bubble_content_padding"
+                android:singleLine="true"
+                android:text="Abhi Toh Party"
+                android:textColor="@color/black"
+                android:textSize="@dimen/large_text_size" />
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:id="@+id/tvAlbumName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/trivia_bubble_padding"
+                android:paddingLeft="@dimen/trivia_bubble_content_padding"
+                android:text="Khoobsurat"
+                android:textColor="@color/custom_dialog_gray_color"
+                android:textSize="@dimen/medium_text_size"
+                android:visibility="gone" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/trivia_bubble_padding"
+                android:layout_marginLeft="@dimen/trivia_bubble_content_padding"
+                android:layout_marginTop="@dimen/trivia_bubble_padding"
+                android:fadeScrollbars="false" >
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                    android:id="@+id/tvTriviaDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Khoobsurat"
+                    android:textColor="@color/custom_dialog_gray_color"
+                    android:textSize="@dimen/medium_text_size" />
+            </ScrollView>
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageCheckBox
+                android:id="@+id/cbDoNotShowAgain"
+                style="@style/CheckBoxAppTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/trivia_bubble_padding"
+                android:layout_marginLeft="@dimen/trivia_bubble_content_padding_checkbox"
+                android:padding="5dp"
+                android:text="@string/txt_trivia_do_not_show_me_again"
+                android:textColor="@color/custom_dialog_do_not_show_again"
+                android:textSize="@dimen/normal_text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dlg_common_height"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/trivia_bubble_content_padding" >
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                    android:id="@+id/btnShowMeMore"
+                    style="@style/dialog_blue_btn_style"
+                    android:text="@string/txt_trivia_btn_show_me_more" />
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                    android:id="@+id/btnNotNow"
+                    style="@style/dialog_blue_btn_style"
+                    android:layout_marginLeft="@dimen/nativeDialogButtonMargin"
+                    android:text="@string/txt_trivia_btn_not_now" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/tivia_dialog_close_button"
+            android:layout_width="@dimen/badges_custom_dialog_close_button_size"
+            android:layout_height="@dimen/badges_custom_dialog_close_button_size"
+            android:layout_alignEnd="@id/llMainLayout"
+            android:layout_marginRight="-5dp"
+            android:background="@drawable/icon_close_button_new" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/carmode_music_item_height"
+                android:background="@color/carmode_music_item_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/rl_cache_state"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/application_name"
+            android:textColor="@color/carmode_main_text_color"
+            android:textSize="@dimen/carmode_text_small_size"/>
+
+        <TextView
+            android:id="@+id/tv_sub_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/application_name"
+            android:textColor="@color/carmode_main_text_color"
+            android:textSize="@dimen/carmode_text_tiny_size"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_cache_state"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp">
+
+        <ProgressBar
+            android:id="@+id/pb_download_queued"
+            style="?android:attr/android:progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/iv_cache_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/carmode_divider_color"/>
+
+    <!-- <ImageButton -->
+    <!-- android:id="@+id/btn_media_menu" -->
+    <!-- android:layout_width="@dimen/carmode_music_item_menu_btn_width" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_alignParentRight="true" -->
+    <!-- android:background="@drawable/carmode_button_states" -->
+    <!-- android:src="@drawable/carmode_btn_show_options" /> -->
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"><shape>
+        <corners android:radius="3dip" />
+
+        <gradient android:angle="270" android:endColor="@color/custom_selected_blue_btn_color" android:startColor="@color/custom_selected_blue_btn_color" />
+
+        <padding android:bottom="@dimen/custom_dialog_btn_padding" android:left="@dimen/custom_dialog_btn_padding" android:right="@dimen/custom_dialog_btn_padding" android:top="@dimen/custom_dialog_btn_padding" />
+    </shape></item>
+    <item android:state_focused="true"><shape>
+        <corners android:radius="3dip" />
+
+        <gradient android:angle="270" android:endColor="@color/custom_selected_blue_btn_color" android:startColor="@color/custom_selected_blue_btn_color" />
+
+        <padding android:bottom="@dimen/custom_dialog_btn_padding" android:left="@dimen/custom_dialog_btn_padding" android:right="@dimen/custom_dialog_btn_padding" android:top="@dimen/custom_dialog_btn_padding" />
+    </shape></item>
+    <item android:state_enabled="false"><shape>
+        <corners android:radius="3dip" />
+
+        <gradient android:angle="270" android:endColor="@color/custom_disable_blue_btn_color" android:startColor="@color/custom_disable_blue_btn_color" />
+
+        <padding android:bottom="@dimen/custom_dialog_btn_padding" android:left="@dimen/custom_dialog_btn_padding" android:right="@dimen/custom_dialog_btn_padding" android:top="@dimen/custom_dialog_btn_padding" />
+    </shape></item>
+    <item><shape android:shape="rectangle">
+        <corners android:radius="3dip" />
+
+        <gradient android:endColor="@color/custom_normal_blue_btn_color" android:startColor="@color/custom_normal_blue_btn_color" />
+
+        <padding android:bottom="@dimen/custom_dialog_btn_padding" android:left="@dimen/custom_dialog_btn_padding" android:right="@dimen/custom_dialog_btn_padding" android:top="@dimen/custom_dialog_btn_padding" />
+    </shape></item>
+
+</selector>

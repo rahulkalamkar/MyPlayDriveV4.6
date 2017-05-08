@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_carmode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/carmode_main_bg_color"
+        android:visibility="visible">
+
+        <FrameLayout
+            android:id="@+id/carmode_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@+id/player_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/carmode_main_bg_color" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_player_queue"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@+id/player_queue_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/carmode_main_bg_color" />
+
+    </RelativeLayout>
+
+
+    <include layout="@layout/carmode_layout_dialog" />
+
+    <include layout="@layout/carmode_loading_dialog" />
+
+    <include layout="@layout/carmode_no_network_dialog" />
+
+    <include layout="@layout/carmode_main_menu_no_network_dialog" />
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_rounded_corner_white"
+    android:minHeight="@dimen/redeem_dialog_min_height"
+    android:minWidth="@dimen/redeem_dialog_min_width"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/redeem_dialog_padding_top_bottom"
+    android:paddingLeft="@dimen/trivia_bubble_padding_left_right"
+    android:paddingRight="@dimen/trivia_bubble_padding_left_right"
+    android:paddingTop="@dimen/redeem_dialog_padding_top_bottom" >
+
+    <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="@string/verify_dialog_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/xxlarge_text_size" />
+
+    <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+        android:id="@+id/txt_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="5dp"
+        android:text="@string/verify_dialog_subtitle"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/large_text_size" />
+
+    <com.hungama.myplay.activity.ui.widgets.LanguageEditText
+        android:id="@+id/edt_mobileno"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="@dimen/verify_dialog_edit_text_margin_top"
+        android:background="@drawable/abs__textfield_search_default_holo_light"
+        android:hint="@string/verify_dialog_edittext_hint"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textColor="@color/redeem_dialog_edittext_hint"
+        android:textColorHint="@color/redeem_dialog_edittext_hint"
+        android:textSize="@dimen/large_text_size" />
+
+    <com.hungama.myplay.activity.ui.widgets.LanguageButton
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/verify_dialog_apply_btn_margin_top"
+        android:background="@drawable/redeembutton"
+        android:paddingBottom="@dimen/redeem_dialog_apply_btn_paddin_top_bottom"
+        android:paddingLeft="@dimen/redeem_dialog_apply_btn_paddin_left_right"
+        android:paddingRight="@dimen/redeem_dialog_apply_btn_paddin_left_right"
+        android:paddingTop="@dimen/redeem_dialog_apply_btn_paddin_top_bottom"
+        android:text="@string/verify_dialog_submit_button"
+        android:textColor="@color/white"
+        android:textSize="@dimen/medium_text_size" />
+
+    <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+        android:id="@+id/txt_already_have_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="@dimen/verify_dialog_bottm_text_margin"
+        android:text="@string/verify_dialog_already_account_text"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/large_text_size" />
+
+    <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+        android:id="@+id/txt_login_with_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="5dp"
+        android:text="@string/verify_dialog_bottm_text"
+        android:textColor="@color/redeem_dialog_button_color"
+        android:textSize="@dimen/xxlarge_text_size" />
+
+</LinearLayout>

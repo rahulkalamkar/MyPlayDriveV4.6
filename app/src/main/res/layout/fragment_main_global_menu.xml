@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/left_panel_color_bg"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/md_drawer_header_item" />
+
+    <RelativeLayout
+        android:id="@+id/ll_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_actionbar_settings_menu_item_height"
+        android:layout_below="@+id/header"
+        android:background="@color/transparent"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/main_setting_menu_item_icon"
+            android:layout_width="@dimen/main_actionbar_settings_menu_item_icon_size"
+            android:layout_height="@dimen/main_actionbar_settings_menu_item_icon_size"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/main_actionbar_settings_item_edge_margin"
+            android:layout_toRightOf="@+id/img_temp"
+            android:src="@null"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/main_actionbar_settings_item_edge_margin"
+            android:layout_toRightOf="@+id/main_setting_menu_item_icon"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="2dp" >
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/global_menu_button_sign_in1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/medium_text_size"
+                android:textStyle="bold" />
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/global_menu_button_sign_in2"
+                android:textColor="@color/main_actionbar_settings_menu_item_text_grey"
+                android:textSize="@dimen/medium_text_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/main_setting_menu_item_separator"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_below="@+id/header"
+        android:alpha="0.15"
+        android:background="#FFFFFF" />
+    <!--
+    <RelativeLayout
+        android:id="@+id/ll_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/global_menu_upgrade_bar"
+        android:padding="5dp"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/global_menu_button_sign_in1"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/global_menu_button_sign_in2"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+    -->
+
+    <ExpandableListView
+        android:id="@+id/main_settings_expandablelistview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/ll_upgrade_view"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/main_setting_menu_item_separator"
+        android:layout_weight="1"
+        android:background="@color/transparent"
+        android:cacheColorHint="@drawable/transparent_background"
+        android:groupIndicator="@drawable/list_expand_background"
+        android:listSelector="?attr/selectableItemBackground"
+        android:overScrollFooter="@null"
+        android:overScrollHeader="@null"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:scrollingCache="false" />
+
+    <ListView
+        android:id="@+id/main_settings_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/ll_upgrade_view"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/main_setting_menu_item_separator"
+        android:layout_weight="1"
+        android:background="@color/left_panel_color_bg"
+        android:cacheColorHint="@drawable/transparent_background"
+        android:groupIndicator="@drawable/list_expand_background"
+        android:listSelector="?attr/selectableItemBackground"
+        android:overScrollFooter="@null"
+        android:overScrollHeader="@null"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:scrollingCache="false"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_upgrade_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/left_drawer_bottom_hight"
+        android:layout_alignParentBottom="true"
+        android:background="@color/myPrimaryColor"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp" >
+
+        <!--<LinearLayout
+            android:id="@+id/ll_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/main_actionbar_settings_item_edge_margin"
+            android:layout_toLeftOf="@+id/global_menu_button_upgrade"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:id="@+id/global_menu_text_upgrade_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/global_menu_button_upgrade_title"
+                android:textColor="#EEEEEE"
+                android:textSize="@dimen/normal_text_size"
+                android:textStyle="bold" />
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:id="@+id/global_menu_text_upgrade_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/global_menu_button_upgrade_message"
+                android:textColor="#EEEEEE"
+                android:textSize="@dimen/normal_text_size" />
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/ll_status_pro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/main_actionbar_settings_item_edge_margin"
+            android:layout_toLeftOf="@+id/global_menu_button_upgrade"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <!--<com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:id="@+id/global_menu_text_upgrade_title_pro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/global_menu_button_upgrade_title"
+                android:textColor="#EEEEEE"
+                android:textSize="@dimen/normal_text_size" />-->
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:id="@+id/global_menu_text_upgrade_message_pro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/global_menu_button_upgrade_message"
+                android:textColor="#EEEEEE"
+                android:textSize="@dimen/large_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageButton
+            android:id="@+id/global_menu_button_upgrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:background="@drawable/background_global_upgrade_button"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:text="@string/global_menu_button_upgrade_now"
+            android:textColor="@color/global_menu_upgrade_button_text"
+            android:textSize="@dimen/normal_text_size" />
+    </LinearLayout>
+
+</LinearLayout>

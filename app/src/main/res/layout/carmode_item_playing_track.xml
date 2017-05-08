@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/carmode_music_item_height"
+                android:background="@color/carmode_music_item_color"
+                android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:id="@+id/iv_track_avatar"
+        android:layout_width="@dimen/carmode_music_item_thumb_width"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_home_tile_album_default"/>
+
+    <ImageButton
+        android:id="@+id/btn_track_delete"
+        android:layout_width="@dimen/carmode_playing_track_item_delete_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/carmode_button_states"
+        android:src="@drawable/carmode_btn_delete"/>
+
+    <View
+        android:id="@+id/ver_divider"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/btn_track_delete"
+        android:background="@color/carmode_divider_color"/>
+
+    <TextView
+        android:id="@+id/tv_track_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/ver_divider"
+        android:layout_toRightOf="@id/iv_track_avatar"
+        android:ellipsize="end"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="@string/application_name"
+        android:textColor="@color/carmode_main_text_color"
+        android:textSize="@dimen/carmode_text_small_size"/>
+
+    <ImageView
+        android:id="@+id/iv_offline_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:background="@color/carmode_dialog_bg"/>
+
+</RelativeLayout>

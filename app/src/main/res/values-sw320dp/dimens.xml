@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Discovery -->
+
+    <dimen name="discovery_categories_selected_categories_height">145dp</dimen>
+    <dimen name="discovery_categories_selected_categories_margin_top">30dp</dimen>
+    <dimen name="discovery_categories_selected_item_width">140dp</dimen>
+    <dimen name="background_discovery_categories_imdone_size">80dp</dimen>
+    <dimen name="background_discovery_categories_selected_mood_margin_right">75dp</dimen>
+    <dimen name="background_discovery_categories_selected_mood_bubble_size">60dp</dimen>
+
+    <!-- Album arts -->
+    <dimen name="album_arts_ad_Height">100dp</dimen>
+
+    <!-- Song details -->
+    <dimen name="song_details_layout_height">460dp</dimen>
+
+    <!-- General -->
+    <dimen name="screen_height">395dp</dimen>
+
+    <!-- Discovery - Moods -->
+    <dimen name="discovery_mood_selected_item">170dp</dimen>
+    <dimen name="discovery_mood_selected_item_margin_top">30dp</dimen>
+    <dimen name="discovery_mood_item_size">40dp</dimen>
+    <dimen name="discovery_mood_selected_item_size">65dp</dimen>
+    <dimen name="discovery_mood_selected_item_text_size">12sp</dimen>
+    <dimen name="discovery_mood_selected_item_text_width">70dp</dimen>
+    <dimen name="discovery_mood_first_raw_item_margin_top">15dp</dimen>
+    <dimen name="discovery_mood_first_raw_item_margin_side">35dp</dimen>
+    <dimen name="discovery_mood_second_raw_item_margin_top">30dp</dimen>
+    <dimen name="discovery_mood_second_raw_item_margin_side">25dp</dimen>
+    <dimen name="discovery_mood_third_raw_item_margin_top">30dp</dimen>
+    <dimen name="discovery_mood_forth_raw_item_margin_top">80dp</dimen>
+    <dimen name="discovery_mood_third_raw_item_margin">25dp</dimen>
+    <dimen name="discovery_mood_button_next_skip_height">35dp</dimen>
+    <dimen name="discovery_mood_button_next_skip_width">60dp</dimen>
+    <dimen name="upgrade_subscription_popup_close_button_margin">-10dp</dimen>
+
+    <!-- discovery new -->
+    <dimen name="circle_height">290dp</dimen>
+    <dimen name="circle_margin">40dp</dimen>
+    <dimen name="circle_margin_left">40dp</dimen>
+    <dimen name="middle_circle_margin_left">0dp</dimen>
+    <dimen name="circle_margin_top">15dp</dimen>
+    <dimen name="needle_width">70dp</dimen>
+    <dimen name="discover_btn_margin_top">-25dp</dimen>
+    <dimen name="discover_selected_mood_widht">100dp</dimen>
+    <dimen name="discover_predefine_padding">10dp</dimen>
+    <dimen name="discover_margin_top_play">10dp</dimen>
+    <dimen name="radio_details_coming_up_discovery_context_menu">25dp</dimen>
+
+    <dimen name="home_tiles_bottom_size">45dp</dimen>
+
+</resources>

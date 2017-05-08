@@ -1,0 +1,32 @@
+{
+    "registration_login": {
+        "message": "Register Now, earn 200 Coins!\nBONUS: Get a FREE Recharge redemption coupon worth INR 10/-.",
+        "positive_button": "Register Now",
+        "negative_button": "Cancel"
+    },
+    "social_signin_without_login": {
+        "message": "Login using your Hungama Account OR FB/ Google+/ Twitter!\nEarn points & Save Music for Offline Play.",
+        "positive_button": "Login Now",
+        "negative_button": "Cancel"
+    },
+    "social_signin_with_login": {
+        "message": "Add a Social Acocunt!\nShare music with friends on FB, earn 100 Coins & redeem.",
+        "positive_button": "Login Now",
+        "negative_button": "Cancel"
+    },
+    "category_pref_selection_generic": {
+        "message": "Did you know you can browse Music of the language of your choice.\nDiscover from our huge library across 15 Indian lanugages!",
+        "positive_button": "",
+        "negative_button": "Ok"
+    },
+    "offline_caching_trial_offer_expired": {
+        "message": "Your Hungama PRO Trial Pack has expired!\n\nYou have saved more than X Songs/ Videos for in your offline play.\nContinue listening to your saved Music, SUBSCRIBE NOW!",
+        "positive_button": "Subscribe Now",
+        "negative_button": "Remind Me Later!"
+    },
+    "offline_caching_3rd_song": {
+        "message": "We've downloaded 3 songs for your Offline Play experience!\nDownload unlimited Music & play in Offline/No Network mode. Upgrade to Hungama PRO!",
+        "positive_button": "Upgrade Now",
+        "negative_button": "Remind me later"
+    }
+}

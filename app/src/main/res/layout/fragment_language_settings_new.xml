@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_language_settings"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/trivia_bubble_padding_left_right"
+    android:paddingRight="@dimen/trivia_bubble_padding_left_right" >
+
+    <RelativeLayout
+        android:id="@+id/language_settings_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:background="@drawable/background_rounded_corner_white"
+        android:paddingBottom="@dimen/trivia_bubble_content_padding"
+        android:paddingLeft="@dimen/trivia_bubble_content_padding"
+        android:paddingRight="@dimen/trivia_bubble_content_padding"
+        android:paddingTop="0dp" >
+
+        <ListView
+            android:id="@+id/language_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/divider_listview_color"
+            android:dividerHeight="0dp" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

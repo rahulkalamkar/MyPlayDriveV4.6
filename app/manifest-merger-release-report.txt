@@ -1,0 +1,1069 @@
+-- Merging decision tree log ---
+manifest
+ADDED from AndroidManifest.xml:2:1
+	xmlns:amazon
+		ADDED from AndroidManifest.xml:3:5
+	xmlns:android
+		ADDED from AndroidManifest.xml:2:11
+	package
+		ADDED from AndroidManifest.xml:4:5
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:versionName
+		ADDED from AndroidManifest.xml:7:5
+	android:versionCode
+		ADDED from AndroidManifest.xml:6:5
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:installLocation
+		ADDED from AndroidManifest.xml:5:5
+uses-sdk
+ADDED from AndroidManifest.xml:9:5
+MERGED from com.android.support:appcompat-v7:21.0.3:15:5
+MERGED from com.android.support:support-v4:21.0.3:15:5
+MERGED from com.android.support:recyclerview-v7:21.0.3:15:5
+MERGED from com.android.support:support-v4:21.0.3:15:5
+MERGED from net.danlew:android.joda:2.8.1:7:5
+MERGED from MyPlay:slideuppanellib:unspecified:7:5
+MERGED from com.android.support:support-v4:21.0.3:15:5
+MERGED from MyPlay:wheellib:unspecified:7:5
+MERGED from com.android.support:support-v4:21.0.3:15:5
+MERGED from MyPlay:dragdrop-lib:unspecified:7:5
+MERGED from com.android.support:support-v4:21.0.3:15:5
+MERGED from MyPlay:exoplayerlib:unspecified:26:5
+MERGED from :urbanairship-lib-5.1.0::8:5
+MERGED from com.github.lzyzsd:circleprogress:1.1.0:7:5
+MERGED from com.edmodo:rangebar:1.0.0:7:5
+MERGED from MyPlay:showcaseview-lib:unspecified:22:5
+MERGED from com.android.support:support-v4:21.0.3:15:5
+MERGED from com.twitter.sdk.android:tweet-composer:0.8.0:23:5
+MERGED from io.fabric.sdk.android:fabric:1.3.4:23:5
+MERGED from com.google.android.gms:play-services-plus:6.5.87:18:5
+MERGED from com.google.android.gms:play-services-base:6.5.87:18:5
+MERGED from com.android.support:support-v4:21.0.3:15:5
+MERGED from com.google.android.gms:play-services-identity:6.5.87:18:5
+MERGED from com.google.android.gms:play-services-base:6.5.87:18:5
+MERGED from com.android.support:support-v4:21.0.3:15:5
+MERGED from com.facebook.android:facebook-android-sdk:4.1.0:24:5
+MERGED from com.android.support:support-v4:21.0.3:15:5
+	android:targetSdkVersion
+		ADDED from AndroidManifest.xml:9:42
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:minSdkVersion
+		ADDED from AndroidManifest.xml:9:15
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	tools:overrideLibrary
+		ADDED from :urbanairship-lib-5.1.0::11:9
+uses-permission#android.permission.INTERNET
+ADDED from AndroidManifest.xml:12:5
+MERGED from MyPlay:exoplayerlib:unspecified:30:5
+MERGED from com.twitter.sdk.android:tweet-composer:0.8.0:25:5
+	android:name
+		ADDED from AndroidManifest.xml:12:22
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from AndroidManifest.xml:13:5
+MERGED from MyPlay:exoplayerlib:unspecified:31:5
+	android:name
+		ADDED from AndroidManifest.xml:13:22
+uses-permission#android.permission.WAKE_LOCK
+ADDED from AndroidManifest.xml:14:5
+	android:name
+		ADDED from AndroidManifest.xml:14:22
+uses-permission#android.permission.VIBRATE
+ADDED from AndroidManifest.xml:15:5
+	android:name
+		ADDED from AndroidManifest.xml:15:22
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from AndroidManifest.xml:19:5
+	android:name
+		ADDED from AndroidManifest.xml:19:22
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from AndroidManifest.xml:20:5
+	android:name
+		ADDED from AndroidManifest.xml:20:22
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from AndroidManifest.xml:21:5
+MERGED from MyPlay:exoplayerlib:unspecified:32:5
+	android:name
+		ADDED from AndroidManifest.xml:21:22
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from AndroidManifest.xml:23:5
+MERGED from MyPlay:exoplayerlib:unspecified:33:5
+	android:name
+		ADDED from AndroidManifest.xml:23:22
+uses-permission#android.permission.BROADCAST_STICKY
+ADDED from AndroidManifest.xml:24:5
+	android:name
+		ADDED from AndroidManifest.xml:24:22
+uses-permission#com.android.vending.BILLING
+ADDED from AndroidManifest.xml:25:5
+	android:name
+		ADDED from AndroidManifest.xml:25:22
+uses-permission#android.permission.USE_CREDENTIALS
+ADDED from AndroidManifest.xml:27:5
+	android:name
+		ADDED from AndroidManifest.xml:27:22
+uses-permission#android.permission.GET_TASKS
+ADDED from AndroidManifest.xml:28:5
+	android:name
+		ADDED from AndroidManifest.xml:28:22
+permission#com.hungama.myplay.activity.permission.UA_DATA
+ADDED from AndroidManifest.xml:31:5
+	android:protectionLevel
+		ADDED from AndroidManifest.xml:33:9
+	android:name
+		ADDED from AndroidManifest.xml:32:9
+uses-permission#com.hungama.myplay.activity.permission.UA_DATA
+ADDED from AndroidManifest.xml:35:5
+	android:name
+		ADDED from AndroidManifest.xml:35:22
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from AndroidManifest.xml:40:5
+	android:name
+		ADDED from AndroidManifest.xml:40:22
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from AndroidManifest.xml:42:5
+	android:name
+		ADDED from AndroidManifest.xml:42:22
+permission#com.hungama.myplay.activity.permission.C2D_MESSAGE
+ADDED from AndroidManifest.xml:45:5
+	android:protectionLevel
+		ADDED from AndroidManifest.xml:47:9
+	android:name
+		ADDED from AndroidManifest.xml:46:9
+uses-permission#com.hungama.myplay.activity.permission.C2D_MESSAGE
+ADDED from AndroidManifest.xml:49:5
+	android:name
+		ADDED from AndroidManifest.xml:49:22
+uses-permission#com.amazon.device.messaging.permission.RECEIVE
+ADDED from AndroidManifest.xml:55:5
+	android:name
+		ADDED from AndroidManifest.xml:55:22
+permission#com.hungama.myplay.activity.permission.RECEIVE_ADM_MESSAGE
+ADDED from AndroidManifest.xml:57:5
+	android:protectionLevel
+		ADDED from AndroidManifest.xml:59:9
+	android:name
+		ADDED from AndroidManifest.xml:58:9
+uses-permission#com.hungama.myplay.activity.permission.RECEIVE_ADM_MESSAGE
+ADDED from AndroidManifest.xml:61:5
+	android:name
+		ADDED from AndroidManifest.xml:61:22
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from AndroidManifest.xml:68:5
+	android:name
+		ADDED from AndroidManifest.xml:68:22
+application
+ADDED from AndroidManifest.xml:75:5
+MERGED from com.android.support:appcompat-v7:21.0.3:16:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
+MERGED from com.android.support:recyclerview-v7:21.0.3:17:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
+MERGED from net.danlew:android.joda:2.8.1:11:5
+MERGED from MyPlay:slideuppanellib:unspecified:11:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
+MERGED from MyPlay:wheellib:unspecified:11:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
+MERGED from :urbanairship-lib-5.1.0::13:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
+MERGED from com.twitter.sdk.android:tweet-composer:0.8.0:27:5
+MERGED from io.fabric.sdk.android:fabric:1.3.4:25:5
+MERGED from com.google.android.gms:play-services-plus:6.5.87:19:5
+MERGED from com.google.android.gms:play-services-base:6.5.87:20:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
+MERGED from com.google.android.gms:play-services-identity:6.5.87:19:5
+MERGED from com.google.android.gms:play-services-base:6.5.87:20:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
+MERGED from com.facebook.android:facebook-android-sdk:4.1.0:28:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
+	android:allowBackup
+		ADDED from MyPlay:wheellib:unspecified:11:18
+	android:label
+		ADDED from AndroidManifest.xml:78:9
+	android:icon
+		ADDED from AndroidManifest.xml:77:9
+	android:theme
+		ADDED from AndroidManifest.xml:80:9
+	android:largeHeap
+		ADDED from AndroidManifest.xml:79:9
+	android:name
+		ADDED from AndroidManifest.xml:76:9
+activity#com.hungama.myplay.activity.ui.OnApplicationStartsActivity
+ADDED from AndroidManifest.xml:81:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:85:13
+	android:label
+		ADDED from AndroidManifest.xml:84:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:83:13
+	android:theme
+		ADDED from AndroidManifest.xml:86:13
+	android:name
+		ADDED from AndroidManifest.xml:82:13
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:87:13
+action#android.intent.action.MAIN
+ADDED from AndroidManifest.xml:88:17
+	android:name
+		ADDED from AndroidManifest.xml:88:25
+category#android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:90:17
+	android:name
+		ADDED from AndroidManifest.xml:90:27
+activity#com.hungama.myplay.activity.ui.SplashScreenActivity
+ADDED from AndroidManifest.xml:96:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:100:13
+	android:label
+		ADDED from AndroidManifest.xml:99:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:98:13
+	android:theme
+		ADDED from AndroidManifest.xml:101:13
+	android:name
+		ADDED from AndroidManifest.xml:97:13
+activity#com.hungama.myplay.activity.ui.LoginActivity
+ADDED from AndroidManifest.xml:104:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:107:13
+	android:label
+		ADDED from AndroidManifest.xml:106:13
+	android:theme
+		ADDED from AndroidManifest.xml:108:13
+	android:name
+		ADDED from AndroidManifest.xml:105:13
+activity#com.hungama.myplay.activity.ui.UpgradeActivity
+ADDED from AndroidManifest.xml:112:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:116:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:115:13
+	android:label
+		ADDED from AndroidManifest.xml:114:13
+	android:name
+		ADDED from AndroidManifest.xml:113:13
+activity#com.hungama.myplay.activity.ui.DownloadConnectingActivity
+ADDED from AndroidManifest.xml:122:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:125:13
+	android:label
+		ADDED from AndroidManifest.xml:124:13
+	android:name
+		ADDED from AndroidManifest.xml:123:13
+activity#com.hungama.myplay.activity.ui.DownloadActivity
+ADDED from AndroidManifest.xml:129:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:133:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:132:13
+	android:label
+		ADDED from AndroidManifest.xml:131:13
+	android:name
+		ADDED from AndroidManifest.xml:130:13
+activity#com.hungama.myplay.activity.ui.RedeemActivity
+ADDED from AndroidManifest.xml:144:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:147:13
+	android:label
+		ADDED from AndroidManifest.xml:146:13
+	android:name
+		ADDED from AndroidManifest.xml:145:13
+activity#com.hungama.myplay.activity.ui.HomeActivity
+ADDED from AndroidManifest.xml:150:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:158:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:156:13
+	android:label
+		ADDED from AndroidManifest.xml:154:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:152:13
+	android:theme
+		ADDED from AndroidManifest.xml:157:13
+	android:excludeFromRecents
+		ADDED from AndroidManifest.xml:153:13
+	android:name
+		ADDED from AndroidManifest.xml:151:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:155:13
+intent-filter#android.intent.action.SEARCH
+ADDED from AndroidManifest.xml:159:13
+action#android.intent.action.SEARCH
+ADDED from AndroidManifest.xml:160:17
+	android:name
+		ADDED from AndroidManifest.xml:160:25
+meta-data#android.app.searchable
+ADDED from AndroidManifest.xml:163:13
+	android:resource
+		ADDED from AndroidManifest.xml:165:17
+	android:name
+		ADDED from AndroidManifest.xml:164:17
+activity#com.hungama.myplay.activity.ui.MediaDetailsActivity
+ADDED from AndroidManifest.xml:206:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:211:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:209:13
+	android:label
+		ADDED from AndroidManifest.xml:208:13
+	android:theme
+		ADDED from AndroidManifest.xml:210:13
+	android:name
+		ADDED from AndroidManifest.xml:207:13
+activity#com.hungama.myplay.activity.ui.VideoActivity
+ADDED from AndroidManifest.xml:220:9
+	android:label
+		ADDED from AndroidManifest.xml:223:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:222:13
+	android:name
+		ADDED from AndroidManifest.xml:221:13
+activity#com.hungama.myplay.activity.ui.ActivityMainSearchResult
+ADDED from AndroidManifest.xml:224:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:229:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:227:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:226:13
+	android:theme
+		ADDED from AndroidManifest.xml:228:13
+	android:name
+		ADDED from AndroidManifest.xml:225:13
+activity#com.hungama.myplay.activity.ui.AppTourActivity
+ADDED from AndroidManifest.xml:233:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:236:13
+	android:label
+		ADDED from AndroidManifest.xml:235:13
+	android:theme
+		ADDED from AndroidManifest.xml:237:13
+	android:name
+		ADDED from AndroidManifest.xml:234:13
+activity#com.hungama.myplay.activity.ui.AppGuideActivity
+ADDED from AndroidManifest.xml:238:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:241:13
+	android:label
+		ADDED from AndroidManifest.xml:240:13
+	android:theme
+		ADDED from AndroidManifest.xml:242:13
+	android:name
+		ADDED from AndroidManifest.xml:239:13
+intent-filter#android.intent.category.DEFAULT+hungama.activity.AppTour
+ADDED from AndroidManifest.xml:243:13
+action#hungama.activity.AppTour
+ADDED from AndroidManifest.xml:244:17
+	android:name
+		ADDED from AndroidManifest.xml:244:25
+category#android.intent.category.DEFAULT
+ADDED from AndroidManifest.xml:246:17
+	android:name
+		ADDED from AndroidManifest.xml:246:27
+data
+ADDED from AndroidManifest.xml:248:17
+	android:mimeType
+		ADDED from AndroidManifest.xml:248:23
+activity#com.hungama.myplay.activity.ui.BadgesAndCoinsActivity
+ADDED from AndroidManifest.xml:254:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:257:13
+	android:label
+		ADDED from AndroidManifest.xml:256:13
+	android:theme
+		ADDED from AndroidManifest.xml:258:13
+	android:name
+		ADDED from AndroidManifest.xml:255:13
+activity#com.hungama.myplay.activity.ui.FavoritesActivity
+ADDED from AndroidManifest.xml:270:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:272:13
+	android:theme
+		ADDED from AndroidManifest.xml:273:13
+	android:name
+		ADDED from AndroidManifest.xml:271:13
+activity#com.hungama.myplay.activity.ui.CommentsActivity
+ADDED from AndroidManifest.xml:277:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:282:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:280:13
+	android:label
+		ADDED from AndroidManifest.xml:279:13
+	android:theme
+		ADDED from AndroidManifest.xml:281:13
+	android:name
+		ADDED from AndroidManifest.xml:278:13
+activity#com.hungama.myplay.activity.ui.MyCollectionActivity
+ADDED from AndroidManifest.xml:285:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:288:13
+	android:label
+		ADDED from AndroidManifest.xml:287:13
+	android:theme
+		ADDED from AndroidManifest.xml:289:13
+	android:name
+		ADDED from AndroidManifest.xml:286:13
+activity#com.hungama.myplay.activity.ui.ProfileActivity
+ADDED from AndroidManifest.xml:315:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:319:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:317:13
+	android:theme
+		ADDED from AndroidManifest.xml:318:13
+	android:name
+		ADDED from AndroidManifest.xml:316:13
+activity#com.hungama.myplay.activity.ui.PlayerQueueActivity
+ADDED from AndroidManifest.xml:322:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:326:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:324:13
+	android:theme
+		ADDED from AndroidManifest.xml:325:13
+	android:name
+		ADDED from AndroidManifest.xml:323:13
+activity#com.hungama.myplay.activity.ui.TrendNowActivity
+ADDED from AndroidManifest.xml:329:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:333:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:331:13
+	android:theme
+		ADDED from AndroidManifest.xml:332:13
+	android:name
+		ADDED from AndroidManifest.xml:330:13
+activity#com.hungama.myplay.activity.ui.RechargeActivity
+ADDED from AndroidManifest.xml:336:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:340:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:338:13
+	android:theme
+		ADDED from AndroidManifest.xml:339:13
+	android:name
+		ADDED from AndroidManifest.xml:337:13
+activity#com.hungama.myplay.activity.ui.PlaylistsActivity
+ADDED from AndroidManifest.xml:344:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:346:13
+	android:theme
+		ADDED from AndroidManifest.xml:347:13
+	android:name
+		ADDED from AndroidManifest.xml:345:13
+activity#com.hungama.myplay.activity.ui.FeedbackActivity
+ADDED from AndroidManifest.xml:351:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:354:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:353:13
+	android:name
+		ADDED from AndroidManifest.xml:352:13
+activity#com.hungama.myplay.activity.ui.HelpAndFAQActivity
+ADDED from AndroidManifest.xml:358:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:360:13
+	android:name
+		ADDED from AndroidManifest.xml:359:13
+activity#com.hungama.myplay.activity.ui.AboutActivity
+ADDED from AndroidManifest.xml:364:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:366:13
+	android:name
+		ADDED from AndroidManifest.xml:365:13
+activity#com.hungama.myplay.activity.gigya.InviteFriendsActivity
+ADDED from AndroidManifest.xml:370:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:372:13
+	android:name
+		ADDED from AndroidManifest.xml:371:13
+activity#com.hungama.myplay.activity.gigya.TwitterLoginActivity
+ADDED from AndroidManifest.xml:373:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:375:13
+	android:theme
+		ADDED from AndroidManifest.xml:376:13
+	android:name
+		ADDED from AndroidManifest.xml:374:13
+activity#com.hungama.myplay.activity.ui.SettingsActivity
+ADDED from AndroidManifest.xml:377:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:379:13
+	android:name
+		ADDED from AndroidManifest.xml:378:13
+activity#com.hungama.myplay.activity.ui.PlacementSplashActivity
+ADDED from AndroidManifest.xml:380:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:382:13
+	android:theme
+		ADDED from AndroidManifest.xml:383:13
+	android:name
+		ADDED from AndroidManifest.xml:381:13
+activity#com.gigya.socialize.android.ui.HostActivity
+ADDED from AndroidManifest.xml:396:9
+	android:theme
+		ADDED from AndroidManifest.xml:398:13
+	android:name
+		ADDED from AndroidManifest.xml:397:13
+activity#com.gigya.socialize.android.login.providers.WebLoginActivity
+ADDED from AndroidManifest.xml:399:9
+	android:theme
+		ADDED from AndroidManifest.xml:403:13
+	android:allowTaskReparenting
+		ADDED from AndroidManifest.xml:401:13
+	android:name
+		ADDED from AndroidManifest.xml:400:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:402:13
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from AndroidManifest.xml:404:13
+action#android.intent.action.VIEW
+ADDED from AndroidManifest.xml:405:17
+	android:name
+		ADDED from AndroidManifest.xml:405:25
+category#android.intent.category.BROWSABLE
+ADDED from AndroidManifest.xml:408:17
+	android:name
+		ADDED from AndroidManifest.xml:408:27
+activity#com.facebook.FacebookActivity
+ADDED from AndroidManifest.xml:416:9
+	android:label
+		ADDED from AndroidManifest.xml:419:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:418:13
+	android:theme
+		ADDED from AndroidManifest.xml:420:13
+	android:name
+		ADDED from AndroidManifest.xml:417:13
+activity#com.hungama.myplay.activity.ui.AlertActivity
+ADDED from AndroidManifest.xml:429:9
+	android:theme
+		ADDED from AndroidManifest.xml:432:13
+	android:name
+		ADDED from AndroidManifest.xml:430:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:431:13
+service#com.hungama.myplay.activity.services.SubscriptionService
+ADDED from AndroidManifest.xml:454:9
+	android:exported
+		ADDED from AndroidManifest.xml:457:13
+	android:enabled
+		ADDED from AndroidManifest.xml:456:13
+	android:name
+		ADDED from AndroidManifest.xml:455:13
+service#com.hungama.myplay.activity.services.CampaignsPreferchingService
+ADDED from AndroidManifest.xml:466:9
+	android:exported
+		ADDED from AndroidManifest.xml:469:13
+	android:enabled
+		ADDED from AndroidManifest.xml:468:13
+	android:name
+		ADDED from AndroidManifest.xml:467:13
+service#com.hungama.myplay.activity.player.PlayerService
+ADDED from AndroidManifest.xml:470:9
+	android:exported
+		ADDED from AndroidManifest.xml:473:13
+	android:stopWithTask
+		ADDED from AndroidManifest.xml:474:13
+	android:enabled
+		ADDED from AndroidManifest.xml:472:13
+	android:name
+		ADDED from AndroidManifest.xml:471:13
+service#com.hungama.myplay.activity.services.DownloadFileService2
+ADDED from AndroidManifest.xml:479:9
+	android:exported
+		ADDED from AndroidManifest.xml:482:13
+	android:enabled
+		ADDED from AndroidManifest.xml:481:13
+	android:name
+		ADDED from AndroidManifest.xml:480:13
+service#com.hungama.myplay.activity.services.InventoryLightService
+ADDED from AndroidManifest.xml:485:9
+	android:exported
+		ADDED from AndroidManifest.xml:488:13
+	android:enabled
+		ADDED from AndroidManifest.xml:487:13
+	android:name
+		ADDED from AndroidManifest.xml:486:13
+service#com.hungama.myplay.activity.services.ServerCommandsService
+ADDED from AndroidManifest.xml:489:9
+	android:exported
+		ADDED from AndroidManifest.xml:492:13
+	android:enabled
+		ADDED from AndroidManifest.xml:491:13
+	android:name
+		ADDED from AndroidManifest.xml:490:13
+receiver#com.AdX.tag.AdXAppTracker
+ADDED from AndroidManifest.xml:494:9
+	android:exported
+		ADDED from AndroidManifest.xml:496:13
+	android:name
+		ADDED from AndroidManifest.xml:495:13
+intent-filter#com.android.vending.INSTALL_REFERRER
+ADDED from AndroidManifest.xml:497:13
+action#com.android.vending.INSTALL_REFERRER
+ADDED from AndroidManifest.xml:498:17
+	android:name
+		ADDED from AndroidManifest.xml:498:25
+meta-data#APP_NAME
+ADDED from AndroidManifest.xml:502:9
+	android:name
+		ADDED from AndroidManifest.xml:503:13
+	android:value
+		ADDED from AndroidManifest.xml:504:13
+meta-data#ADX_CLIENT_ID
+ADDED from AndroidManifest.xml:505:9
+	android:name
+		ADDED from AndroidManifest.xml:506:13
+	android:value
+		ADDED from AndroidManifest.xml:507:13
+meta-data#com.facebook.sdk.ApplicationId
+ADDED from AndroidManifest.xml:526:9
+	android:name
+		ADDED from AndroidManifest.xml:527:13
+	android:value
+		ADDED from AndroidManifest.xml:528:13
+service#com.hungama.myplay.activity.data.audiocaching.DownloaderService
+ADDED from AndroidManifest.xml:530:9
+	android:exported
+		ADDED from AndroidManifest.xml:532:13
+	android:name
+		ADDED from AndroidManifest.xml:531:13
+activity#com.hungama.myplay.activity.ui.GoOfflineActivity
+ADDED from AndroidManifest.xml:534:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:539:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:538:13
+	android:label
+		ADDED from AndroidManifest.xml:536:13
+	android:name
+		ADDED from AndroidManifest.xml:535:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:537:13
+activity#com.hungama.myplay.activity.ui.SaveOfflineUpdate
+ADDED from AndroidManifest.xml:541:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:544:13
+	android:label
+		ADDED from AndroidManifest.xml:543:13
+	android:theme
+		ADDED from AndroidManifest.xml:545:13
+	android:name
+		ADDED from AndroidManifest.xml:542:13
+receiver#com.hungama.myplay.activity.player.PlayerWidgetProvider
+ADDED from AndroidManifest.xml:548:9
+	android:label
+		ADDED from AndroidManifest.xml:551:13
+	android:icon
+		ADDED from AndroidManifest.xml:550:13
+	android:name
+		ADDED from AndroidManifest.xml:549:13
+intent-filter#android.appwidget.action.APPWIDGET_UPDATE
+ADDED from AndroidManifest.xml:552:13
+action#android.appwidget.action.APPWIDGET_UPDATE
+ADDED from AndroidManifest.xml:553:17
+	android:name
+		ADDED from AndroidManifest.xml:553:25
+meta-data#android.appwidget.provider
+ADDED from AndroidManifest.xml:556:13
+	android:resource
+		ADDED from AndroidManifest.xml:558:17
+	android:name
+		ADDED from AndroidManifest.xml:557:17
+service#com.hungama.myplay.activity.player.PlayerUpdateWidgetService
+ADDED from AndroidManifest.xml:561:9
+	android:exported
+		ADDED from AndroidManifest.xml:564:13
+	android:enabled
+		ADDED from AndroidManifest.xml:563:13
+	android:name
+		ADDED from AndroidManifest.xml:562:13
+service#com.hungama.myplay.activity.services.ImagePrefetchingService
+ADDED from AndroidManifest.xml:566:9
+	android:exported
+		ADDED from AndroidManifest.xml:569:13
+	android:enabled
+		ADDED from AndroidManifest.xml:568:13
+	android:name
+		ADDED from AndroidManifest.xml:567:13
+activity#com.hungama.myplay.activity.ui.SaveFavoritesOfflineActivity
+ADDED from AndroidManifest.xml:571:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:574:13
+	android:label
+		ADDED from AndroidManifest.xml:573:13
+	android:theme
+		ADDED from AndroidManifest.xml:575:13
+	android:name
+		ADDED from AndroidManifest.xml:572:13
+activity#com.hungama.myplay.activity.ui.ConsentBillingActivity
+ADDED from AndroidManifest.xml:577:9
+	android:configChanges
+		ADDED from AndroidManifest.xml:579:13
+	android:name
+		ADDED from AndroidManifest.xml:578:13
+receiver#com.hungama.myplay.activity.player.RemoteControlReceiver
+ADDED from AndroidManifest.xml:582:9
+	android:name
+		ADDED from AndroidManifest.xml:582:19
+intent-filter#android.intent.action.MEDIA_BUTTON
+ADDED from AndroidManifest.xml:583:13
+action#android.intent.action.MEDIA_BUTTON
+ADDED from AndroidManifest.xml:584:17
+	android:name
+		ADDED from AndroidManifest.xml:584:25
+activity#com.hungama.myplay.activity.ui.BrowserIntentReceiverActivity
+ADDED from AndroidManifest.xml:588:9
+	android:theme
+		ADDED from AndroidManifest.xml:591:13
+	android:name
+		ADDED from AndroidManifest.xml:589:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:590:13
+activity#com.hungama.myplay.activity.ui.MyStreamActivity
+ADDED from AndroidManifest.xml:627:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:631:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:629:13
+	android:theme
+		ADDED from AndroidManifest.xml:630:13
+	android:name
+		ADDED from AndroidManifest.xml:628:13
+activity#com.hungama.myplay.activity.ui.TransperentActivity
+ADDED from AndroidManifest.xml:633:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:637:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:635:13
+	android:theme
+		ADDED from AndroidManifest.xml:636:13
+	android:name
+		ADDED from AndroidManifest.xml:634:13
+activity#com.hungama.myplay.activity.ui.DiscoveryPlayerContextMenuActivity
+ADDED from AndroidManifest.xml:639:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:643:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:641:13
+	android:theme
+		ADDED from AndroidManifest.xml:642:13
+	android:name
+		ADDED from AndroidManifest.xml:640:13
+activity#com.hungama.myplay.activity.ui.TransperentActivityMyFavorite
+ADDED from AndroidManifest.xml:645:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:649:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:647:13
+	android:theme
+		ADDED from AndroidManifest.xml:648:13
+	android:name
+		ADDED from AndroidManifest.xml:646:13
+activity#com.hungama.myplay.activity.ui.TransperentActivityMyCollection
+ADDED from AndroidManifest.xml:651:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:655:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:653:13
+	android:theme
+		ADDED from AndroidManifest.xml:654:13
+	android:name
+		ADDED from AndroidManifest.xml:652:13
+activity#com.hungama.myplay.activity.ui.LogoutActivity
+ADDED from AndroidManifest.xml:657:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:661:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:659:13
+	android:theme
+		ADDED from AndroidManifest.xml:660:13
+	android:name
+		ADDED from AndroidManifest.xml:658:13
+activity#com.hungama.myplay.activity.ui.AppGuideActivityPlayerQueue
+ADDED from AndroidManifest.xml:676:9
+	android:theme
+		ADDED from AndroidManifest.xml:678:13
+	android:name
+		ADDED from AndroidManifest.xml:677:13
+activity#com.hungama.myplay.activity.ui.AppGuideActivityPlayerBar
+ADDED from AndroidManifest.xml:680:9
+	android:theme
+		ADDED from AndroidManifest.xml:682:13
+	android:name
+		ADDED from AndroidManifest.xml:681:13
+activity#com.hungama.myplay.activity.ui.AppGuideActivityOfflineMusic
+ADDED from AndroidManifest.xml:684:9
+	android:theme
+		ADDED from AndroidManifest.xml:686:13
+	android:name
+		ADDED from AndroidManifest.xml:685:13
+meta-data#android.app.default_searchable
+ADDED from AndroidManifest.xml:697:9
+	android:name
+		ADDED from AndroidManifest.xml:698:13
+	android:value
+		ADDED from AndroidManifest.xml:699:13
+activity#com.hungama.myplay.activity.ui.fragments.MainSearchFragment
+ADDED from AndroidManifest.xml:701:7
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:707:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:705:13
+	android:label
+		ADDED from AndroidManifest.xml:703:13
+	android:theme
+		ADDED from AndroidManifest.xml:706:13
+	android:name
+		ADDED from AndroidManifest.xml:702:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:704:13
+receiver#com.hungama.myplay.activity.gcm.IntentReceiver
+ADDED from AndroidManifest.xml:724:9
+	android:name
+		ADDED from AndroidManifest.xml:724:19
+intent-filter#com.app.hungamaPush
+ADDED from AndroidManifest.xml:725:13
+action#com.app.hungamaPush
+ADDED from AndroidManifest.xml:726:17
+	android:name
+		ADDED from AndroidManifest.xml:726:25
+activity#com.hungama.myplay.activity.preference.PushPreferencesActivity
+ADDED from AndroidManifest.xml:731:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:733:13
+	android:theme
+		ADDED from AndroidManifest.xml:734:13
+	android:name
+		ADDED from AndroidManifest.xml:732:13
+receiver#com.hungama.myplay.activity.PushReceiver
+ADDED from AndroidManifest.xml:785:9
+	android:exported
+		ADDED from AndroidManifest.xml:787:13
+	android:name
+		ADDED from AndroidManifest.xml:786:13
+intent-filter#com.hungama.myplay.activity+com.urbanairship.push.CHANNEL_UPDATED+com.urbanairship.push.DISMISSED+com.urbanairship.push.OPENED+com.urbanairship.push.RECEIVED
+ADDED from AndroidManifest.xml:788:13
+action#com.urbanairship.push.CHANNEL_UPDATED
+ADDED from AndroidManifest.xml:789:17
+	android:name
+		ADDED from AndroidManifest.xml:789:25
+action#com.urbanairship.push.OPENED
+ADDED from AndroidManifest.xml:790:17
+	android:name
+		ADDED from AndroidManifest.xml:790:25
+action#com.urbanairship.push.DISMISSED
+ADDED from AndroidManifest.xml:791:17
+	android:name
+		ADDED from AndroidManifest.xml:791:25
+action#com.urbanairship.push.RECEIVED
+ADDED from AndroidManifest.xml:792:17
+	android:name
+		ADDED from AndroidManifest.xml:792:25
+category#com.hungama.myplay.activity
+ADDED from AndroidManifest.xml:795:17
+	android:name
+		ADDED from AndroidManifest.xml:795:27
+amazon:enable-feature
+ADDED from AndroidManifest.xml:805:9
+	android:required
+		ADDED from AndroidManifest.xml:807:13
+	android:name
+		ADDED from AndroidManifest.xml:806:13
+meta-data#com.google.android.gms.version
+ADDED from AndroidManifest.xml:810:9
+MERGED from com.google.android.gms:play-services-base:6.5.87:21:9
+MERGED from com.google.android.gms:play-services-base:6.5.87:21:9
+	android:name
+		ADDED from AndroidManifest.xml:811:13
+	android:value
+		ADDED from AndroidManifest.xml:812:13
+activity#com.urbanairship.actions.ActionActivity
+ADDED from AndroidManifest.xml:815:9
+	android:name
+		ADDED from AndroidManifest.xml:815:19
+activity#com.urbanairship.CoreActivity
+ADDED from AndroidManifest.xml:816:9
+	android:name
+		ADDED from AndroidManifest.xml:816:19
+activity#com.urbanairship.actions.LandingPageActivity
+ADDED from AndroidManifest.xml:828:9
+	android:theme
+		ADDED from AndroidManifest.xml:832:13
+	android:exported
+		ADDED from AndroidManifest.xml:830:13
+	android:parentActivityName
+		ADDED from AndroidManifest.xml:831:13
+	android:name
+		ADDED from AndroidManifest.xml:829:13
+meta-data#com.urbanairship.action.LANDING_PAGE_VIEW
+ADDED from AndroidManifest.xml:835:13
+	android:resource
+		ADDED from AndroidManifest.xml:837:17
+	android:name
+		ADDED from AndroidManifest.xml:836:17
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from AndroidManifest.xml:844:13
+	android:name
+		ADDED from AndroidManifest.xml:845:17
+	android:value
+		ADDED from AndroidManifest.xml:846:17
+intent-filter#android.intent.category.DEFAULT+com.urbanairship.actions.SHOW_LANDING_PAGE_INTENT_ACTION
+ADDED from AndroidManifest.xml:848:13
+action#com.urbanairship.actions.SHOW_LANDING_PAGE_INTENT_ACTION
+ADDED from AndroidManifest.xml:849:17
+	android:name
+		ADDED from AndroidManifest.xml:849:25
+activity#com.urbanairship.google.PlayServicesErrorActivity
+ADDED from AndroidManifest.xml:859:9
+	android:theme
+		ADDED from AndroidManifest.xml:861:13
+	android:name
+		ADDED from AndroidManifest.xml:860:13
+receiver#com.urbanairship.CoreReceiver
+ADDED from AndroidManifest.xml:869:9
+	android:exported
+		ADDED from AndroidManifest.xml:871:13
+	android:name
+		ADDED from AndroidManifest.xml:870:13
+intent-filter#com.hungama.myplay.activity+com.urbanairship.push.OPENED
+ADDED from AndroidManifest.xml:872:13
+	android:priority
+		ADDED from AndroidManifest.xml:872:28
+receiver#com.urbanairship.push.GCMPushReceiver
+ADDED from AndroidManifest.xml:881:9
+	android:permission
+		ADDED from AndroidManifest.xml:883:13
+	android:name
+		ADDED from AndroidManifest.xml:882:13
+intent-filter#com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION+com.hungama.myplay.activity
+ADDED from AndroidManifest.xml:884:13
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from AndroidManifest.xml:885:17
+	android:name
+		ADDED from AndroidManifest.xml:885:25
+action#com.google.android.c2dm.intent.REGISTRATION
+ADDED from AndroidManifest.xml:886:17
+	android:name
+		ADDED from AndroidManifest.xml:886:25
+receiver#com.urbanairship.push.ADMPushReceiver
+ADDED from AndroidManifest.xml:894:9
+	android:permission
+		ADDED from AndroidManifest.xml:896:13
+	android:name
+		ADDED from AndroidManifest.xml:895:13
+intent-filter#com.amazon.device.messaging.intent.RECEIVE+com.amazon.device.messaging.intent.REGISTRATION+com.hungama.myplay.activity
+ADDED from AndroidManifest.xml:897:13
+action#com.amazon.device.messaging.intent.REGISTRATION
+ADDED from AndroidManifest.xml:898:17
+	android:name
+		ADDED from AndroidManifest.xml:898:25
+action#com.amazon.device.messaging.intent.RECEIVE
+ADDED from AndroidManifest.xml:899:17
+	android:name
+		ADDED from AndroidManifest.xml:899:25
+service#com.urbanairship.push.PushService
+ADDED from AndroidManifest.xml:907:9
+	android:label
+		ADDED from AndroidManifest.xml:909:13
+	android:name
+		ADDED from AndroidManifest.xml:908:13
+service#com.urbanairship.analytics.EventService
+ADDED from AndroidManifest.xml:910:9
+	android:label
+		ADDED from AndroidManifest.xml:912:13
+	android:name
+		ADDED from AndroidManifest.xml:911:13
+service#com.urbanairship.actions.ActionService
+ADDED from AndroidManifest.xml:913:9
+	android:name
+		ADDED from AndroidManifest.xml:913:18
+service#com.urbanairship.richpush.RichPushUpdateService
+ADDED from AndroidManifest.xml:914:9
+	android:name
+		ADDED from AndroidManifest.xml:914:18
+provider#com.urbanairship.UrbanAirshipProvider
+ADDED from AndroidManifest.xml:922:9
+	android:multiprocess
+		ADDED from AndroidManifest.xml:926:13
+	android:exported
+		ADDED from AndroidManifest.xml:925:13
+	android:authorities
+		ADDED from AndroidManifest.xml:924:13
+	android:permission
+		ADDED from AndroidManifest.xml:927:13
+	android:name
+		ADDED from AndroidManifest.xml:923:13
+receiver#com.hungama.myplay.activity.util.AlaramReceiver
+ADDED from AndroidManifest.xml:929:9
+	android:name
+		ADDED from AndroidManifest.xml:929:19
+activity#com.hungama.myplay.activity.ui.NotificationActivity
+ADDED from AndroidManifest.xml:932:9
+	android:name
+		ADDED from AndroidManifest.xml:932:19
+activity#com.hungama.myplay.activity.ui.OfflineAlertActivity
+ADDED from AndroidManifest.xml:934:9
+	android:theme
+		ADDED from AndroidManifest.xml:936:13
+	android:name
+		ADDED from AndroidManifest.xml:935:13
+activity#com.hungama.myplay.activity.ui.WebviewNativeActivity
+ADDED from AndroidManifest.xml:938:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:940:13
+	android:name
+		ADDED from AndroidManifest.xml:939:13
+service#com.hungama.myplay.activity.services.ReloadTracksDataService
+ADDED from AndroidManifest.xml:943:9
+	android:name
+		ADDED from AndroidManifest.xml:943:18
+meta-data#com.facebook.sdk.ApplicationName
+ADDED from AndroidManifest.xml:946:9
+	android:name
+		ADDED from AndroidManifest.xml:947:13
+	android:value
+		ADDED from AndroidManifest.xml:948:13
+receiver#com.hungama.myplay.activity.ui.inappprompts.InAppPromptReceiver
+ADDED from AndroidManifest.xml:950:9
+	android:name
+		ADDED from AndroidManifest.xml:950:19
+intent-filter#com.hungama.myplay.activity+com.hungama.myplay.activity.ui.inappprompts.AppPromptOfflineCaching3rdSong+com.hungama.myplay.activity.ui.inappprompts.SaveOfflineHelpDialog
+ADDED from AndroidManifest.xml:951:13
+action#com.hungama.myplay.activity.ui.inappprompts.SaveOfflineHelpDialog
+ADDED from AndroidManifest.xml:952:17
+	android:name
+		ADDED from AndroidManifest.xml:952:25
+action#com.hungama.myplay.activity.ui.inappprompts.AppPromptOfflineCaching3rdSong
+ADDED from AndroidManifest.xml:953:17
+	android:name
+		ADDED from AndroidManifest.xml:953:25
+activity#com.hungama.myplay.activity.ui.inappprompts.InAppPromptDialogActivity
+ADDED from AndroidManifest.xml:959:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:961:13
+	android:theme
+		ADDED from AndroidManifest.xml:962:13
+	android:name
+		ADDED from AndroidManifest.xml:960:13
+service#com.hungama.myplay.activity.data.audiocaching.MoveDownloadedTracksService
+ADDED from AndroidManifest.xml:965:9
+	android:name
+		ADDED from AndroidManifest.xml:965:18
+meta-data#io.fabric.ApiKey
+ADDED from AndroidManifest.xml:967:9
+	android:name
+		ADDED from AndroidManifest.xml:968:13
+	android:value
+		ADDED from AndroidManifest.xml:969:13
+activity#android.support.v7.widget.TestActivity
+ADDED from com.android.support:recyclerview-v7:21.0.3:18:9
+	android:label
+		ADDED from com.android.support:recyclerview-v7:21.0.3:18:19
+	android:name
+		ADDED from com.android.support:recyclerview-v7:21.0.3:18:60

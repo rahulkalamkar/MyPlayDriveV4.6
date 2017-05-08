@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/carmode_main_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5.04">
+
+        <ImageButton
+            android:id="@+id/btn_back_main_menu"
+            android:layout_width="@dimen/carmode_header_button_width"
+            android:layout_height="match_parent"
+            android:background="@drawable/carmode_button_states"
+            android:onClick="vHandleClicks"
+            android:src="@drawable/carmode_btn_back" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/btn_back_main_menu"
+            android:background="@color/carmode_divider_color" />
+
+        <EditText
+            android:id="@+id/et_search_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/btn_action"
+            android:layout_toRightOf="@id/btn_back_main_menu"
+            android:background="@color/transparent"
+            android:drawableLeft="@drawable/carmode_btn_search_small"
+            android:drawablePadding="10dp"
+            android:hint="@string/hint_search"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColor="@color/carmode_main_text_color"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="@dimen/carmode_header_font_size" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/btn_action"
+            android:background="@color/carmode_divider_color" />
+
+        <ImageButton
+            android:id="@+id/btn_universal_player"
+            android:layout_width="@dimen/carmode_header_button_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/carmode_button_states"
+            android:onClick="vHandleClicks"
+            android:src="@drawable/carmode_btn_music_player" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/carmode_divider_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center_vertical"
+            android:text="@string/title_popular_searches"
+            android:textColor="@color/carmode_main_text_color"
+            android:textSize="@dimen/carmode_text_medium_size" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
+
+            <ListView
+                android:id="@+id/lv_popular_searches"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/ll_listview_progress_control"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="10dp"
+                android:scrollbars="none" />
+
+            <ProgressBar
+                android:id="@+id/pb_popular_searches"
+                style="@style/CustomProgressDialogStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+            <include layout="@layout/carmode_layout_scroller" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

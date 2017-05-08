@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/application_background_grey"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/radio_tab_button_height"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageButton
+            android:id="@+id/radio_tab_button_live"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_home_tabwidget_tab_regular_selector"
+            android:text="@string/radio_live_radio"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_text_size" />
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageButton
+            android:id="@+id/radio_tab_button_top_artist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_home_tabwidget_tab_regular_selector"
+            android:text="@string/radio_top_artist_radio"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/home_music_tile_margin"
+        android:layout_marginLeft="@dimen/home_music_tile_margin"
+        android:layout_marginRight="@dimen/home_music_tile_margin"
+        android:layout_marginTop="@dimen/home_music_tile_margin"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/radio_filter_button_live"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_radio_filter_button_selector"
+            android:paddingBottom="@dimen/radio_tab_padding_top_bottom"
+            android:paddingLeft="@dimen/radio_tab_padding_left"
+            android:paddingRight="@dimen/radio_tab_padding_right"
+            android:paddingTop="@dimen/radio_tab_padding_top_bottom" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_live_radio" />
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:id="@+id/txt_live_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="@string/radio_live_radio_capital"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/large_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/radio_filter_button_top_artist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/home_music_tile_margin"
+            android:layout_weight="1"
+            android:background="@drawable/background_radio_filter_button_selector"
+            android:paddingBottom="@dimen/radio_tab_padding_top_bottom"
+            android:paddingLeft="@dimen/radio_tab_padding_left"
+            android:paddingRight="@dimen/radio_tab_padding_right"
+            android:paddingTop="@dimen/radio_tab_padding_top_bottom"
+            android:visibility="visible" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_celeb_radio" />
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:id="@+id/txt_top_artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="@string/radio_top_artist_radio_capital"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/large_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/radio_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" >
+    </FrameLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/radio_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

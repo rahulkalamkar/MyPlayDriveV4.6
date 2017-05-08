@@ -1,0 +1,1 @@
+include ':app', ':showcaseview-lib', ':slideuppanellib', ':wheellib', ':dragdrop-lib', ':exoplayer_library', ':gigyalibrary', ':customseekbarlibrary', ':CastCompanionLibrary-android-master', ':MySpinSDK'

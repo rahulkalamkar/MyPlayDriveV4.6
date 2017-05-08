@@ -1,0 +1,56 @@
+{
+    "response": {
+        "code": 1,
+        "transaction_session": "u7otao0c4aavahc2krf6aif5v0",
+        "plan": [
+            {
+                "plan_id": 165,
+                "plan_name": "Trial",
+                "plan_price": 110,
+                "plan_currency": "Rs.",
+                "plan_duration": 30,
+                "plan_detail": "5 Downloads",
+                "plan_benefits": [
+                    "Unlimited Offline Songs",
+                    "HD Quality Music",
+                    "Unlimited Full length Music Videos",
+                    "Ad-Free Entertainment"
+                ],
+                "plan_condition": "This Plan will be renewed automatically every month",
+                "type": "google"
+            },
+            {
+                "plan_id": 122,
+                "plan_name": "Monthly",
+                "plan_price": 110,
+                "plan_currency": "Rs.",
+                "plan_duration": 30,
+                "plan_detail": "5 Downloads",
+                "plan_benefits": [
+                    "Unlimited Offline Songs",
+                    "HD Quality Music",
+                    "Unlimited Full length Music Videos",
+                    "Ad-Free Entertainment"
+                ],
+                "plan_condition": "This Plan will be renewed automatically every month",
+                "type": "google"
+            },
+            {
+                "plan_id": 158,
+                "plan_name": "Monthly",
+                "plan_price": 110,
+                "plan_currency": "Rs.",
+                "plan_detail": "5 Downloads",
+                "plan_benefits": [
+                    "Unlimited Offline Songs",
+                    "HD Quality Music",
+                    "Unlimited Full length Music Videos",
+                    "Ad-Free Entertainment"
+                ],
+                "plan_condition": "This Plan will be renewed automatically every month",
+                "plan_duration": 30,
+                "type": "google"
+            }
+        ]
+    }
+}

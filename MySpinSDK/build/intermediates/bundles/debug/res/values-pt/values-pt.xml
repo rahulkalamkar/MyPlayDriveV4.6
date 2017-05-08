@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="keyboard_done">enter</string>
+    <string name="keyboard_go">enter</string>
+    <string name="keyboard_next">enter</string>
+    <string name="keyboard_ok">enter</string>
+    <string name="keyboard_prev">enter</string>
+    <string name="keyboard_search">pesquisar</string>
+    <string name="keyboard_space">espaço</string>
+</resources>

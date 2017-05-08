@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app1="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/search_fragment_result_layout_body_background"
+    android:orientation="vertical" >
+
+    <!--<LinearLayout
+        android:id="@+id/main_search_results_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/background_fragment_search_results_top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+            android:id="@+id/main_search_results_title_text_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+            android:id="@+id/main_search_results_title_label_result_for"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:text="@string/search_results_layout_top_text_results_for"
+            android:textColor="@color/search_fragment_result_layout_top_text_color_grey"
+            android:visibility="gone" />
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+            android:id="@+id/main_search_results_title_text_search_query"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/main_search_results_loading_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/search_results_loading_bar_progress"
+            style="@style/LoadingIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:paddingRight="5dp" />
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+            android:id="@+id/search_results_loading_bar_label"
+            style="@style/TextSmallMediumMinusPlus"
+            android:layout_width="wrap_content"
+            android:text="@string/search_results_loading_indicator_loading"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <com.hungama.myplay.activity.ui.PagerSlidingTabStrip
+        android:id="@+id/tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/home_tabwidget_height"
+        android:background="@color/myPrimaryColor"
+        android:textColor="@color/white"
+        app1:footerColor="@color/white"
+        android:fillViewport="false" />
+
+    <!--
+         <com.hungama.myplay.activity.ui.PagerSlidingTabStrip
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_tabwidget_height"
+        android:background="@drawable/background_home_tabwidget" />
+    -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@null" />
+
+</LinearLayout>

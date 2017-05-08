@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Discovery - Categories -->
+
+    <dimen name="discovery_categories_item_height">40dp</dimen>
+    <dimen name="discovery_categories_item_width">165dp</dimen>
+    <dimen name="discovery_categories_item_option_icon_size">21dp</dimen>
+    <dimen name="discovery_categories_item_side_margin">5dp</dimen>
+    <dimen name="discovery_categories_item_indication_size">30dp</dimen>
+    <dimen name="discovery_categories_selected_item_width">165dp</dimen>
+    <dimen name="discovery_categories_selected_categories_height">190dp</dimen>
+    <dimen name="discovery_categories_selected_categories_margin_top">30dp</dimen>
+    <dimen name="background_discovery_categories_imdone_size">100dp</dimen>
+    <dimen name="background_discovery_categories_selected_mood_margin_right">90dp</dimen>
+    <dimen name="background_discovery_categories_selected_mood_bubble_size">60dp</dimen>
+    <dimen name="upgrade_subscription_popup_close_button_margin">-10dp</dimen>
+    <dimen name="radio_list_item_height">56dp</dimen>
+
+    <!-- discovery new -->
+    <dimen name="circle_height">290dp</dimen>
+    <dimen name="circle_margin">40dp</dimen>
+    <dimen name="circle_margin_left">40dp</dimen>
+    <dimen name="middle_circle_margin_left">0dp</dimen>
+    <dimen name="circle_margin_top">15dp</dimen>
+    <dimen name="needle_width">70dp</dimen>
+    <dimen name="discover_btn_margin_top">-25dp</dimen>
+    <dimen name="discover_selected_mood_widht">100dp</dimen>
+    <dimen name="discover_predefine_padding">10dp</dimen>
+    <dimen name="discover_margin_top_play">10dp</dimen>
+    <dimen name="radio_details_coming_up_discovery_context_menu">25dp</dimen>
+
+    <dimen name="home_tiles_bottom_size">45dp</dimen>
+</resources>

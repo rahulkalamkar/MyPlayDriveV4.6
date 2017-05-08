@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="true"><shape android:shape="rectangle">
+            <gradient android:angle="0" android:endColor="@android:color/white" android:startColor="@android:color/white" />
+
+            <stroke android:width="0dp" android:color="@color/global_menu_upgrade_button_border" />
+
+            <corners android:radius="10dp" />
+            <!--
+                 <padding android:left="10dp"
+                android:right="1dp"
+                android:top="10dp"
+                android:bottom="10dp"/>
+            -->
+        </shape></item>
+
+</selector>

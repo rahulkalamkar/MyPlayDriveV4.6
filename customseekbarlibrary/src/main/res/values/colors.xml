@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_upgrade_progress_bar_background">#94ca1d</color>
+    <color name="main_upgrade_progress_bar_secondary_progress">#888888</color>
+    <color name="main_upgrade_progress_bar_progress">#fa692a</color>
+    <color name="text_bg_color">#dededf</color>
+</resources>

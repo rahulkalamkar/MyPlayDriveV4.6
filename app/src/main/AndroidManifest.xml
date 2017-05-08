@@ -1,0 +1,1088 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:amazon="http://schemas.amazon.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hungama.hungamamusic.lite"
+    android:installLocation="auto"
+    android:versionCode="53"
+    android:versionName="4.7">
+
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="21" />
+
+    <!-- REQUIRED for Urban Airship -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- Required for Push -->
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+
+    <!-- App permissions -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--<uses-permission android:name="android.permission.RECORD_AUDIO" />-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <!--<uses-permission android:name="android.permission.GET_ACCOUNTS" />-->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- MODIFICATION REQUIRED - Replace "com.urbanairship.richpush.sample" with your package name -->
+    <permission
+        android:name="com.hungama.hungamamusic.lite.permission.UA_DATA"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.hungama.hungamamusic.lite.permission.UA_DATA" />
+    <!-- The two elements above ensure that only this application has access to the Urban Airship provider and can receive push intents -->
+
+
+    <!-- REQUIRED PERMISSIONS for GCM --><uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <!-- This app has permission to register with GCM and receive message -->
+    <!-- Required MODIFICATION REQUIRED - Replace "com.urbanairship.richpush.sample" with your package name -->
+    <permission
+        android:name="com.hungama.hungamamusic.lite.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.hungama.hungamamusic.lite.permission.C2D_MESSAGE" />
+    <!-- The two elements above ensure that only this application can receive the messages and registration result -->
+    <!-- END Urban Airship Required Permissions -->
+
+
+    <!-- REQUIRED PERMISSIONS for ADM -->
+    <uses-permission android:name="com.amazon.device.messaging.permission.RECEIVE" />
+    <!-- Required MODIFICATION REQUIRED - Replace "com.urbanairship.richpush.sample" with your package name -->
+    <permission
+        android:name="com.hungama.hungamamusic.lite.permission.RECEIVE_ADM_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.hungama.hungamamusic.lite.permission.RECEIVE_ADM_MESSAGE" />
+    <!-- The two elements above ensure that only this application can receive the messages and registration result -->
+
+
+    <!-- OPTIONAL Urban Airship Settings -->
+    <!-- REQUIRED FOR LOCATION -->
+    <!-- Use ACCESS_COARSE_LOCATION if GPS access is not necessary -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+
+
+    <!-- OPTIONAL - This permission is only necessary if your app has multiple processes -->
+    <!-- <uses-permission android:name="android.permission.BROADCAST_STICKY" /> -->
+
+    <!-- Required to pair Bluetooth devices -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+
+    <application
+        android:name="com.hungama.myplay.activity.HungamaApplication"
+        android:icon="@drawable/icon_launcher"
+        android:label="@string/application_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.hungama.myplay.activity.ui.OnApplicationStartsActivity"
+            android:configChanges="locale"
+            android:label="@string/application_name"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeHome" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="com.bosch.myspin.action.MAIN"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Splash Screen. -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.SplashScreenActivity"
+            android:configChanges="locale"
+            android:label="@string/activity_label_login"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.Translucent" />
+        <!-- Login. -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.LoginActivity"
+            android:label="@string/activity_label_login"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:configChanges="keyboard|keyboardHidden" />
+
+        <!-- Upgrade -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.UpgradeActivity"
+            android:label="@string/application_name"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- android:theme="@style/Theme.UserDialog" -->
+
+
+        <!-- Download Connecting. -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.DownloadConnectingActivity"
+            android:label="@string/application_name"
+            android:screenOrientation="sensorPortrait" />
+
+        <!-- Download -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.DownloadActivity"
+            android:label="@string/application_name"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- My Preferences -->
+
+        <!--<activity
+            android:name=".ui.MyPreferencesActivity"
+            android:label="@string/application_name"
+            android:screenOrientation="sensorPortrait" />-->
+
+        <!-- Redeem / Rewards -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.RedeemActivity"
+            android:label="@string/application_name"
+            android:screenOrientation="sensorPortrait" />
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.CarModeHomeActivity"
+            android:label="@string/application_name"
+            android:screenOrientation="sensorPortrait" />
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.HomeActivity"
+            android:configChanges="locale"
+            android:excludeFromRecents="false"
+            android:label="@string/main_actionbar_title_music"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeHome"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+            <!--
+            <intent-filter>
+	            <action android:name="android.intent.action.VIEW" />
+	
+	            <category android:name="android.intent.category.DEFAULT" />
+	            <category android:name="android.intent.category.BROWSABLE" />
+	
+	            <data
+	                android:host="www.hungama.com"
+	                android:scheme="http" />
+	        </intent-filter>
+
+
+
+
+            -->
+            <!--
+            <intent-filter>
+		        <data android:scheme="ua" />
+		        <action android:name="android.intent.action.VIEW" />
+		        <category android:name="android.intent.category.BROWSABLE" />
+		        <category android:name="android.intent.category.DEFAULT" />
+		    </intent-filter>
+
+
+
+
+            -->
+        </activity>
+
+        <!-- Discovery -->
+
+       <!-- <activity
+            android:name=".ui.DiscoveryActivity"
+            android:label="@string/main_actionbar_title_discover"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan" />-->
+
+        <!-- Music Activities. -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.MediaDetailsActivity"
+            android:label="@string/main_actionbar_title_music"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme_gray"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- Video activities -->
+
+        <!--<activity
+            android:name=".ui.VideoCategoriesActivity"
+            android:label="@string/main_actionbar_title_videos"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan" />-->
+        <activity
+            android:name="com.hungama.myplay.activity.ui.VideoActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/main_actionbar_title_videos" />
+        <activity
+            android:name="com.hungama.myplay.activity.ui.ActivityMainSearchResult"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- Tutorial activities -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.AppTourActivity"
+            android:label="@string/application_name"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.hungama.myplay.activity.ui.AppGuideActivity"
+            android:label="@string/application_name"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.Translucent" >
+            <intent-filter>
+                <action android:name="hungama.activity.AppTour" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity>
+
+        <!-- Badges and Coins -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.BadgesAndCoinsActivity"
+            android:label="@string/application_name"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.Translucent" />
+
+        <!-- Push Notification -->
+
+        <!--<activity
+            android:name=".ui.PushNotificationActivity"
+            android:label="@string/application_name"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/Theme.Translucent.NoActionBar" />-->
+
+        <!-- My Favorites -->
+
+        <!--<activity
+            android:name=".ui.FavoritesActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme_gray" />-->
+
+        <!-- Comments -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.CommentsActivity"
+            android:label="@string/application_name"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- My Collection -->
+        <!--<activity
+            android:name=".ui.MyCollectionActivity"
+            android:label="@string/application_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_gray" />-->
+
+        <!-- Radio Activity. -->
+
+        <!--<activity
+            android:name=".ui.RadioActivity"
+            android:label="@string/main_actionbar_title_radio"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan" />-->
+
+        <!-- Campaigns -->
+
+        <!--<activity
+            android:name=".campaigns.ForYouActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".campaigns.VideoViewActivity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".campaigns.ImageDetailActivity"
+            android:theme="@style/AppTheme" />-->
+
+        <!-- Profile -->
+
+        <!--<activity
+            android:name=".ui.ProfileActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme_gray"
+            android:windowSoftInputMode="adjustPan" />-->
+
+        <!-- Queue -->
+        <activity
+            android:name="com.hungama.myplay.activity.ui.PlayerQueueActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- Trend Screen -->
+        <activity
+            android:name="com.hungama.myplay.activity.ui.TrendNowActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.Translucent"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- Recharge -->
+        <!--<activity
+            android:name=".ui.RechargeActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />-->
+
+        <!-- Playlists Activity -->
+
+        <!--<activity
+            android:name=".ui.PlaylistsActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme_gray" />-->
+
+        <!-- Feedback Activity -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.FeedbackActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- Help and FAQ Activity -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.HelpAndFAQActivity"
+            android:screenOrientation="sensorPortrait" />
+
+        <!-- About Activity -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.AboutActivity"
+            android:screenOrientation="sensorPortrait" />
+
+        <!-- InviteFriendsActivity -->
+
+        <activity
+            android:name="com.hungama.myplay.activity.gigya.InviteFriendsActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="com.hungama.myplay.activity.gigya.TwitterLoginActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.Field.NoActionBar" />
+        <activity
+            android:name="com.hungama.myplay.activity.ui.SettingsActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="com.hungama.myplay.activity.ui.PlacementSplashActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme" />
+
+        <!-- Gigya dependencies -->
+        <!--
+             <activity
+            android:name="com.gigya.socialize.android.GSWebViewActivity"
+            android:screenOrientation="sensorPortrait" />
+
+
+
+
+        -->
+
+        <activity
+            android:name="com.gigya.socialize.android.ui.HostActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.gigya.socialize.android.login.providers.WebLoginActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:launchMode="singleTask"
+            android:allowTaskReparenting="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="com.hungama.hungamamusic.lite" android:host="gsapi" />
+            </intent-filter>
+        </activity>
+        <!--<activity
+            android:name="com.gigya.socialize.android.ui.HostActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name="com.gigya.socialize.android.login.providers.WebLoginActivity"
+            android:allowTaskReparenting="true"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.Translucent" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="gsapi"
+                    android:scheme="com.hungama.hungamamusic.lite"/>
+            </intent-filter>
+        </activity>-->
+        <!--<activity android:name="com.facebook.LoginActivity" />-->
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Translucent" />
+
+        <!-- Notifications -->
+        <!--
+             <activity
+            android:name=".ui.AlertActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Dialog" >
+        -->
+        <activity
+            android:name="com.hungama.myplay.activity.ui.AlertActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/MyThemeAlertDialog" >
+
+            <!--
+            <intent-filter>
+	            <action android:name="android.intent.action.VIEW" />
+	
+	            <category android:name="android.intent.category.DEFAULT" />
+	            <category android:name="android.intent.category.BROWSABLE" />
+	
+	            <data
+	                android:host="www.hungama.com"
+	                android:scheme="http" />
+	        </intent-filter>
+
+
+
+
+
+
+            -->
+        </activity>
+
+        <service
+            android:name="com.hungama.myplay.activity.services.SubscriptionService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- Discovery moods Prefetcher. -->
+        <!--<service
+            android:name=".services.MoodPrefetchingService"
+            android:enabled="true"
+            android:exported="false" />-->
+
+        <!-- Campaigns Prefetcher. -->
+        <service
+            android:name="com.hungama.myplay.activity.services.CampaignsPreferchingService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.hungama.myplay.activity.player.PlayerService"
+            android:enabled="true"
+            android:exported="true"
+            android:stopWithTask="false" />
+        <!--<service
+            android:name=".services.DownloadFileService"
+            android:enabled="true"
+            android:exported="false" />-->
+        <service
+            android:name="com.hungama.myplay.activity.services.DownloadFileService2"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- Inventory Light -->
+        <service
+            android:name="com.hungama.myplay.activity.services.InventoryLightService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.hungama.myplay.activity.services.ServerCommandsService"
+            android:enabled="true"
+            android:exported="false" />
+        <!-- AdX Library -->
+        <!--<receiver
+            android:name="com.AdX.tag.AdXAppTracker"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="APP_NAME"
+            android:value="@string/adx_app_name" />
+        <meta-data
+            android:name="ADX_CLIENT_ID"
+            android:value="@string/adx_client_id" />-->
+        <!--
+        <meta-data
+            android:name="OTHERSTORE"
+            android:value="@string/adx_other_store_name" />
+        <meta-data
+            android:name="STOREAPPID"
+            android:value="@string/adx_other_store_app_id" />
+        -->
+
+
+        <!--
+        <meta-data android:name="OTHERSTORE" android:value="MOBOGENIE" />
+		<meta-data android:name="STOREAPPID" android:value="com.hungama.myplay.activity" />
+		
+		<meta-data android:name="OTHERSTORE" android:value="UC BROWSER" />
+		<meta-data android:name="STOREAPPID" android:value="com.hungama.myplay.activity" />
+        -->
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/gigya_facebook_application_id" />
+
+        <service
+            android:name="com.hungama.myplay.activity.data.audiocaching.DownloaderService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.GoOfflineActivity"
+            android:label="@string/main_actionbar_title_music"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.hungama.myplay.activity.ui.SaveOfflineUpdate"
+            android:label="@string/application_name"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+
+        <receiver
+            android:name="com.hungama.myplay.activity.player.PlayerWidgetProvider"
+            android:icon="@drawable/icon_launcher"
+            android:label="@string/application_name" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/player_widget" />
+        </receiver>
+
+        <service
+            android:name="com.hungama.myplay.activity.player.PlayerUpdateWidgetService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+        <service
+            android:name="com.hungama.myplay.activity.services.ImagePrefetchingService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.SaveFavoritesOfflineActivity"
+            android:label="@string/application_name"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <!--<activity
+            android:name=".ui.ConsentBillingActivity"
+            android:configChanges="navigation|orientation|screenLayout|screenSize" >
+        </activity>-->
+        <activity
+            android:name="com.hungama.myplay.activity.ui.HungamaPayActivity"
+            android:configChanges="navigation|orientation|screenLayout|screenSize"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+
+        <receiver android:name="com.hungama.myplay.activity.player.RemoteControlReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.BrowserIntentReceiverActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.Translucent" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.hungama.com"
+                    android:scheme="http" />
+                <!--<data
+                    android:host="www.hungama.com"
+                    android:scheme="hungama" />-->
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="www.hungama.com"
+                    android:scheme="hungama" />
+            </intent-filter>
+            <!--<intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="com.hungama.myplay.activity"
+                    android:scheme="android-app" />
+            </intent-filter>-->
+        </activity>
+        <!--<activity
+            android:name=".ui.MyStreamActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme_gray"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>-->
+        <activity
+            android:name="com.hungama.myplay.activity.ui.TransperentActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/MyTheme"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.hungama.myplay.activity.ui.DiscoveryPlayerContextMenuActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.hungama.myplay.activity.ui.TransperentActivityMyFavorite"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/MyTheme"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.hungama.myplay.activity.ui.TransperentActivityMyCollection"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/MyTheme"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.hungama.myplay.activity.ui.LogoutActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/MyTheme"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!--<activity
+            android:name=".ui.LangangeRewardsActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".ui.AppGuideActivityCordinatad"
+            android:theme="@style/AppTheme.Translucent" >
+        </activity>
+        <activity
+            android:name=".ui.AppGuideActivityLeftMenu"
+            android:theme="@style/AppTheme.Translucent" >
+        </activity>-->
+        <activity
+            android:name="com.hungama.myplay.activity.ui.AppGuideActivityPlayerQueue"
+            android:theme="@style/AppTheme.Translucent" >
+        </activity>
+        <activity
+            android:name="com.hungama.myplay.activity.ui.AppGuideActivityPlayerBar"
+            android:theme="@style/AppTheme.Translucent" >
+        </activity>
+        <activity
+            android:name="com.hungama.myplay.activity.ui.AppGuideActivityOfflineMusic"
+            android:theme="@style/AppTheme.Translucent" >
+        </activity>
+        <!--<activity
+            android:name=".ui.HomeActivityLandingScreen"
+            android:theme="@style/AppTheme.Translucent" >
+        </activity>
+        <activity
+            android:name=".ui.AppGuideActivityPlayerDrawer"
+            android:theme="@style/AppTheme.Translucent" >
+        </activity>-->
+
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value=".ui.fragments.MainSearchFragment" />
+
+      <activity
+            android:name="com.hungama.myplay.activity.ui.fragments.MainSearchFragment"
+            android:label="@string/application_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <!--<activity
+            android:name=".ui.DiscoveryResultActivity"
+            android:label="@string/main_actionbar_title_discover"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme_gray"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>-->
+
+        <receiver android:name="com.hungama.myplay.activity.gcm.IntentReceiver" >
+            <intent-filter>
+                <action android:name="com.app.hungamaPush" />
+            </intent-filter>
+        </receiver>
+
+        <!-- UA Lib -->
+        <activity
+            android:name="com.hungama.myplay.activity.preference.PushPreferencesActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeLight" />
+        <!--<activity android:name="com.hungama.myplay.activity.inbox.MessageActivity" />-->
+
+        <!--
+        Optional: This is an example of one of the many ways to handle deep
+        linking in the application.  To use with your application, update the data
+        scheme to be unique for the application and modify ParseDeepLinkActivity.parseDeepLink
+        method to match your application's deep link parsing
+        -->
+        <!--
+        <activity android:name=".ParseDeepLinkActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                Handles any vnd.urbanairship.richpush://deeplink URI's
+                <data
+                    android:host="deeplink"
+                    android:scheme="vnd.urbanairship.richpush" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        -->
+
+
+        <!-- The provider is needed for the RichPush Widget -->
+        <!--
+        <receiver android:name="com.hungama.myplay.activity.widget.RichPushWidgetProvider" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            This specifies the widget provider info
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widgetinfo" />
+        </receiver>
+        -->
+
+
+        <!-- The service serving the RemoteViews to the collection widget -->
+        <!--
+             <service
+            android:name="com.hungama.myplay.activity.widget.RichPushWidgetService"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+        -->
+
+
+        <!-- OPTIONAL, if you want to receive push, push opened and registration completed intents -->
+        <!-- Replace the receiver below with your package and class name -->
+        <receiver
+            android:name="com.hungama.myplay.activity.PushReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.urbanairship.push.CHANNEL_UPDATED" />
+                <action android:name="com.urbanairship.push.OPENED" />
+                <action android:name="com.urbanairship.push.DISMISSED" />
+                <action android:name="com.urbanairship.push.RECEIVED" />
+
+                <!-- MODIFICATION REQUIRED - Use your package name as the category -->
+                <category android:name="com.hungama.hungamamusic.lite" />
+            </intent-filter>
+        </receiver>
+
+        <!--
+        REQUIRED for ADM - You must explicitly enable ADM and declare whether your app cannot work without
+        ADM (android:required="true") or can work without ADM (android:required="false").
+        If you specify android:required="false", your app must degrade gracefully if ADM
+        is unavailable.
+        -->
+        <amazon:enable-feature
+            android:name="com.amazon.device.messaging"
+            android:required="false" />
+
+        <!-- REQUIRED for Google Play services (GCM) -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- Needed for Action.startActivityForResult -->
+        <activity android:name="com.urbanairship.actions.ActionActivity" />
+        <activity android:name="com.urbanairship.CoreActivity" />
+
+        <!--
+        REQUIRED for Landing Pages
+        MODIFICATION REQUIRED:
+         - Set or Remove the parent activity
+         - Set or Remove the theme.  Removing the theme will cause the landing page
+         to use the default theme for the application.  If the theme allows an action
+         bar and is running on a honeycomb or newer device, the action bar will enable
+         up navigation.
+         - For more customization details, see com.urbanairship.actions.LandingPageActivity
+        -->
+        <activity
+            android:name="com.urbanairship.actions.LandingPageActivity"
+            android:exported="false"
+            android:parentActivityName="com.hungama.myplay.activity.ui.AlertActivity"
+            tools:replace="android:theme"
+            android:theme="@style/Theme.AppTheme.LandingPage" >
+
+            <!-- Sample layout, remove to use the default -->
+            <meta-data
+                android:name="com.urbanairship.action.LANDING_PAGE_VIEW"
+                tools:replace="android:resource"
+                android:resource="@layout/activity_landing_page" />
+
+            <!--
+            Optional: Landing page will start the parent activity if the landing
+            page is the root task.  Also supports proper up navigation if the action
+            bar is supported
+            -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hungama.myplay.activity.ui.AlertActivity" />
+
+            <intent-filter>
+                <action android:name="com.urbanairship.actions.SHOW_LANDING_PAGE_INTENT_ACTION" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- REQUIRED for PlayServiceUtils.handleAnyPlayServicesError to handle Google Play services recoverable errors. -->
+        <activity
+            android:name="com.urbanairship.google.PlayServicesErrorActivity"
+            tools:replace="android:theme"
+            android:theme="@style/AppTheme.Translucent" />
+
+        <!--
+             REQUIRED for Urban Airship Push. The priority is important to be set lower than the
+               application's push intent receiver in order for the push intent receiver to handle push intents
+               before the core receiver. This allows the application to launch any activities before Urban
+               Airship performs any actions or falls back to launching the application launch intent.
+        -->
+        <receiver
+            android:name="com.urbanairship.CoreReceiver"
+            android:exported="false" >
+            <intent-filter android:priority="-999" >
+                <action android:name="com.urbanairship.push.OPENED" />
+
+                <!-- MODIFICATION REQUIRED - Use your package name as the category -->
+                <category android:name="com.hungama.hungamamusic.lite" />
+            </intent-filter>
+        </receiver>
+
+        <!-- REQUIRED for GCM -->
+        <receiver
+            android:name="com.urbanairship.push.GCMPushReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <!-- MODIFICATION REQUIRED - Use your package name as the category -->
+                <category android:name="com.hungama.hungamamusic.lite" />
+            </intent-filter>
+        </receiver>
+
+        <!-- REQUIRED for ADM -->
+        <receiver
+            android:name="com.urbanairship.push.ADMPushReceiver"
+            android:permission="com.amazon.device.messaging.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.amazon.device.messaging.intent.REGISTRATION" />
+                <action android:name="com.amazon.device.messaging.intent.RECEIVE" />
+
+                <!-- MODIFICATION REQUIRED - Use your package name as the category -->
+                <category android:name="com.hungama.hungamamusic.lite" />
+            </intent-filter>
+        </receiver>
+
+        <!-- REQUIRED for Urban Airship -->
+        <service
+            android:name="com.urbanairship.push.PushService"
+            android:label="Push Notification Service" />
+        <service
+            android:name="com.urbanairship.analytics.EventService"
+            android:label="Event Service" />
+        <service android:name="com.urbanairship.actions.ActionService" />
+        <service android:name="com.urbanairship.richpush.RichPushUpdateService" />
+
+        <!-- OPTIONAL for Urban Airship Location (for segments support) -->
+        <!-- <service android:name="com.urbanairship.location.LocationService" android:label="Segments Service" /> -->
+
+
+        <!-- This is required for persisting preferences related to push and location -->
+        <!-- MODIFICATION REQUIRED - Replace "com.urbanairship.richpush.sample" with your package name -->
+        <provider
+            android:name="com.urbanairship.UrbanAirshipProvider"
+            android:authorities="com.hungama.hungamamusic.lite.urbanairship.provider"
+            android:exported="true"
+            android:multiprocess="true"
+            tools:replace="android:permission"
+            android:permission="com.hungama.hungamamusic.lite.permission.UA_DATA" />
+
+        <receiver android:name="com.hungama.myplay.activity.util.AlaramReceiver" >
+        </receiver>
+
+        <activity android:name="com.hungama.myplay.activity.ui.NotificationActivity" >
+        </activity>
+        <activity
+            android:name="com.hungama.myplay.activity.ui.OfflineAlertActivity"
+            android:theme="@style/Theme.Translucent.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.hungama.myplay.activity.ui.WebviewNativeActivity"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+
+        <service android:name="com.hungama.myplay.activity.services.ReloadTracksDataService" >
+        </service>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationName"
+            android:value="@string/app_name" />
+
+        <receiver android:name="com.hungama.myplay.activity.ui.inappprompts.InAppPromptReceiver" >
+            <intent-filter>
+                <action android:name="com.hungama.myplay.activity.ui.inappprompts.SaveOfflineHelpDialog" />
+                <action android:name="com.hungama.myplay.activity.ui.inappprompts.AppPromptOfflineCaching3rdSong" />
+
+                <category android:name="com.hungama.hungamamusic.lite" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.hungama.myplay.activity.ui.inappprompts.InAppPromptDialogActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/Theme.Translucent.NoActionBar" >
+        </activity>
+
+        <service android:name="com.hungama.myplay.activity.data.audiocaching.MoveDownloadedTracksService" >
+        </service>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="7a8a0afc2f196c993a31ddf6bea660574c3b4667" />
+
+        <!-- Apsalar -->
+        <receiver android:exported="true" android:name="com.apsalar.sdk.ApsalarReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"></action>
+            </intent-filter>
+        </receiver>
+
+
+ <!--Cromecast Code 21-10-2015 -->
+
+        <!--<activity android:name="com.google.android.libraries.cast.companionlibrary.cast.player.VideoCastControllerActivity"
+                  android:screenOrientation="portrait"
+                  android:label="@string/app_name"
+                  android:launchMode="singleTask" android:theme="@style/AppTheme.NoActionBar.FullScreen"
+                  android:parentActivityName="com.hungama.myplay.activity.ui.HomeActivity"
+                  >
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                       android:value="com.hungama.myplay.activity.ui.HomeActivity" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>-->
+
+       <!-- <activity
+            android:name="com.google.android.libraries.cast.companionlibrary.cast.player.VideoCastControllerActivity"
+            android:label="@string/application_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>-->
+        <!--<activity
+            android:name="com.google.android.libraries.cast.companionlibrary.cast.tracks.CaptionsPreferenceActivity"
+            android:label="Settings" >
+            &lt;!&ndash;<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>&ndash;&gt;
+        </activity>
+        <receiver android:name="com.google.android.libraries.cast.companionlibrary.remotecontrol.VideoIntentReceiver" >
+            <intent-filter>
+                <action android:name="android.media.AUDIO_BECOMING_NOISY" />
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+                <action android:name="com.google.android.libraries.cast.companionlibrary.action.toggleplayback" />
+                <action android:name="com.google.android.libraries.cast.companionlibrary.action.stop" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.libraries.cast.companionlibrary.notification.VideoCastNotificationService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.libraries.cast.companionlibrary.action.toggleplayback" />
+                <action android:name="com.google.android.libraries.cast.companionlibrary.action.stop" />
+                <action android:name="com.google.android.libraries.cast.companionlibrary.action.notificationvisibility" />
+            </intent-filter>
+        </service>
+
+        <service android:name="com.google.android.libraries.cast.companionlibrary.cast.reconnection.ReconnectionService"/>-->
+
+
+        <!-- ford integration -->
+
+        <activity  android:screenOrientation="sensorPortrait" android:name="com.hungama.hungamamusic.ford.carmode.LockScreenActivity"/>
+        <service android:name="com.hungama.hungamamusic.ford.carmode.ProxyService" >
+        </service>
+        <receiver android:name="com.hungama.hungamamusic.ford.carmode.SyncReceiver" >
+            <intent-filter>
+                <action android:name="android.bluetooth.device.action.ACL_CONNECTED" />
+                <action android:name="android.bluetooth.device.action.ACL_DISCONNECTED" />
+                <action android:name="android.media.AUDIO_BECOMING_NOISY" />
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+
+
+    </application>
+
+</manifest>

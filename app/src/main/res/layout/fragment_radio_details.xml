@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlRadioDetailParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_player_content_buttons_background_white_trans"
+    android:clickable="true" >
+
+    <LinearLayout
+        android:id="@+id/radio_details_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/main_player_content_buttons_background_trans"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/radio_details_title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_title_bar_height"
+            android:background="@drawable/background_home_tabwidget_tab_unselected"
+            android:visibility="gone" >
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:id="@+id/radio_details_title_bar_text"
+                style="@style/TextMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/radio_details_layout_top_artists_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/radio_details_layout_bottom_padding"
+            android:paddingLeft="@dimen/radio_details_layout_padding"
+            android:paddingRight="@dimen/radio_details_layout_padding"
+            android:paddingTop="@dimen/radio_details_layout_padding"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/radio_details_thumbnail"
+                android:layout_width="@dimen/radio_details_thumbnail_size"
+                android:layout_height="@dimen/radio_details_thumbnail_size"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/background_home_tile_album_default" />
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/TextSmallMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/radio_details_thumbnail"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/radio_details_thumbnail"
+                android:text="@string/radio_radio_pefix"
+                android:textColor="@color/azure"
+                android:textSize="@dimen/large_text_size" />
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:id="@+id/radio_details_top_artists_text_radio_name"
+                style="@style/TextSmallMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView1"
+                android:layout_marginLeft="@dimen/radio_details_layout_content_margin"
+                android:layout_toRightOf="@+id/textView1"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textSize="@dimen/large_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/radio_details_layout_live_station"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/radio_details_layout_bottom_padding"
+            android:paddingLeft="@dimen/radio_details_layout_padding"
+            android:paddingRight="@dimen/radio_details_layout_padding"
+            android:paddingTop="@dimen/radio_details_layout_padding"
+            android:visibility="gone" >
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:id="@+id/radio_details_live_station_text_radio_name"
+                style="@style/TextSmallPlus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normal_text_size" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/radio_details_line_separator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/media_details_seperetor_height"
+            android:background="@color/black" />
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="3dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/login_link_text_color"
+            android:textSize="@dimen/medium_text_size"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/radio_details_layout_coming_up"
+        android:layout_below="@id/radio_details_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:clickable="true" >
+
+        <RelativeLayout
+            android:id="@+id/rlTileParent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/radio_placement_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:clickable="true" />
+
+            <Button
+                android:id="@+id/bCloseVideoAd"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="@dimen/main_player_ad_close_size"
+                android:layout_height="@dimen/main_player_ad_close_size"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/ad_close_button"
+                android:text="X"
+                android:textColor="@color/white"
+                android:textSize="@dimen/large_text_size"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/radio_details_layout_coming_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_player_content_buttons_background_trans"
+        android:paddingBottom="@dimen/radio_details_coming_up_content_margin"
+        android:visibility="invisible" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/radio_details_coming_up_thumbnail_size"
+            android:layout_marginBottom="@dimen/radio_details_coming_up_content_margin"
+            android:layout_marginLeft="@dimen/radio_details_layout_padding"
+            android:layout_marginTop="@dimen/radio_details_coming_up_content_margin"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/radio_details_coming_up_thumbnail"
+                android:layout_width="@dimen/radio_details_coming_up_thumbnail_size"
+                android:layout_height="@dimen/radio_details_coming_up_thumbnail_size"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/background_home_tile_album_default" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/radio_details_coming_up_thumbnail"
+                android:orientation="vertical"
+                android:weightSum="1" >
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                    android:id="@+id/radio_details_coming_up_label"
+                    style="@style/TextSmallMediumMinus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text=" "
+                    android:textColor="@color/white" />
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                    android:id="@+id/radio_details_coming_up_song_name"
+                    style="@style/TextSmallMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.4"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text=" "
+                    android:textColor="@color/white" />
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                    android:id="@+id/radio_details_coming_up_album_name"
+                    style="@style/TextSmallMediumMinus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text=" "
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_player_drawer_ad_outer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/radio_details_layout_coming_up"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/main_player_drawer_ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="@dimen/album_arts_ad_Height"
+            android:background="@color/background_material_light"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <!-- <Button -->
+            <!-- android:id="@+id/bCloseVideoAd" -->
+            <!-- style="?android:attr/buttonStyleSmall" -->
+            <!-- android:layout_width="35dp" -->
+            <!-- android:layout_height="35dp" -->
+            <!-- android:layout_alignParentRight="true" -->
+            <!-- android:layout_alignParentTop="true" -->
+            <!-- android:layout_marginRight="10dp" -->
+            <!-- android:layout_marginTop="10dp" -->
+            <!-- android:background="@color/ad_close_button" -->
+            <!-- android:text="x" -->
+            <!-- android:textColor="@color/white" -->
+            <!-- android:textSize="15dp" /> -->
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_player_dont_want_ads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radio_details_layout_coming_up"
+        android:background="@drawable/skip_ad_background"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+            android:id="@+id/main_player_text_dont_want_ads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="@string/dont_want_ad_message_free_user"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/membership_detail_text_color" />
+
+</RelativeLayout>

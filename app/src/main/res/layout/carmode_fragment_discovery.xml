@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/carmode_main_bg_color"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/title_play_a_mood"
+            android:textColor="@color/carmode_main_text_color"
+            android:textSize="@dimen/carmode_text_small_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="center"
+                        android:src="@drawable/carmode_mood_selector_happy" />
+
+                    <TextView
+                        style="@style/CarModeMoodTextStyle"
+                        android:text="@string/mood_happy" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_mood_happy"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:onClick="vHandleClicks" />
+            </FrameLayout>
+
+            <!--<Button-->
+            <!--android:id="@+id/btn_mood_happy"-->
+            <!--style="@style/CarModeMoodTextStyle"-->
+            <!--android:background="@drawable/carmode_button_states"-->
+            <!--android:drawableTop="@drawable/carmode_mood_selector_happy"-->
+            <!--android:text="@string/mood_happy" />-->
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/carmode_divider_color" />
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="center"
+                        android:src="@drawable/carmode_mood_selector_heart_broken" />
+
+                    <TextView
+                        style="@style/CarModeMoodTextStyle"
+                        android:text="@string/mood_heart_broken" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_mood_heart_broken"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:onClick="vHandleClicks" />
+            </FrameLayout>
+
+            <!--<Button-->
+            <!--android:id="@+id/btn_mood_heart_broken"-->
+            <!--style="@style/CarModeMoodTextStyle"-->
+            <!--android:background="@drawable/carmode_button_states"-->
+            <!--android:drawableTop="@drawable/carmode_mood_selector_heart_broken"-->
+            <!--android:text="@string/mood_heart_broken" />-->
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/carmode_divider_color" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="center"
+                        android:src="@drawable/carmode_mood_selector_ecstatic" />
+
+                    <TextView
+                        style="@style/CarModeMoodTextStyle"
+                        android:text="@string/mood_ecstatic" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_mood_ecstatic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:onClick="vHandleClicks" />
+            </FrameLayout>
+
+            <!--<Button-->
+            <!--android:id="@+id/btn_mood_ecstatic"-->
+            <!--style="@style/CarModeMoodTextStyle"-->
+            <!--android:background="@drawable/carmode_button_states"-->
+            <!--android:drawableTop="@drawable/carmode_mood_selector_ecstatic"-->
+            <!--android:text="@string/mood_ecstatic" />-->
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/carmode_divider_color" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="center"
+                        android:src="@drawable/carmode_mood_selector_sad" />
+
+                    <TextView
+                        style="@style/CarModeMoodTextStyle"
+                        android:text="@string/mood_sad" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_mood_sad"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:onClick="vHandleClicks" />
+            </FrameLayout>
+
+            <!--<Button-->
+            <!--android:id="@+id/btn_mood_sad"-->
+            <!--style="@style/CarModeMoodTextStyle"-->
+            <!--android:background="@drawable/carmode_button_states"-->
+            <!--android:drawableTop="@drawable/carmode_mood_selector_sad"-->
+            <!--android:text="@string/mood_sad" />-->
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/carmode_divider_color" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="center"
+                        android:src="@drawable/carmode_mood_selector_chilled_out" />
+
+                    <TextView
+                        style="@style/CarModeMoodTextStyle"
+                        android:text="@string/mood_chilled_out" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_mood_chilled_out"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:onClick="vHandleClicks" />
+            </FrameLayout>
+
+            <!--<Button-->
+            <!--android:id="@+id/btn_mood_chilled_out"-->
+            <!--style="@style/CarModeMoodTextStyle"-->
+            <!--android:background="@drawable/carmode_button_states"-->
+            <!--android:drawableTop="@drawable/carmode_mood_selector_chilled_out"-->
+            <!--android:text="@string/mood_chilled_out" />-->
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/carmode_divider_color" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="center"
+                        android:src="@drawable/carmode_mood_selector_romantic" />
+
+                    <TextView
+                        style="@style/CarModeMoodTextStyle"
+                        android:text="@string/mood_romantic" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_mood_romantic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:onClick="vHandleClicks" />
+            </FrameLayout>
+
+            <!--<Button-->
+            <!--android:id="@+id/btn_mood_romantic"-->
+            <!--style="@style/CarModeMoodTextStyle"-->
+            <!--android:background="@drawable/carmode_button_states"-->
+            <!--android:drawableTop="@drawable/carmode_mood_selector_romantic"-->
+            <!--android:text="@string/mood_romantic" />-->
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/carmode_divider_color" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="center"
+                        android:src="@drawable/carmode_mood_selector_party" />
+
+                    <TextView
+                        style="@style/CarModeMoodTextStyle"
+                        android:text="@string/mood_party" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_mood_party"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:onClick="vHandleClicks" />
+            </FrameLayout>
+
+            <!--<Button-->
+            <!--android:id="@+id/btn_mood_party"-->
+            <!--style="@style/CarModeMoodTextStyle"-->
+            <!--android:background="@drawable/carmode_button_states"-->
+            <!--android:drawableTop="@drawable/carmode_mood_selector_party"-->
+            <!--android:text="@string/mood_party" />-->
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_load"
+        style="@style/CustomProgressDialogStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

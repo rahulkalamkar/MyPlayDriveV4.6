@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mini_player_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_player_content_buttons_background_trans"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/main_player_drawer_header_new"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_player_bar_height" >
+
+        <!-- <LinearLayout -->
+        <!-- android:id="@+id/main_player_drawer_header_content_new" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="match_parent" > -->
+
+
+        <!-- android:paddingTop="@dimen/main_player_drawer_header_content_edge" -->
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/layout_main_player_content_info_bar"
+            android:visibility="visible" />
+        <!-- </LinearLayout> -->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_player_bar_handle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_player_bar_height"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/main_player_bar_progress_bar_handle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" >
+
+            <SeekBar
+                android:id="@+id/main_player_bar_progress_bar_seek_bar_handle"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_centerVertical="true"
+                android:indeterminateOnly="false"
+                android:maxHeight="3dp"
+                android:padding="0dp"
+                android:progress="0"
+                android:progressDrawable="@drawable/background_main_player_bar_progress"
+                android:secondaryProgress="0"
+                android:thumb="@null"
+                android:thumbOffset="0dip" />
+
+            <!-- <LinearLayout -->
+            <!-- android:id="@+id/main_player_bar_progress_bar_scale_bar" -->
+            <!-- android:layout_width="@dimen/main_player_bar_progress_bar_scale_width" -->
+            <!-- android:layout_height="@dimen/main_player_bar_progress_bar_height" -->
+            <!-- android:layout_alignParentRight="true" -->
+            <!-- android:background="@color/main_player_bar_progress_bar_scale_background" -->
+            <!-- android:gravity="center_vertical|center_horizontal" -->
+            <!-- android:orientation="horizontal" -->
+            <!-- android:paddingLeft="2dp" -->
+            <!-- android:paddingRight="2dp" > -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/main_player_bar_progress_bar_scale_text_current_handle" -->
+            <!-- android:layout_width="@dimen/main_player_bar_progress_bar_scale_text_current_width" -->
+            <!-- android:layout_height="@dimen/main_player_bar_progress_bar_scale_text_height" -->
+            <!-- android:text="@string/main_player_bar_progress_bar_scale_text_current" -->
+            <!-- android:textColor="@color/main_player_bar_progress_bar_scale_text_current" -->
+            <!-- android:textSize="@dimen/main_player_progress_bar_scale_text" /> -->
+            <!-- </LinearLayout> -->
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/main_player_bar_text_container_handle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_player_bar_progress_bar_handle"
+            android:orientation="horizontal"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp" >
+
+            <!-- <com.hungama.myplay.activity.ui.widgets.LanguageTextView -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                    android:id="@+id/main_player_bar_text_title_handle"
+                    style="@style/TextMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:freezesText="true"
+                    android:gravity="center_horizontal"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="@string/main_player_bar_text_not_playing"
+                    android:textSize="@dimen/normal_text_size" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewVerticalLine"
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_toRightOf="@+id/main_player_bar_text_title_handle"
+                android:background="@android:color/white"
+                android:visibility="invisible" />
+
+            <!-- <com.hungama.myplay.activity.ui.widgets.LanguageTextView -->
+            <!-- android:id="@+id/main_player_bar_text_additional_handle" -->
+            <!-- style="@style/TextSmall" -->
+            <!-- android:layout_width="0dp" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_alignWithParentIfMissing="true" -->
+            <!-- android:layout_centerVertical="true" -->
+            <!-- android:layout_marginTop="@dimen/main_player_bar_text_container_internal_margin" -->
+            <!-- android:layout_toRightOf="@+id/viewVerticalLine" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:ellipsize="marquee" -->
+            <!-- android:focusable="true" -->
+            <!-- android:focusableInTouchMode="true" -->
+            <!-- android:gravity="center_vertical" -->
+            <!-- android:lines="1" -->
+            <!-- android:marqueeRepeatLimit="marquee_forever" -->
+            <!-- android:scrollHorizontally="true" -->
+            <!-- android:visibility="gone" /> -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_player_bar_buttons_container_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/main_player_bar_text_container_handle"
+            android:orientation="horizontal" >
+
+            <com.hungama.myplay.activity.ui.widgets.ActiveButton
+                android:id="@+id/main_player_bar_button_previous_handle"
+                android:layout_width="@dimen/main_player_bar_button_size"
+                android:layout_height="@dimen/main_player_bar_button_size"
+                android:layout_margin="@dimen/main_player_bar_button_margin"
+                android:background="@null"
+                android:padding="@dimen/main_player_bar_button_padding"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                app:activeSrc="@drawable/icon_prev_new_selector"
+                app:inactiveSrc="@drawable/icon_prev_new_gray" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/main_player_bar_button_size"
+                android:layout_height="@dimen/main_player_bar_button_size"
+                android:layout_margin="@dimen/main_player_bar_button_margin" >
+
+                <ProgressBar
+                    android:id="@+id/pbPlayMiniPlayer"
+                    style="@style/CustomProgressDialogStyle"
+                    android:layout_width="@dimen/main_player_bar_button_size"
+                    android:layout_height="@dimen/main_player_bar_button_size"
+                    android:visibility="invisible" />
+
+                <com.hungama.myplay.activity.ui.widgets.ActiveButton
+                    android:id="@+id/main_player_bar_button_play_handle"
+                    android:layout_width="@dimen/main_player_bar_button_size"
+                    android:layout_height="@dimen/main_player_bar_button_size"
+                    android:background="@null"
+                    android:padding="@dimen/main_player_bar_button_padding"
+                    android:scaleType="fitXY"
+                    app:activeSrc="@drawable/icon_play_new"
+                    app:inactiveSrc="@drawable/icon_play_new" />
+            </RelativeLayout>
+
+            <com.hungama.myplay.activity.ui.widgets.ActiveButton
+                android:id="@+id/main_player_bar_button_next_handle"
+                android:layout_width="@dimen/main_player_bar_button_size"
+                android:layout_height="@dimen/main_player_bar_button_size"
+                android:layout_margin="@dimen/main_player_bar_button_margin"
+                android:background="@null"
+                android:padding="@dimen/main_player_bar_button_padding"
+                android:scaleType="fitXY"
+                app:activeSrc="@drawable/icon_next_new_selector"
+                app:inactiveSrc="@drawable/icon_next_new_gray" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/main_player_bar_button_size"
+            android:layout_height="@dimen/main_player_bar_button_size"
+            android:layout_below="@+id/main_player_bar_text_container_handle"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/main_player_bar_button_margin" >
+
+            <ProgressBar
+                android:id="@+id/pbPlayMiniPlayerRadio"
+                style="@style/CustomProgressDialogStyle"
+                android:layout_width="@dimen/main_player_bar_button_size"
+                android:layout_height="@dimen/main_player_bar_button_size"
+                android:visibility="invisible" />
+
+            <com.hungama.myplay.activity.ui.widgets.ActiveButton
+                android:id="@+id/main_player_bar_button_play_radio_handle"
+                android:layout_width="@dimen/main_player_bar_button_size"
+                android:layout_height="@dimen/main_player_bar_button_size"
+                android:background="@null"
+                android:padding="@dimen/main_player_bar_button_padding"
+                android:scaleType="fitXY"
+                android:visibility="invisible"
+                app:activeSrc="@drawable/icon_play_new"
+                app:inactiveSrc="@drawable/icon_play_new" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/main_player_bar_buttons_container_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/main_player_bar_text_container_handle"
+            android:orientation="horizontal" >
+
+            <!-- <ProgressBar -->
+            <!-- android:id="@+id/main_player_bar_loading_indicator_handle" -->
+            <!-- style="@style/LoadingIndicator" -->
+            <!-- android:layout_width="@dimen/main_player_bar_text_container_loading_indicator" -->
+            <!-- android:layout_height="@dimen/main_player_bar_text_container_loading_indicator" -->
+            <!-- android:layout_gravity="center_vertical" -->
+            <!-- android:padding="@dimen/main_player_bar_button_padding" -->
+            <!-- android:visibility="gone" /> -->
+
+            <com.hungama.myplay.activity.ui.widgets.TwoStatesActiveButton
+                android:id="@+id/main_player_bar_button_audio_effects_handle"
+                android:layout_width="@dimen/main_player_bar_button_size"
+                android:layout_height="@dimen/main_player_bar_button_size"
+                android:layout_margin="@dimen/main_player_bar_button_margin"
+                android:background="@null"
+                android:padding="@dimen/main_player_bar_button_padding"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                app:activeStateSource="@drawable/icon_main_player_audio_effect_white"
+                app:inactiveStateSource="@drawable/icon_main_player_audio_effect_grey"
+                app:secondStateSource="@drawable/icon_main_player_audio_effect_blue" />
+
+            <RelativeLayout
+                android:id="@+id/main_player_bar_button_rl_save_offline_handle"
+                android:layout_width="@dimen/main_player_bar_button_size"
+                android:layout_height="@dimen/main_player_bar_button_size"
+                android:layout_margin="@dimen/main_player_bar_button_margin"
+                android:background="@null"
+                android:gravity="center"
+                android:padding="@dimen/main_player_bar_button_padding"
+                android:visibility="gone" >
+
+                <com.hungama.myplay.activity.ui.widgets.CustomCacheStateProgressBar
+                    android:id="@+id/main_player_bar_progress_cache_state_handle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <com.hungama.myplay.activity.ui.widgets.ActiveButton
+                android:id="@+id/main_player_bar_button_add_to_favorites_handle"
+                android:layout_width="@dimen/main_player_bar_button_size"
+                android:layout_height="@dimen/main_player_bar_button_size"
+                android:layout_margin="@dimen/main_player_bar_button_margin"
+                android:background="@null"
+                android:padding="@dimen/main_player_bar_button_padding"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                app:activeSrc="@drawable/icon_main_player_favorites_white"
+                app:inactiveSrc="@drawable/icon_main_player_favorites_white" />
+
+            <com.hungama.myplay.activity.ui.widgets.TwoStatesActiveButton
+                android:id="@+id/main_player_bar_button_shuffle_handle"
+                android:layout_width="@dimen/main_player_bar_button_size"
+                android:layout_height="@dimen/main_player_bar_button_size"
+                android:layout_margin="@dimen/main_player_bar_button_margin"
+                android:background="@null"
+                android:padding="@dimen/main_player_bar_button_padding"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                app:activeStateSource="@drawable/icon_main_player_shuffle_white"
+                app:inactiveStateSource="@drawable/icon_main_player_shuffle_grey"
+                app:secondStateSource="@drawable/icon_main_player_suffle_blue" />
+
+            <com.hungama.myplay.activity.ui.widgets.ThreeStatesActiveButton
+                android:id="@+id/main_player_bar_button_loop_handle"
+                android:layout_width="@dimen/main_player_bar_button_size"
+                android:layout_height="@dimen/main_player_bar_button_size"
+                android:layout_margin="@dimen/main_player_bar_button_margin"
+                android:background="@null"
+                android:padding="@dimen/main_player_bar_button_padding"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                app:ThirdStateSrc="@drawable/icon_main_player_loop_blue"
+                app:activeStateSrc="@drawable/icon_main_player_loop_white"
+                app:inactiveStateSrc="@drawable/icon_main_player_loop_grey"
+                app:secondStateSrc="@drawable/icon_main_player_loop_single_blue" />
+
+            <ImageView
+                android:id="@+id/main_player_bar_button_queue_handle"
+                android:layout_width="@dimen/main_player_bar_button_size"
+                android:layout_height="@dimen/main_player_bar_button_size"
+                android:layout_margin="@dimen/main_player_bar_button_margin"
+                android:padding="@dimen/main_player_bar_button_padding"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_main_player_queue_selector"
+                android:visibility="visible" />
+
+            <com.hungama.myplay.activity.ui.widgets.ActiveButton
+                android:id="@+id/main_player_bar_button_settings_handle"
+                android:layout_width="@dimen/main_player_bar_button_size"
+                android:layout_height="@dimen/main_player_bar_button_size"
+                android:layout_margin="@dimen/main_player_bar_button_margin"
+                android:background="@null"
+                android:padding="@dimen/main_player_bar_button_padding"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                app:activeSrc="@drawable/icon_main_player_settings_white"
+                app:inactiveSrc="@drawable/icon_main_player_settings_grey" />
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageButton
+                android:id="@+id/main_player_bar_button_load_handle"
+                android:layout_width="@dimen/main_player_bar_button_size"
+                android:layout_height="@dimen/main_player_bar_button_size"
+                android:layout_margin="@dimen/main_player_bar_button_margin"
+                android:background="@null"
+                android:drawableTop="@drawable/icon_white_content_collapse_up"
+                android:paddingBottom="@dimen/main_player_bar_button_load_padding_bottom"
+                android:paddingTop="@dimen/main_player_bar_button_load_padding_top"
+                android:text="@string/main_player_bar_button_load"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normal_text_size"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

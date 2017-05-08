@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/radio_dialog_padding_top_bottom"
+    android:background="@drawable/background_rounded_corner_white"
+    android:minWidth="@dimen/redeem_dialog_min_width"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/radio_dialog_padding_top_bottom"
+    android:paddingLeft="@dimen/trivia_bubble_padding_left_right"
+    android:paddingRight="@dimen/trivia_bubble_padding_left_right" >
+
+    <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="@dimen/dlg_margin_top"
+        android:text="Info"
+        android:textColor="@color/black"
+        android:textSize="@dimen/xlarge_text_size" />
+
+    <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+        android:id="@+id/txt_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:text="@string/save_offline_dialog_message"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/normal_text_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/trivia_bubble_content_padding_checkbox"
+        android:layout_marginRight="@dimen/trivia_bubble_content_padding_checkbox"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp" >
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageButton
+            android:id="@+id/btn_dismiss"
+            android:layout_width="@dimen/custom_dialog_btn_width"
+            android:layout_height="@dimen/dlg_common_height"
+            android:background="@drawable/background_blue_dialog_btn"
+            android:paddingTop="8dp"
+            android:text="@string/ok"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/medium_text_size" />
+    </LinearLayout>
+
+</LinearLayout>

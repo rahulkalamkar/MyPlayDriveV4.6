@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_songcathcher"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:layout_marginTop="10dp" >
+
+    <!--<RelativeLayout
+        android:id="@+id/rl_main2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_search_nq"
+        android:clickable="true" android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/iv_mice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_catcher_title_upper"
+            android:background="@drawable/ic_mice"
+            android:clickable="true" />
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+            android:id="@+id/tv_catcher_title_upper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/marginright_iv_mick"
+            android:layout_toLeftOf="@+id/iv_help_songcatcher"
+            android:text="@string/songcatcher_title_upper"
+            android:textColor="#bee704"
+            android:textSize="@dimen/xxlarge_text_size" />
+        android:layout_below="@+id/rl_main2"
+
+        <ImageView
+            android:id="@+id/iv_help_songcatcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/marginleft_tv_catcher_title_upper"
+            android:layout_marginRight="@dimen/search_content_margin"
+            android:background="@drawable/ic_help_songcatcher"
+            android:clickable="true"
+            android:padding="@dimen/dlg_margin_top" />
+    </RelativeLayout>-->
+
+    <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+        android:id="@+id/search_popular_searches_title_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="19dp"
+        android:paddingLeft="@dimen/search_content_margin"
+        android:paddingTop="19dp"
+        android:text="@string/search_popular_searches_title_cap"
+        android:textColor="@color/white"
+        android:textSize="@dimen/large_text_size" />
+
+</RelativeLayout>

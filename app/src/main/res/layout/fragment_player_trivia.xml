@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_player_content_fragment_background_dark_trans"
+    android:clickable="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_player_content_fragment_background_dark_trans" >
+
+        <include
+            android:id="@+id/include"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/player_content_title_height"
+            layout="@layout/top_bar_player_option" />
+
+        <ListView
+            android:id="@+id/player_trivia_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/llPlayerTriviaAdHolder"
+            android:layout_below="@+id/include"
+            android:layout_marginLeft="@dimen/trivia_bubble_side_margin"
+            android:layout_marginRight="@dimen/trivia_bubble_side_margin"
+            android:layout_marginTop="10dp"
+            android:divider="@null"
+            android:dividerHeight="10dp"
+            android:scrollbars="none" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="75dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/llPlayerTriviaAdHolder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ivHungamaPlayerTrivia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/icon_actionbar_logo" />
+
+            <ProgressBar
+                android:id="@+id/pbHungamaPlayerTrivia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

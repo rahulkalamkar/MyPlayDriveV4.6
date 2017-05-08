@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="view_tag_view_holder" format="integer" type="id">1</item>
+    <item name="view_tag_object" format="integer" type="id">2</item>
+    <item name="view_tag_position" format="integer" type="id">3</item>
+    <item name="view_tag_group_position" format="integer" type="id">4</item>
+    <item name="view_tag_type" format="integer" type="id">6</item>
+
+</resources>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/carmode_main_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5.04">
+
+        <ImageButton
+            android:id="@+id/btn_player_back"
+            android:layout_width="@dimen/carmode_header_button_width"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/carmode_button_states"
+            android:onClick="vHandleClicks"
+            android:src="@drawable/carmode_btn_back" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_alignRight="@id/btn_player_back"
+            android:background="@color/carmode_divider_color" />
+
+        <TextView
+            android:id="@+id/tv_title_mood"
+            style="@style/CarModeHeaderTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/carmode_divider_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_discovery_player_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_track_avatar"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/background_home_tile_album_default" />
+
+            <FrameLayout android:id="@+id/frameLayoutMood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/iv_track_avatar"
+                android:layout_alignTop="@id/iv_track_avatar"
+                android:background="@drawable/bg_mood">
+
+                <ImageView
+                    android:id="@+id/iv_mood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/carmode_mood_selector_party" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_track_avatar"
+                android:layout_alignLeft="@id/iv_track_avatar"
+                android:layout_alignRight="@id/iv_track_avatar"
+                android:layout_alignTop="@id/iv_track_avatar">
+
+                <ImageButton
+                    android:id="@+id/btn_discovery_play_pause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#DD787878"
+                    android:onClick="vHandleClicks"
+                    android:src="@drawable/carmode_btn_play_large" />
+            </FrameLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_discovery_player_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_track_avatar"
+                android:layout_alignLeft="@id/iv_track_avatar"
+                android:layout_alignRight="@id/iv_track_avatar"
+                android:layout_alignTop="@id/iv_track_avatar"
+                android:visibility="visible">
+
+                <ProgressBar
+                    style="@style/CustomProgressDialogStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/iv_track_avatar"
+                android:layout_alignRight="@id/iv_track_avatar"
+                android:layout_below="@id/iv_track_avatar"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tv_discovery_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+
+                    android:textColor="@color/carmode_main_text_color"
+                    android:textSize="@dimen/carmode_text_small_size" />
+
+                <TextView
+                    android:id="@+id/tv_discovery_sub_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/carmode_main_text_color"
+                    android:textSize="@dimen/carmode_text_tiny_size" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_title_comming_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/iv_track_avatar"
+                android:layout_toRightOf="@id/iv_track_avatar"
+                android:text="@string/title_coming_up_next"
+                android:textColor="@color/carmode_main_text_color"
+                android:textSize="@dimen/carmode_text_medium_size" />
+
+            <LinearLayout
+                android:id="@+id/ll_next_track"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_title_comming_next"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/btn_play_next"
+                android:layout_toRightOf="@id/iv_track_avatar"
+                android:background="@color/carmode_sub_bg_color"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_discovery_next_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/carmode_main_text_color"
+                    android:textSize="@dimen/carmode_text_small_size" />
+
+                <TextView
+                    android:id="@+id/tv_discovery_next_sub_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/carmode_main_text_color"
+                    android:textSize="@dimen/carmode_text_tiny_size" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btn_play_next"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/ll_next_track"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/ll_next_track"
+                android:background="@color/carmode_sub_bg_color"
+                android:onClick="vHandleClicks"
+                android:src="@drawable/carmode_btn_play" />
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/pb_page_loading"
+            style="@style/CustomProgressDialogStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

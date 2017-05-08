@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Discovery -->
+
+    <dimen name="discovery_categories_selected_categories_height">200dp</dimen>
+    <dimen name="discovery_categories_selected_categories_margin_top">30dp</dimen>
+
+    <!-- Album arts -->
+    <dimen name="album_arts_ad_Height">10dp</dimen>
+
+    <!-- Song details -->
+    <dimen name="song_details_layout_height">260dp</dimen>
+
+    <!-- General -->
+    <dimen name="screen_height">426dp</dimen>
+    <dimen name="discovery_mood_selected_item_text_size">12sp</dimen>
+    <dimen name="discovery_mood_button_next_skip_height">35dp</dimen>
+    <dimen name="discovery_mood_button_next_skip_width">60dp</dimen>
+    <dimen name="upgrade_subscription_popup_close_button_margin">-20dp</dimen>
+
+    <!-- New Upgrade subscription popup -->
+    <dimen name="upgrade_subscription_popup_width">245dp</dimen>
+    <dimen name="upgrade_subscription_popup_height">380dp</dimen>
+    <!--
+    <dimen name="upgrade_subscription_popup_benefits_height">150dp</dimen>
+	<dimen name="upgrade_subscription_item_height">50dp</dimen>
+    -->
+    <dimen name="upgrade_subscription_popup_margin">10dp</dimen>
+
+</resources>

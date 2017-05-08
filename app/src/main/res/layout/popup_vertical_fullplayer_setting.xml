@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/scroller"
+        android:layout_width="@dimen/fullplayer_option_popup_width"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:fadingEdgeLength="5dip"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/rl_hd_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:id="@+id/ll_hd_options"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <ListView
+                    android:id="@+id/listview_hd_options"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="@color/search_fragment_categories_seperator_background"
+                    android:dividerHeight="0.2dp"
+                    android:listSelector="@android:color/white"
+                    android:scrollbars="none" >
+                </ListView>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

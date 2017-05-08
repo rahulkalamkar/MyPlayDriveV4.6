@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/layoutToMove"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:background="@color/transperent_background" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/home_filter_show"
+                android:textColor="@color/white"
+                android:textSize="@dimen/xlarge_text_size" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/transperent_text_color" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupFav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp" >
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageRadioButton
+                    android:id="@+id/radio_fav_song"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="@string/favorite_fragment_title_songs"
+                    android:textSize="@dimen/xlarge_text_size" />
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageRadioButton
+                    android:id="@+id/radio_fav_album"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:checked="false"
+                    android:text="@string/favorite_fragment_title_albums"
+                    android:textSize="@dimen/xlarge_text_size" />
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageRadioButton
+                    android:id="@+id/radio_fav_playlist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:checked="false"
+                    android:text="@string/favorite_fragment_title_playlists"
+                    android:textSize="@dimen/xlarge_text_size" />
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageRadioButton
+                    android:id="@+id/radio_fav_videos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:checked="false"
+                    android:text="@string/favorite_fragment_title_videos"
+                    android:textSize="@dimen/xlarge_text_size" />
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageRadioButton
+                    android:id="@+id/radio_fav_artist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:checked="false"
+                    android:text="@string/favorite_fragment_title_artists"
+                    android:textSize="@dimen/xlarge_text_size" />
+            </RadioGroup>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/main_player_bar_height"
+        android:layout_alignParentBottom="true" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/transperent_text_color" />
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+            android:id="@+id/btn_close"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/home_filter_close"
+            android:textColor="@color/white"
+            android:textSize="@dimen/xlarge_text_size" />
+    </RelativeLayout>
+
+</RelativeLayout>

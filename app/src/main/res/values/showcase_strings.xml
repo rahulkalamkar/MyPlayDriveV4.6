@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="showcase_preferences_title">Discover Your Favourite Music!</string>
+    <string name="showcase_preferences_message">Tap here to access our Music library across Language/ Category of your choice.</string>
+    <string name="showcase_preferences_button_text">Got It!</string>
+    <string name="showcase_song_catacher_title">What\'s That Song!</string>
+    <string name="showcase_song_catacher_message">Listening to a song but can’t identify the name? Tap this icon n you’ll know! </string>
+    <string name="help_left_menu_settings">App Settings</string>
+    <string name="help_left_menu_first_menu_item">Tap to access your Profile info,\n Playlists, Downloads, Favorites and more.</string>
+    <string name="help_left_menu_first_menu_item_not_logged_in">Login/ Register to –\n- Save your favorite songs to\nPlay without Internet.\n- Add/ Edit Playlists\n- View all Download\n- Points &amp; Badges earned\n- Lots more to do...</string>
+    <string name="help_left_menu_upgrade_button">Enjoy uninterrupted ad-free music and video, unlimited\nsongs to save for playback without internet, and more.</string>
+    <string name="help_offline_music_options">Tap to Sort your Offline songs\nand related Settings</string>
+    <string name="help_offline_music_list_item">Swipe to Remove Songs from cache</string>
+    <!-- <string name="help_play_bar_tap">Tap here to open the full player</string> -->
+    <string name="help_play_bar_tap">Drag/Tap to close the player</string>
+    <string name="help_player_queue_clear">Clear Queue</string>
+    <string name="help_player_queue_options">Shuffle/Repeat\n has moved here</string>
+    <string name="help_player_queue_drag_handle">Rearrange Songs listing.\nTap &amp; Hold. Darg to move.</string>
+    <string name="help_player_queue_list_item">Swipe to Remove Songs from Queue</string>
+    <string name="showcase_home_screen_filter_title">Customize your Music Screen!</string>
+    <string name="showcase_home_screen_filter_message">Tap to filter content and customize your music home screen.</string>
+    <string name="showcase_full_player_save_offline_title">Download this Song!</string>
+    <string name="showcase_full_player_save_offline_message">Tap to Download this song and play without Internet. Save on data cost.</string>
+    <string name="showcase_full_player_get_mp3_title">Own this MP3 forever!</string>
+    <string name="showcase_full_player_get_mp3_message">Tap on 3-dot menu to GET &amp; OWN this MP3 forever.</string>
+    <string name="showcase_discover_title">Personalize your Discovery Radio over here</string>
+    <string name="showcase_discover_message">Personalize your Discovery Radio over here</string>
+    <string name="showcase_discover_button_text">Got It!</string>
+    <string name="showcase_offline_screen_delete_title">Remove Songs!</string>
+    <string name="showcase_offline_screen_delete_message">Tap on artwork to select</string>
+
+</resources>

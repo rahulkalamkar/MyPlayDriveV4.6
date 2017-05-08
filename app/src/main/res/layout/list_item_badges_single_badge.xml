@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/badges_gridview_badges"
+    android:gravity="top" >
+
+    <ImageView
+        android:id="@+id/badges_list_item_badge_icon"
+        android:layout_width="@dimen/badges_detail_sze"
+        android:layout_height="@dimen/badges_detail_sze"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/badges_list_item_badge_icon_bottom_margin" />
+
+    <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+        android:id="@+id/badges_list_item_badge_name"
+        style="@style/TextSmallPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/badges_list_item_badge_icon"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/badges_list_item_badge_text_name"
+        android:textSize="@dimen/medium_text_size" />
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+{
+    "response": {
+        "code": 1,
+        "transaction_session": "u7otao0c4aavahc2krf6aif5v0",
+        "payment_options": [
+            {
+                "name": "Google Wallet",
+                "type": "google",
+                "offer": false
+            },
+            {
+                "name": "Operator Billing",
+                "type": "mobile",
+                "offer": false
+            },
+            {
+                "name": "Promo Code",
+                "type": "promo",
+                "offer": false
+            },
+            {
+                "name": "Debit/ Credit Card",
+                "type": "card",
+                "offer": true
+            },
+            {
+                "name": "Wallets",
+                "type": "wallets",
+                "offer": false,
+                "options": [
+                    {
+                        "id": 1,
+                        "name": "Pay TM",
+                        "offer": true
+                    },
+                    {
+                        "id": 2,
+                        "name": "Citrus",
+                        "offer": false
+                    },
+                    {
+                        "id": 3,
+                        "name": "Mobik wik",
+                        "offer": false
+                    }
+                ]
+            },
+            {
+                "name": "Redeem with coins",
+                "type": "redeem",
+                "offer": false
+            },
+            {
+                "name": "IVR Payment",
+                "type": "ivr",
+                "offer": false
+            }
+        ]
+    }
+}

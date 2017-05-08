@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:paddingLeft="@dimen/trivia_bubble_padding_left_right"
+    android:paddingRight="@dimen/trivia_bubble_padding_left_right" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_rounded_corner_white"
+        android:paddingBottom="@dimen/trivia_bubble_content_padding"
+        android:paddingLeft="@dimen/trivia_bubble_content_padding"
+        android:paddingRight="@dimen/trivia_bubble_content_padding"
+        android:paddingTop="0dp" >
+
+        <RelativeLayout
+            android:id="@+id/custom_dialog_title_row"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/media_details_long_click_custom_dialog_row_height"
+            android:background="@android:color/transparent" >
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                android:id="@+id/download_custom_dialog_title_text"
+                android:layout_width="@dimen/media_details_long_click_custom_dialog_text_view_row_width"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/sleep_mode_dialog_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/xlarge_text_size" />
+
+            <ImageButton
+                android:id="@+id/close_button"
+                android:layout_width="@dimen/media_details_long_click_custom_dialog_close_button_size"
+                android:layout_height="@dimen/media_details_long_click_custom_dialog_close_button_size"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right|center_vertical"
+                android:background="@color/transparent"
+                android:src="@drawable/icon_close_white"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/viewDivider"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/custom_dialog_title_row"
+            android:background="@color/native_dialog_blue_color" />
+
+        <RadioGroup
+            android:id="@+id/times_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/viewDivider"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio15"
+                    style="@style/revRadioButtonStyle" />
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                    android:id="@+id/radio_txt_15"
+                    style="@style/revRadioButtonTxtStyle" />
+            </LinearLayout>
+
+            <!-- <View -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="0.5dp" -->
+            <!-- android:background="@color/native_dialog_divider_color" /> -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_radio_item"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio30"
+                    style="@style/revRadioButtonStyle" />
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                    android:id="@+id/radio_txt_30"
+                    style="@style/revRadioButtonTxtStyle" />
+            </LinearLayout>
+
+            <!-- <View -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="0.5dp" -->
+            <!-- android:background="@color/native_dialog_divider_color" /> -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_radio_item"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio45"
+                    style="@style/revRadioButtonStyle" />
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                    android:id="@+id/radio_txt_45"
+                    style="@style/revRadioButtonTxtStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_radio_item"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio60"
+                    style="@style/revRadioButtonStyle" />
+
+                <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+                    android:id="@+id/radio_txt_60"
+                    style="@style/revRadioButtonTxtStyle" />
+            </LinearLayout>
+            <!-- <View -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="0.5dp" -->
+            <!-- android:background="@color/native_dialog_divider_color" /> -->
+
+
+            <!-- <View -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="1dp" -->
+            <!-- android:background="@color/white" /> -->
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/remaining_time_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/times_radio_group"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/medium_text_size"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/viewDivider1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/remaining_time_text"
+            android:background="@color/native_dialog_divider_color" />
+
+        <LinearLayout
+            android:id="@+id/ll_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dlg_common_height"
+            android:layout_below="@id/viewDivider1"
+            android:layout_marginBottom="@dimen/trivia_bubble_content_padding"
+            android:layout_marginTop="@dimen/trivia_bubble_content_padding"
+            android:orientation="horizontal" >
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageButton
+                android:id="@+id/start_timer_button"
+                style="@style/dialog_blue_btn_style"
+                android:layout_gravity="center"
+                android:text="@string/start_timer_button_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/medium_text_size" />
+
+            <!-- <View -->
+            <!-- android:layout_width="0dp" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:background="@color/native_dialog_divider_color" /> -->
+
+            <com.hungama.myplay.activity.ui.widgets.LanguageButton
+                android:id="@+id/cancel_timer_button"
+                style="@style/dialog_blue_btn_style"
+                android:layout_marginLeft="@dimen/nativeDialogButtonMargin"
+                android:text="@string/cancel_button_text"
+                android:textSize="@dimen/medium_text_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

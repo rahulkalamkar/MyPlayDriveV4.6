@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+              android:layout_marginTop="@dimen/dialog_margin_top_bottom"
+              android:layout_marginBottom="@dimen/dialog_margin_top_bottom"
+              android:layout_marginLeft="@dimen/dialog_margin_left_right"
+              android:layout_marginRight="@dimen/dialog_margin_left_right"
+    android:background="@color/application_background_grey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#00b9fd"
+        android:orientation="vertical"
+        android:paddingBottom="25dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="25dp">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/board_icon" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="CONGRATULATIONS"
+                android:textSize="@dimen/xlarge_text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/white"></View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:text="You're now a Hungama Pro."
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to"
+            android:textColor="#003366"
+            android:textSize="@dimen/xlarge_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="the Elite Club!"
+            android:textColor="#003366"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content" android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="You can now enjoy:" android:layout_marginTop="@dimen/dialog_margin_top"
+            android:textColor="#666666"
+            android:textSize="@dimen/xlarge_text_size" />
+
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+            android:id="@+id/text_benifits_on_board"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/membership_benefit_1"
+            android:textColor="@color/membership_detail_text_color"
+            android:textSize="@dimen/large_text_size" />
+
+        <!--<TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u2022 Offline Play\n\u2022 HD Quality Music\n\u2022 Unlimited full length Videos\n\u2022 All Ads free" android:layout_marginTop="5dp"
+            android:textColor="#666666"
+            android:textSize="@dimen/large_text_size" />-->
+    </LinearLayout>
+
+</LinearLayout>

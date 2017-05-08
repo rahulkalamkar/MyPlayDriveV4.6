@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/player_widget_image_poster"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_home_tile_album_default" />
+
+    <ImageView
+        android:id="@+id/player_widget_image_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/icon_actionbar_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/player_widget_image_logo"
+        android:layout_margin="8dp"
+        android:baselineAligned="true"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/player_widget_song_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:scrollHorizontally="true"
+            android:shadowColor="#5000"
+            android:shadowDx="1.5"
+            android:shadowDy="1.5"
+            android:shadowRadius="2"
+            android:singleLine="true"
+            android:textColor="@android:color/primary_text_dark"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/player_widget_song_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:scrollHorizontally="true"
+            android:shadowColor="#5000"
+            android:shadowDx="0.5"
+            android:shadowDy="0.5"
+            android:shadowRadius="2"
+            android:singleLine="true"
+            android:textColor="@android:color/secondary_text_dark"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <ImageButton
+                android:id="@+id/player_widget_button_prev"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="25dp"
+                android:background="#0000"
+                android:src="@drawable/button_widget_player_previous" />
+
+            <ImageButton
+                android:id="@+id/player_widget_button_play"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#0000"
+                android:src="@drawable/icon_widget_player_play_white" />
+
+            <ImageButton
+                android:id="@+id/player_widget_button_pause"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#0000"
+                android:src="@drawable/icon_widget_player_pause_white"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/player_widget_button_next"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="25dp"
+                android:background="#0000"
+                android:src="@drawable/button_widget_player_next" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--
+         <TextView
+        android:id="@+id/player_widget_song_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/border"
+        android:gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/application_name"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+    -->
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:clickable="true"
+    android:paddingLeft="0dp" >
+
+    <RelativeLayout
+        android:id="@+id/media_details_track"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp" >
+
+        <ImageButton
+            android:id="@+id/media_details_track_button_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right|center_vertical"
+            android:layout_toLeftOf="@+id/player_queue_line_button_more"
+            android:background="@null"
+            android:src="@drawable/icon_home_music_tile_play"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/player_queue_line_button_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:padding="5dp"
+            android:src="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/media_image"
+            android:layout_width="@dimen/search_result_line_image_size"
+            android:layout_height="@dimen/search_result_line_image_size"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+        <com.hungama.myplay.activity.ui.widgets.CustomCacheStateProgressBar
+            android:id="@+id/media_details_progress_cache_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/media_image"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <com.hungama.myplay.activity.ui.widgets.LanguageTextView
+            android:id="@+id/media_details_track_name"
+            style="@style/TextSmallMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toLeftOf="@id/media_details_track_button_play"
+            android:layout_toRightOf="@id/media_details_progress_cache_state"
+            android:gravity="left|center_vertical"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</LinearLayout>
